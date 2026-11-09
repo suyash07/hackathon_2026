@@ -13,6 +13,8 @@ import random
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+import config
+
 SEED = 42
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 VENUE_TZ = timezone(timedelta(hours=-7))  # Salt Lake City in November (MST)
@@ -21,7 +23,7 @@ NUM_SPEAKERS = 80
 NUM_ATTENDEES = 120
 CHECKED_IN_RATE = 0.7
 
-DAYS = ["2026-11-09", "2026-11-10", "2026-11-11", "2026-11-12"]
+DAYS = config.CONFERENCE_DAYS
 SLOTS = ["10:30", "11:30", "13:30", "14:30", "15:45", "16:45"]
 MAIN_ROOMS = [f"Room {n}" for n in range(1, 9)]
 HANGOUT_AREAS = ["Expo Hall", "Hallway Track Lounge", "Coffee Bar", "Sponsor Showcase"]
