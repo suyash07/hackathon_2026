@@ -11,6 +11,7 @@ load_dotenv(ROOT / ".env")
 ES_URL = os.getenv("ES_URL", "http://localhost:9200")
 ES_USER = os.getenv("ES_USER", "elastic")
 ES_PASSWORD = os.getenv("ES_PASSWORD")
+ES_API_KEY = os.getenv("ES_API_KEY")  # Elastic Cloud: use an API key instead of user/password
 
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
 LLM_MODEL = os.getenv("LLM_MODEL", "claude-sonnet-5-5")

@@ -8,9 +8,14 @@ import config
 
 
 def get_client() -> Elasticsearch:
-    """Return an Elasticsearch client built from config. Fails fast if the password is missing."""
+    """Return an Elasticsearch client built from config.
+
+    Uses ES_API_KEY when set (Elastic Cloud), otherwise ES_USER/ES_PASSWORD (local).
+    """
+    if config.ES_API_KEY:
+        return Elasticsearch(config.ES_URL, api_key=config.ES_API_KEY)
     if not config.ES_PASSWORD:
-        raise ValueError("ES_PASSWORD is empty in .env")
+        raise ValueError("Set ES_API_KEY (cloud) or ES_PASSWORD (local) in .env")
     return Elasticsearch(config.ES_URL, basic_auth=(config.ES_USER, config.ES_PASSWORD))
 
 
