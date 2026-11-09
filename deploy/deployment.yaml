@@ -50,6 +50,13 @@ spec:
                 secretKeyRef:
                   name: app-credentials
                   key: es-password
+            # Optional: voice questions. The app hides the mic if this key is absent.
+            - name: OPENAI_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: app-credentials
+                  key: openai-api-key
+                  optional: true
           resources:
             requests:
               cpu: 250m

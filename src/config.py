@@ -27,6 +27,10 @@ VENUE_TZ = timezone(timedelta(hours=-7))  # Salt Lake City in November (MST)
 # Optional fixed "now" for demos, e.g. 2026-11-10T11:40:00-07:00. Empty = real clock.
 DEMO_NOW = os.getenv("DEMO_NOW")
 
+# Voice questions: speech-to-text calls OpenAI directly (Elasticsearch has no speech-to-text)
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+TRANSCRIBE_MODEL = os.getenv("TRANSCRIBE_MODEL", "whisper-1")
+
 DATA_DIR = ROOT / "data"
 
 # Elasticsearch index names
