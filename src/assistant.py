@@ -16,9 +16,9 @@ from elasticsearch import ApiError, Elasticsearch
 import config
 from es_client import get_client
 from profiles import DEMO_USER_ID, get_profile
-from search import TALK_FIELDS, search_talks
+from search import DEFAULT_TOP_K, TALK_FIELDS, search_talks
 
-RAG_TOP_K = 6
+RAG_TOP_K = DEFAULT_TOP_K
 RAG_FIELDS = [*TALK_FIELDS, "abstract"]
 LLM_TIMEOUT = "60s"
 
