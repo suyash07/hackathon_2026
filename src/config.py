@@ -13,8 +13,9 @@ ES_USER = os.getenv("ES_USER", "elastic")
 ES_PASSWORD = os.getenv("ES_PASSWORD")
 ES_API_KEY = os.getenv("ES_API_KEY")  # Elastic Cloud: use an API key instead of user/password
 
-ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
-LLM_MODEL = os.getenv("LLM_MODEL", "claude-sonnet-5-5")
+# Elasticsearch inference endpoint that writes RAG answers (see README: "LLM setup").
+# The LLM provider's key is stored inside Elasticsearch, not in this app.
+LLM_INFERENCE_ID = os.getenv("LLM_INFERENCE_ID", "openai-completion")
 
 DATA_DIR = ROOT / "data"
 

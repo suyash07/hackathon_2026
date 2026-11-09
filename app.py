@@ -13,6 +13,7 @@ import streamlit as st
 
 sys.path.insert(0, str(Path(__file__).resolve().parent / "src"))
 
+from assistant import ask  # noqa: E402
 from es_client import get_client  # noqa: E402
 from matchmaker import find_matches  # noqa: E402
 from profiles import DEMO_USER_ID, get_profile, list_profiles  # noqa: E402
@@ -119,6 +120,23 @@ def matchmaker_tab(profile: dict | None) -> None:
         person_card(person)
 
 
+def assistant_tab(profile: dict | None) -> None:
+    question = st.text_input("Ask a question")
+    if not question:
+        return
+    try:
+        with st.spinner("Searching the schedule..."):
+            answer, talks = ask(es_client(), question, profile)
+    except RuntimeError as err:
+        st.error(str(err))
+        return
+    st.markdown(answer)
+    with st.expander(f"Talks searched ({len(talks)})"):
+        for talk in talks:
+            when = format_time(talk["start"], talk["end"])
+            st.markdown(f"- **{talk['title']}** · {when} · {talk['room']}")
+
+
 def main() -> None:
     st.title("🔎 Conference Search")
     st.caption("Conference companion · all data synthetic")
@@ -128,11 +146,13 @@ def main() -> None:
         st.error(f"Can't reach Elasticsearch: {err}")
         st.stop()
 
-    search_tab, match_tab = st.tabs(["Talk Search", "Hallway Matchmaker"])
+    search_tab, match_tab, assistant = st.tabs(["Talk Search", "Hallway Matchmaker", "Assistant"])
     with search_tab:
         talk_search_tab(profile)
     with match_tab:
         matchmaker_tab(profile)
+    with assistant:
+        assistant_tab(profile)
 
 
 main()
