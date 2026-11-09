@@ -24,12 +24,13 @@ def search_talks(
     query: str,
     size: int = DEFAULT_TOP_K,
     exclude_ids: list[str] | None = None,
+    fields: list[str] | None = None,
 ) -> list[dict]:
     """Return the talks closest in meaning to `query`, best first, each with a `score`."""
     res = es.search(
         index=config.TALKS_INDEX,
         query=build_semantic_query("content", query, exclude_ids),
-        source_includes=TALK_FIELDS,
+        source_includes=fields or TALK_FIELDS,
         size=size,
     )
     return [{**hit["_source"], "score": hit["_score"]} for hit in res["hits"]["hits"]]
