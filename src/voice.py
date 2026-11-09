@@ -21,9 +21,9 @@ def pick_question(typed: str, spoken: str, last_source: str | None) -> str:
     Returns:
         The question to answer, or '' if there is none.
     """
-    if last_source == SPOKEN and spoken:
+    if last_source == SPOKEN:
         return spoken
-    if last_source == TYPED and typed:
+    if last_source == TYPED:
         return typed
     return typed or spoken
 

@@ -14,9 +14,9 @@ def test_new_recording_beats_old_typed_question():
     assert pick_question("old typed", "new spoken", SPOKEN) == "new spoken"
 
 
-def test_falls_back_when_last_source_is_empty():
-    assert pick_question("typed", "", SPOKEN) == "typed"
-    assert pick_question("", "spoken", TYPED) == "spoken"
+def test_empty_last_source_does_not_fall_back_to_stale_input():
+    assert pick_question("typed", "", SPOKEN) == ""
+    assert pick_question("", "spoken", TYPED) == ""
 
 
 def test_no_source_yet_uses_whichever_is_filled():
