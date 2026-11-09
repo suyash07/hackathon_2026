@@ -18,6 +18,7 @@ from es_client import get_client  # noqa: E402
 from matchmaker import find_matches  # noqa: E402
 from profiles import DEMO_USER_ID, get_profile, list_profiles  # noqa: E402
 from search import recommend_talks, search_talks  # noqa: E402
+from who_to_meet import who_to_meet  # noqa: E402
 
 NO_PROFILE = "(no profile)"
 
@@ -35,6 +36,12 @@ def profile_choices() -> list[dict]:
     return list_profiles(es_client())
 
 
+@st.cache_data(ttl=300)
+def cached_who_to_meet(talk_id: str, exclude_ids: tuple[str, ...]) -> list[dict]:
+    """Cached people-to-meet lookup for one talk."""
+    return who_to_meet(es_client(), talk_id, exclude_ids=list(exclude_ids) or None)
+
+
 def clock(t: datetime) -> str:
     """'2:30' instead of '02:30'."""
     return t.strftime("%I:%M").lstrip("0")
@@ -46,8 +53,8 @@ def format_time(start: str, end: str) -> str:
     return f"{s:%a %b} {s.day} · {clock(s)}–{clock(e)} {e:%p}"
 
 
-def talk_card(talk: dict, bookmarked: set[str]) -> None:
-    """Render one talk."""
+def talk_card(talk: dict, bookmarked: set[str], people: list[dict] | None = None) -> None:
+    """Render one talk, optionally with the people worth meeting there."""
     with st.container(border=True):
         star = "★ " if talk["id"] in bookmarked else ""
         st.markdown(f"**{star}{talk['title']}**")
@@ -57,6 +64,9 @@ def talk_card(talk: dict, bookmarked: set[str]) -> None:
         )
         st.write(", ".join(talk["speakers"]))
         st.caption(" ".join(f"`{tag}`" for tag in talk.get("tags", [])))
+        if people:
+            names = ", ".join(f"{p['name']} ({p['role']})" for p in people)
+            st.markdown(f"🤝 **Who to meet:** {names}")
 
 
 def person_card(person: dict) -> None:
@@ -90,7 +100,12 @@ def sidebar_profile() -> dict | None:
 
 def talk_search_tab(profile: dict | None) -> None:
     query = st.text_input("Search")
+    show_people = st.checkbox("Show who to meet at each talk")
     bookmarked = set(profile["bookmarked_talks"]) if profile else set()
+    me = (profile["id"],) if profile else ()
+
+    def people_for(talk: dict) -> list[dict] | None:
+        return cached_who_to_meet(talk["id"], me) if show_people else None
 
     results = search_talks(es_client(), query) if query else []
     if query:
@@ -98,13 +113,13 @@ def talk_search_tab(profile: dict | None) -> None:
         if not results:
             st.info("No matching talks.")
         for talk in results:
-            talk_card(talk, bookmarked)
+            talk_card(talk, bookmarked, people_for(talk))
 
     if profile:
         st.subheader("Based on your profile, you might like")
         shown = [t["id"] for t in results]
         for talk in recommend_talks(es_client(), profile, exclude_ids=shown):
-            talk_card(talk, bookmarked)
+            talk_card(talk, bookmarked, people_for(talk))
 
 
 def matchmaker_tab(profile: dict | None) -> None:
