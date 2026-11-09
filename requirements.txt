@@ -1,0 +1,4 @@
+elasticsearch>=9.0,<10
+streamlit
+python-dotenv
+anthropic
