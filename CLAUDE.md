@@ -27,6 +27,9 @@ One profile per attendee in the `attendees` index — the single source of perso
 | `interests` (1–2 sentences) | semantic_text | search boosting, agenda builder, who-to-meet |
 | `goals` (list, e.g. `hiring`, `learn eBPF`, `find contributors`) | keyword | assistant context, matchmaker |
 | `available_days` | keyword | agenda builder |
+| `checked_in` | boolean | matchmaker ("in the building" = only checked-in people) |
+| `current_location` (room / area, null if not checked in) | keyword | matchmaker ("find them in Room 4") |
+| `bookmarked_talks` (talk ids) | keyword | agenda builder seed, "you might like" signal |
 
 - The selected profile is passed into features as a parameter (dependency injection), never read from a global.
 - Profile is **optional** for talk search and the assistant (`profile=None` default — they work without login, personalize when given); **required** for the matchmaker, agenda builder and who-to-meet.
@@ -34,7 +37,8 @@ One profile per attendee in the `attendees` index — the single source of perso
 
 ## Data rules
 - **Talks/speakers:** synthetic, KubeCon-style (~150–300 talks over Nov 9–12, Salt Lake City). Use realistic cloud-native tracks: AI Inference + Agentic, Platform Engineering, Security, Observability, Networking (eBPF/Cilium), plus co-located-event style sessions (CiliumCon, ArgoCon, BackstageCon). Fictional speakers and companies. Do not scrape the real schedule.
-- **Talk schema:** `id, title, abstract, speakers (list), track, level, room, start, end, day`. Times in ISO 8601 with timezone `America/Denver`.
+- **Talk schema:** `id, title, abstract, speakers (list of names), speaker_ids (list), track, tags (list), format (talk/workshop/panel/lightning), level, room, start, end, day`. Times in ISO 8601 with Salt Lake City offset (`-07:00`).
+- **Speaker schema:** `id, name, company, bio`. **Side event schema:** `id, name, description, start, location`.
 - **Attendees, side events:** also synthetic (fictional names/companies) — public repo, no real personal data. README → Data states that all data is synthetic.
 - Generate with a script `src/generate_data.py` using a fixed random seed so data is reproducible; write to `data/*.json`. Never hand-edit generated files.
 - Make synthetic data realistic enough to demo every feature:

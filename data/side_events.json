@@ -1,0 +1,107 @@
+[
+  {
+    "id": "e001",
+    "name": "Security Happy Hour",
+    "description": "Drinks with security track speakers. Bring your threat detection war stories.",
+    "start": "2026-11-10T18:30:00-07:00",
+    "location": "Rooftop Bar"
+  },
+  {
+    "id": "e002",
+    "name": "AI Builders Breakfast",
+    "description": "Morning meetup for people building with LLMs, RAG and agents.",
+    "start": "2026-11-10T12:15:00-07:00",
+    "location": "Coffee Bar"
+  },
+  {
+    "id": "e003",
+    "name": "eBPF Hands-On Workshop",
+    "description": "Write your first kernel tracing program. Laptop required.",
+    "start": "2026-11-11T12:15:00-07:00",
+    "location": "Lab A"
+  },
+  {
+    "id": "e004",
+    "name": "Platform Engineering Roundtable",
+    "description": "Share what worked for your internal developer platform.",
+    "start": "2026-11-12T19:00:00-07:00",
+    "location": "Room 105"
+  },
+  {
+    "id": "e005",
+    "name": "Women in Cloud Native Lunch",
+    "description": "Networking lunch for women across cloud native roles.",
+    "start": "2026-11-12T07:30:00-07:00",
+    "location": "Room 106"
+  },
+  {
+    "id": "e006",
+    "name": "Job Fair",
+    "description": "Meet hiring teams from cloud, fintech and AI companies.",
+    "start": "2026-11-12T18:30:00-07:00",
+    "location": "Expo Hall"
+  },
+  {
+    "id": "e007",
+    "name": "First-Timers Orientation",
+    "description": "New to KubeCon? Learn how to get the most out of the week.",
+    "start": "2026-11-11T17:30:00-07:00",
+    "location": "Main Stage"
+  },
+  {
+    "id": "e008",
+    "name": "GitOps Office Hours",
+    "description": "Bring your Argo CD and Flux questions to maintainers.",
+    "start": "2026-11-10T08:00:00-07:00",
+    "location": "Project Pavilion"
+  },
+  {
+    "id": "e009",
+    "name": "Observability Game Night",
+    "description": "Debugging puzzles and board games with the OpenTelemetry community.",
+    "start": "2026-11-11T17:30:00-07:00",
+    "location": "Hallway Track Lounge"
+  },
+  {
+    "id": "e010",
+    "name": "Contributor Meetup",
+    "description": "Find a project to contribute to and meet maintainers.",
+    "start": "2026-11-12T07:30:00-07:00",
+    "location": "Project Pavilion"
+  },
+  {
+    "id": "e011",
+    "name": "Cost Optimization Clinic",
+    "description": "Bring your cloud bill; FinOps experts help you trim it.",
+    "start": "2026-11-09T08:00:00-07:00",
+    "location": "Room 107"
+  },
+  {
+    "id": "e012",
+    "name": "Morning Fun Run",
+    "description": "Easy 5K around downtown Salt Lake City. All paces welcome.",
+    "start": "2026-11-11T08:00:00-07:00",
+    "location": "Main Entrance"
+  },
+  {
+    "id": "e013",
+    "name": "Student Mixer",
+    "description": "Students meet mentors and recruiters.",
+    "start": "2026-11-11T12:15:00-07:00",
+    "location": "Coffee Bar"
+  },
+  {
+    "id": "e014",
+    "name": "Agents in Production Panel Drinks",
+    "description": "Informal follow-up to the agentic track.",
+    "start": "2026-11-11T19:00:00-07:00",
+    "location": "Rooftop Bar"
+  },
+  {
+    "id": "e015",
+    "name": "Closing Party",
+    "description": "Celebrate the end of the conference.",
+    "start": "2026-11-11T18:30:00-07:00",
+    "location": "Expo Hall"
+  }
+]

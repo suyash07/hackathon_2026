@@ -1,4 +1,5 @@
 """All settings in one place. Everything else imports from here."""
+
 import os
 from pathlib import Path
 
@@ -15,3 +16,9 @@ ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
 LLM_MODEL = os.getenv("LLM_MODEL", "claude-sonnet-5-5")
 
 DATA_DIR = ROOT / "data"
+
+# Elasticsearch index names
+TALKS_INDEX = "talks"
+SPEAKERS_INDEX = "speakers"
+ATTENDEES_INDEX = "attendees"
+SIDE_EVENTS_INDEX = "side_events"

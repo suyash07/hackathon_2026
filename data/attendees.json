@@ -1,0 +1,2848 @@
+[
+  {
+    "id": "demo-user",
+    "name": "Demo User",
+    "role": "Platform Engineer",
+    "company": "Hackathon Team",
+    "experience_level": "intermediate",
+    "working_on": "Building eBPF-based runtime security for Kubernetes with an AI assistant that triages the alerts.",
+    "interests": "Interested in runtime security and kernel-level threat detection and AI agents for operations.",
+    "goals": [
+      "learn",
+      "find-contributors"
+    ],
+    "available_days": [
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "checked_in": true,
+    "current_location": "Hallway Track Lounge",
+    "bookmarked_talks": [
+      "t049",
+      "t080"
+    ]
+  },
+  {
+    "id": "a001",
+    "name": "Freya Weber",
+    "role": "SRE",
+    "company": "TrustLayer",
+    "experience_level": "advanced",
+    "working_on": "Cutting logging costs with OpenTelemetry tail sampling.",
+    "interests": "Interested in observability and OpenTelemetry.",
+    "goals": [
+      "find-contributors",
+      "job-seeking"
+    ],
+    "available_days": [
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 1",
+    "bookmarked_talks": [
+      "t056",
+      "t101",
+      "t170"
+    ]
+  },
+  {
+    "id": "a002",
+    "name": "Amara Iyer",
+    "role": "Platform Engineer",
+    "company": "PodPilot",
+    "experience_level": "beginner",
+    "working_on": "Canary releases with automatic rollback.",
+    "interests": "Interested in GitOps and progressive delivery and running LLM inference on Kubernetes.",
+    "goals": [
+      "find-contributors",
+      "share-work"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 2",
+    "bookmarked_talks": [
+      "t132",
+      "t176"
+    ]
+  },
+  {
+    "id": "a003",
+    "name": "Noah Okafor",
+    "role": "Security Engineer",
+    "company": "Skyforge",
+    "experience_level": "advanced",
+    "working_on": "Rolling out zero trust between microservices.",
+    "interests": "Interested in zero trust and workload identity and runtime security and kernel-level threat detection.",
+    "goals": [
+      "find-mentor",
+      "hiring"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Hallway Track Lounge",
+    "bookmarked_talks": [
+      "t076"
+    ]
+  },
+  {
+    "id": "a004",
+    "name": "Daniel Carter",
+    "role": "ML Engineer",
+    "company": "Helmsman Labs",
+    "experience_level": "advanced",
+    "working_on": "Serving open-weight LLMs on a shared GPU cluster.",
+    "interests": "Interested in running LLM inference on Kubernetes.",
+    "goals": [
+      "job-seeking",
+      "find-mentor"
+    ],
+    "available_days": [
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 7",
+    "bookmarked_talks": [
+      "t099",
+      "t163"
+    ]
+  },
+  {
+    "id": "a005",
+    "name": "Lena Weber",
+    "role": "Data Engineer",
+    "company": "Northwind Cloud",
+    "experience_level": "intermediate",
+    "working_on": "Reliable backups and restores for stateful workloads.",
+    "interests": "Interested in databases and stateful workloads on Kubernetes and RAG and vector search.",
+    "goals": [
+      "find-mentor",
+      "find-contributors"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 2",
+    "bookmarked_talks": [
+      "t142"
+    ]
+  },
+  {
+    "id": "a006",
+    "name": "Grace Asante",
+    "role": "Backend Engineer",
+    "company": "TrustLayer",
+    "experience_level": "advanced",
+    "working_on": "Hybrid keyword plus vector search for product documentation.",
+    "interests": "Interested in RAG and vector search and GitOps and progressive delivery.",
+    "goals": [
+      "evaluate-tools",
+      "find-mentor"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": []
+  },
+  {
+    "id": "a007",
+    "name": "Ravi Abebe",
+    "role": "Network Engineer",
+    "company": "Groundwork AI",
+    "experience_level": "advanced",
+    "working_on": "Debugging packet drops in our CNI with eBPF tooling.",
+    "interests": "Interested in eBPF networking and service mesh and runtime security and kernel-level threat detection.",
+    "goals": [
+      "evaluate-tools",
+      "share-work"
+    ],
+    "available_days": [
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t149",
+      "t153"
+    ]
+  },
+  {
+    "id": "a008",
+    "name": "Ananya Bianchi",
+    "role": "Student",
+    "company": "SecureOS",
+    "experience_level": "beginner",
+    "working_on": "Serving open-weight LLMs on a shared GPU cluster.",
+    "interests": "Interested in running LLM inference on Kubernetes and cloud cost optimization.",
+    "goals": [
+      "meet-maintainers",
+      "hiring"
+    ],
+    "available_days": [
+      "2026-11-10",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 5",
+    "bookmarked_talks": []
+  },
+  {
+    "id": "a009",
+    "name": "Liam Rossi",
+    "role": "Product Manager",
+    "company": "Northwind Cloud",
+    "experience_level": "beginner",
+    "working_on": "An internal developer portal with golden path templates.",
+    "interests": "Interested in platform engineering and developer experience and AI agents for operations.",
+    "goals": [
+      "learn",
+      "hiring"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 8",
+    "bookmarked_talks": [
+      "t114"
+    ]
+  },
+  {
+    "id": "a010",
+    "name": "Isla Schmidt",
+    "role": "SRE",
+    "company": "TrustLayer",
+    "experience_level": "advanced",
+    "working_on": "Cutting logging costs with OpenTelemetry tail sampling.",
+    "interests": "Interested in observability and OpenTelemetry and eBPF networking and service mesh.",
+    "goals": [
+      "hiring",
+      "job-seeking"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 6",
+    "bookmarked_talks": [
+      "t027",
+      "t052",
+      "t090"
+    ]
+  },
+  {
+    "id": "a011",
+    "name": "Tomás Martinez",
+    "role": "Platform Engineer",
+    "company": "SecureOS",
+    "experience_level": "advanced",
+    "working_on": "Canary releases with automatic rollback.",
+    "interests": "Interested in GitOps and progressive delivery and zero trust and workload identity.",
+    "goals": [
+      "find-contributors",
+      "learn"
+    ],
+    "available_days": [
+      "2026-11-10",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 2",
+    "bookmarked_talks": [
+      "t082",
+      "t138"
+    ]
+  },
+  {
+    "id": "a012",
+    "name": "Yuki Dubois",
+    "role": "Security Engineer",
+    "company": "CloudNest",
+    "experience_level": "advanced",
+    "working_on": "Writing runtime detection rules for our production clusters.",
+    "interests": "Interested in runtime security and kernel-level threat detection and zero trust and workload identity.",
+    "goals": [
+      "meet-maintainers",
+      "find-mentor"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": []
+  },
+  {
+    "id": "a013",
+    "name": "Noah Patel",
+    "role": "ML Engineer",
+    "company": "CloudNest",
+    "experience_level": "intermediate",
+    "working_on": "MCP servers that let assistants safely query our clusters.",
+    "interests": "Interested in AI agents for operations and cloud cost optimization.",
+    "goals": [
+      "hiring",
+      "share-work"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 8",
+    "bookmarked_talks": []
+  },
+  {
+    "id": "a014",
+    "name": "Priya Rossi",
+    "role": "Data Engineer",
+    "company": "OrbitOps",
+    "experience_level": "beginner",
+    "working_on": "A RAG chatbot over our internal runbooks that cites sources.",
+    "interests": "Interested in RAG and vector search.",
+    "goals": [
+      "hiring",
+      "learn"
+    ],
+    "available_days": [
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t100",
+      "t108",
+      "t135"
+    ]
+  },
+  {
+    "id": "a015",
+    "name": "Fatima Asante",
+    "role": "Backend Engineer",
+    "company": "TrustLayer",
+    "experience_level": "advanced",
+    "working_on": "Running Postgres on Kubernetes with an operator.",
+    "interests": "Interested in databases and stateful workloads on Kubernetes and runtime security and kernel-level threat detection.",
+    "goals": [
+      "job-seeking",
+      "meet-maintainers"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t122",
+      "t133"
+    ]
+  },
+  {
+    "id": "a016",
+    "name": "Sofia Fischer",
+    "role": "Network Engineer",
+    "company": "EdgeLink",
+    "experience_level": "advanced",
+    "working_on": "Writing runtime detection rules for our production clusters.",
+    "interests": "Interested in runtime security and kernel-level threat detection and zero trust and workload identity.",
+    "goals": [
+      "job-seeking",
+      "learn"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 1",
+    "bookmarked_talks": [
+      "t032",
+      "t034",
+      "t134"
+    ]
+  },
+  {
+    "id": "a017",
+    "name": "Amara Lindqvist",
+    "role": "Student",
+    "company": "PayNova",
+    "experience_level": "beginner",
+    "working_on": "Building an eBPF sensor that flags container escapes.",
+    "interests": "Interested in runtime security and kernel-level threat detection.",
+    "goals": [
+      "hiring",
+      "job-seeking"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t031",
+      "t034"
+    ]
+  },
+  {
+    "id": "a018",
+    "name": "Sofia Lindqvist",
+    "role": "Product Manager",
+    "company": "VectorWorks",
+    "experience_level": "advanced",
+    "working_on": "Right-sizing workloads to cut our cloud bill.",
+    "interests": "Interested in cloud cost optimization.",
+    "goals": [
+      "find-contributors",
+      "evaluate-tools"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Expo Hall",
+    "bookmarked_talks": [
+      "t067",
+      "t070"
+    ]
+  },
+  {
+    "id": "a019",
+    "name": "Omar Okafor",
+    "role": "SRE",
+    "company": "SecureOS",
+    "experience_level": "advanced",
+    "working_on": "End-to-end tracing across 300 microservices.",
+    "interests": "Interested in observability and OpenTelemetry and runtime security and kernel-level threat detection.",
+    "goals": [
+      "meet-maintainers",
+      "find-mentor"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "checked_in": true,
+    "current_location": "Room 2",
+    "bookmarked_talks": [
+      "t028",
+      "t052",
+      "t073"
+    ]
+  },
+  {
+    "id": "a020",
+    "name": "Daniel Berg",
+    "role": "Platform Engineer",
+    "company": "TrustLayer",
+    "experience_level": "advanced",
+    "working_on": "Debugging packet drops in our CNI with eBPF tooling.",
+    "interests": "Interested in eBPF networking and service mesh.",
+    "goals": [
+      "learn",
+      "job-seeking"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 4",
+    "bookmarked_talks": [
+      "t096",
+      "t110"
+    ]
+  },
+  {
+    "id": "a021",
+    "name": "Maya Haddad",
+    "role": "Security Engineer",
+    "company": "SecureOS",
+    "experience_level": "beginner",
+    "working_on": "Signing every container image and enforcing provenance at deploy.",
+    "interests": "Interested in software supply chain security.",
+    "goals": [
+      "evaluate-tools",
+      "share-work"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Sponsor Showcase",
+    "bookmarked_talks": []
+  },
+  {
+    "id": "a022",
+    "name": "Yuki Fischer",
+    "role": "ML Engineer",
+    "company": "TrustLayer",
+    "experience_level": "beginner",
+    "working_on": "Serving open-weight LLMs on a shared GPU cluster.",
+    "interests": "Interested in running LLM inference on Kubernetes.",
+    "goals": [
+      "find-mentor",
+      "evaluate-tools"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 6",
+    "bookmarked_talks": [
+      "t077"
+    ]
+  },
+  {
+    "id": "a023",
+    "name": "Leila Joshi",
+    "role": "Data Engineer",
+    "company": "EdgeLink",
+    "experience_level": "intermediate",
+    "working_on": "End-to-end tracing across 300 microservices.",
+    "interests": "Interested in observability and OpenTelemetry and databases and stateful workloads on Kubernetes.",
+    "goals": [
+      "find-mentor",
+      "evaluate-tools"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Sponsor Showcase",
+    "bookmarked_talks": [
+      "t052"
+    ]
+  },
+  {
+    "id": "a024",
+    "name": "Elena Martinez",
+    "role": "Backend Engineer",
+    "company": "DataForge",
+    "experience_level": "intermediate",
+    "working_on": "Reliable backups and restores for stateful workloads.",
+    "interests": "Interested in databases and stateful workloads on Kubernetes.",
+    "goals": [
+      "evaluate-tools",
+      "find-contributors"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": []
+  },
+  {
+    "id": "a025",
+    "name": "Felix Fischer",
+    "role": "Network Engineer",
+    "company": "NetScale",
+    "experience_level": "beginner",
+    "working_on": "Debugging packet drops in our CNI with eBPF tooling.",
+    "interests": "Interested in eBPF networking and service mesh.",
+    "goals": [
+      "job-seeking",
+      "learn"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Sponsor Showcase",
+    "bookmarked_talks": [
+      "t160",
+      "t179"
+    ]
+  },
+  {
+    "id": "a026",
+    "name": "Kwame Kim",
+    "role": "Student",
+    "company": "CloudNest",
+    "experience_level": "beginner",
+    "working_on": "Autoscaling model servers to handle traffic spikes.",
+    "interests": "Interested in running LLM inference on Kubernetes and platform engineering and developer experience.",
+    "goals": [
+      "hiring",
+      "find-mentor"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 3",
+    "bookmarked_talks": [
+      "t077",
+      "t155",
+      "t163"
+    ]
+  },
+  {
+    "id": "a027",
+    "name": "Lena Chen",
+    "role": "Product Manager",
+    "company": "KernelGuard",
+    "experience_level": "beginner",
+    "working_on": "An internal developer portal with golden path templates.",
+    "interests": "Interested in platform engineering and developer experience and eBPF networking and service mesh.",
+    "goals": [
+      "share-work",
+      "find-mentor"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": []
+  },
+  {
+    "id": "a028",
+    "name": "Kenji Okafor",
+    "role": "SRE",
+    "company": "LedgerCo",
+    "experience_level": "advanced",
+    "working_on": "End-to-end tracing across 300 microservices.",
+    "interests": "Interested in observability and OpenTelemetry and AI agents for operations.",
+    "goals": [
+      "job-seeking",
+      "share-work"
+    ],
+    "available_days": [
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t042",
+      "t090",
+      "t101"
+    ]
+  },
+  {
+    "id": "a029",
+    "name": "Lucas Schmidt",
+    "role": "Platform Engineer",
+    "company": "PodPilot",
+    "experience_level": "intermediate",
+    "working_on": "An internal developer portal with golden path templates.",
+    "interests": "Interested in platform engineering and developer experience and GitOps and progressive delivery.",
+    "goals": [
+      "hiring",
+      "job-seeking"
+    ],
+    "available_days": [
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t072",
+      "t114"
+    ]
+  },
+  {
+    "id": "a030",
+    "name": "Isla Haddad",
+    "role": "Security Engineer",
+    "company": "PayNova",
+    "experience_level": "intermediate",
+    "working_on": "Generating SBOMs and scanning third-party dependencies.",
+    "interests": "Interested in software supply chain security and eBPF networking and service mesh.",
+    "goals": [
+      "job-seeking",
+      "learn"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 6",
+    "bookmarked_talks": [
+      "t102",
+      "t129",
+      "t141"
+    ]
+  },
+  {
+    "id": "a031",
+    "name": "Daniel Alvarez",
+    "role": "ML Engineer",
+    "company": "PodPilot",
+    "experience_level": "advanced",
+    "working_on": "An AI agent that triages alerts and suggests fixes.",
+    "interests": "Interested in AI agents for operations and running LLM inference on Kubernetes.",
+    "goals": [
+      "find-contributors",
+      "meet-maintainers"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 7",
+    "bookmarked_talks": [
+      "t121"
+    ]
+  },
+  {
+    "id": "a032",
+    "name": "Jonas Haddad",
+    "role": "Data Engineer",
+    "company": "FinSight",
+    "experience_level": "intermediate",
+    "working_on": "End-to-end tracing across 300 microservices.",
+    "interests": "Interested in observability and OpenTelemetry and databases and stateful workloads on Kubernetes.",
+    "goals": [
+      "job-seeking",
+      "find-contributors"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 1",
+    "bookmarked_talks": [
+      "t150"
+    ]
+  },
+  {
+    "id": "a033",
+    "name": "Elena Bianchi",
+    "role": "Backend Engineer",
+    "company": "PayNova",
+    "experience_level": "advanced",
+    "working_on": "Moving 200 clusters to GitOps with Argo CD.",
+    "interests": "Interested in GitOps and progressive delivery and observability and OpenTelemetry.",
+    "goals": [
+      "evaluate-tools",
+      "learn"
+    ],
+    "available_days": [
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 1",
+    "bookmarked_talks": [
+      "t105"
+    ]
+  },
+  {
+    "id": "a034",
+    "name": "Kenji Murphy",
+    "role": "Network Engineer",
+    "company": "EdgeLink",
+    "experience_level": "intermediate",
+    "working_on": "Migrating to a sidecar-free service mesh.",
+    "interests": "Interested in eBPF networking and service mesh.",
+    "goals": [
+      "job-seeking",
+      "evaluate-tools"
+    ],
+    "available_days": [
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t110",
+      "t149",
+      "t179"
+    ]
+  },
+  {
+    "id": "a035",
+    "name": "Ingrid Berg",
+    "role": "Student",
+    "company": "DataForge",
+    "experience_level": "beginner",
+    "working_on": "An internal developer portal with golden path templates.",
+    "interests": "Interested in platform engineering and developer experience.",
+    "goals": [
+      "find-mentor",
+      "share-work"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t017",
+      "t072"
+    ]
+  },
+  {
+    "id": "a036",
+    "name": "Ingrid Reyes",
+    "role": "Product Manager",
+    "company": "CloudNest",
+    "experience_level": "intermediate",
+    "working_on": "Showback dashboards so teams see their own spend.",
+    "interests": "Interested in cloud cost optimization and observability and OpenTelemetry.",
+    "goals": [
+      "job-seeking",
+      "evaluate-tools"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 2",
+    "bookmarked_talks": []
+  },
+  {
+    "id": "a037",
+    "name": "Arjun Schmidt",
+    "role": "SRE",
+    "company": "Quantix",
+    "experience_level": "intermediate",
+    "working_on": "An AI agent that triages alerts and suggests fixes.",
+    "interests": "Interested in AI agents for operations.",
+    "goals": [
+      "learn",
+      "share-work"
+    ],
+    "available_days": [
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "checked_in": true,
+    "current_location": "Room 7",
+    "bookmarked_talks": []
+  },
+  {
+    "id": "a038",
+    "name": "Samir Lindqvist",
+    "role": "Platform Engineer",
+    "company": "ShopWave",
+    "experience_level": "beginner",
+    "working_on": "Moving 200 clusters to GitOps with Argo CD.",
+    "interests": "Interested in GitOps and progressive delivery and platform engineering and developer experience.",
+    "goals": [
+      "meet-maintainers",
+      "learn"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t009"
+    ]
+  },
+  {
+    "id": "a039",
+    "name": "Sofia Mehta",
+    "role": "Security Engineer",
+    "company": "PayNova",
+    "experience_level": "advanced",
+    "working_on": "Generating SBOMs and scanning third-party dependencies.",
+    "interests": "Interested in software supply chain security.",
+    "goals": [
+      "learn",
+      "find-contributors"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "checked_in": true,
+    "current_location": "Coffee Bar",
+    "bookmarked_talks": []
+  },
+  {
+    "id": "a040",
+    "name": "Amara Kim",
+    "role": "ML Engineer",
+    "company": "EdgeLink",
+    "experience_level": "beginner",
+    "working_on": "Serving open-weight LLMs on a shared GPU cluster.",
+    "interests": "Interested in running LLM inference on Kubernetes and RAG and vector search.",
+    "goals": [
+      "learn",
+      "find-contributors"
+    ],
+    "available_days": [
+      "2026-11-10",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Hallway Track Lounge",
+    "bookmarked_talks": [
+      "t077",
+      "t155"
+    ]
+  },
+  {
+    "id": "a041",
+    "name": "Daniel Rossi",
+    "role": "Data Engineer",
+    "company": "FinSight",
+    "experience_level": "beginner",
+    "working_on": "Hybrid keyword plus vector search for product documentation.",
+    "interests": "Interested in RAG and vector search and databases and stateful workloads on Kubernetes.",
+    "goals": [
+      "hiring",
+      "find-contributors"
+    ],
+    "available_days": [
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 2",
+    "bookmarked_talks": [
+      "t092",
+      "t100",
+      "t156"
+    ]
+  },
+  {
+    "id": "a042",
+    "name": "Freya Sato",
+    "role": "Backend Engineer",
+    "company": "NetScale",
+    "experience_level": "intermediate",
+    "working_on": "Reliable backups and restores for stateful workloads.",
+    "interests": "Interested in databases and stateful workloads on Kubernetes.",
+    "goals": [
+      "share-work",
+      "job-seeking"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 4",
+    "bookmarked_talks": [
+      "t058",
+      "t122"
+    ]
+  },
+  {
+    "id": "a043",
+    "name": "Chloe Kobayashi",
+    "role": "Network Engineer",
+    "company": "OrbitOps",
+    "experience_level": "intermediate",
+    "working_on": "Detecting cryptominers in Kubernetes pods by watching syscalls.",
+    "interests": "Interested in runtime security and kernel-level threat detection and eBPF networking and service mesh.",
+    "goals": [
+      "find-mentor",
+      "share-work"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Sponsor Showcase",
+    "bookmarked_talks": [
+      "t049",
+      "t147",
+      "t167"
+    ]
+  },
+  {
+    "id": "a044",
+    "name": "Ethan Reyes",
+    "role": "Student",
+    "company": "NetScale",
+    "experience_level": "beginner",
+    "working_on": "Serving open-weight LLMs on a shared GPU cluster.",
+    "interests": "Interested in running LLM inference on Kubernetes and runtime security and kernel-level threat detection.",
+    "goals": [
+      "find-mentor",
+      "hiring"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "checked_in": true,
+    "current_location": "Coffee Bar",
+    "bookmarked_talks": [
+      "t021"
+    ]
+  },
+  {
+    "id": "a045",
+    "name": "Ingrid Martinez",
+    "role": "Product Manager",
+    "company": "SecureOS",
+    "experience_level": "beginner",
+    "working_on": "An internal developer portal with golden path templates.",
+    "interests": "Interested in platform engineering and developer experience and AI agents for operations.",
+    "goals": [
+      "hiring",
+      "learn"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Hallway Track Lounge",
+    "bookmarked_talks": [
+      "t013",
+      "t014",
+      "t114"
+    ]
+  },
+  {
+    "id": "a046",
+    "name": "Chloe Khan",
+    "role": "SRE",
+    "company": "LedgerCo",
+    "experience_level": "beginner",
+    "working_on": "End-to-end tracing across 300 microservices.",
+    "interests": "Interested in observability and OpenTelemetry and AI agents for operations.",
+    "goals": [
+      "learn",
+      "find-contributors"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 6",
+    "bookmarked_talks": [
+      "t056"
+    ]
+  },
+  {
+    "id": "a047",
+    "name": "Diego Moreau",
+    "role": "Platform Engineer",
+    "company": "BlueHarbor",
+    "experience_level": "beginner",
+    "working_on": "Migrating to a sidecar-free service mesh.",
+    "interests": "Interested in eBPF networking and service mesh and databases and stateful workloads on Kubernetes.",
+    "goals": [
+      "job-seeking",
+      "share-work"
+    ],
+    "available_days": [
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t066",
+      "t096"
+    ]
+  },
+  {
+    "id": "a048",
+    "name": "Lucas Khan",
+    "role": "Security Engineer",
+    "company": "OrbitOps",
+    "experience_level": "advanced",
+    "working_on": "Rolling out zero trust between microservices.",
+    "interests": "Interested in zero trust and workload identity and software supply chain security.",
+    "goals": [
+      "learn",
+      "meet-maintainers"
+    ],
+    "available_days": [
+      "2026-11-10",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 3",
+    "bookmarked_talks": [
+      "t165"
+    ]
+  },
+  {
+    "id": "a049",
+    "name": "Grace Weber",
+    "role": "ML Engineer",
+    "company": "CloudNest",
+    "experience_level": "beginner",
+    "working_on": "Autoscaling model servers to handle traffic spikes.",
+    "interests": "Interested in running LLM inference on Kubernetes and AI agents for operations.",
+    "goals": [
+      "learn",
+      "job-seeking"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": []
+  },
+  {
+    "id": "a050",
+    "name": "Ananya Asante",
+    "role": "Data Engineer",
+    "company": "DataForge",
+    "experience_level": "intermediate",
+    "working_on": "Hybrid keyword plus vector search for product documentation.",
+    "interests": "Interested in RAG and vector search and AI agents for operations.",
+    "goals": [
+      "evaluate-tools",
+      "hiring"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 5",
+    "bookmarked_talks": [
+      "t156",
+      "t172"
+    ]
+  },
+  {
+    "id": "a051",
+    "name": "Fatima Bianchi",
+    "role": "Backend Engineer",
+    "company": "Streamly",
+    "experience_level": "advanced",
+    "working_on": "Hybrid keyword plus vector search for product documentation.",
+    "interests": "Interested in RAG and vector search and GitOps and progressive delivery.",
+    "goals": [
+      "learn",
+      "find-mentor"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10"
+    ],
+    "checked_in": true,
+    "current_location": "Coffee Bar",
+    "bookmarked_talks": [
+      "t055"
+    ]
+  },
+  {
+    "id": "a052",
+    "name": "Jonas Nilsson",
+    "role": "Network Engineer",
+    "company": "LedgerCo",
+    "experience_level": "intermediate",
+    "working_on": "Debugging packet drops in our CNI with eBPF tooling.",
+    "interests": "Interested in eBPF networking and service mesh.",
+    "goals": [
+      "meet-maintainers",
+      "hiring"
+    ],
+    "available_days": [
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t143",
+      "t153"
+    ]
+  },
+  {
+    "id": "a053",
+    "name": "Maya Liu",
+    "role": "Student",
+    "company": "VectorWorks",
+    "experience_level": "beginner",
+    "working_on": "An internal developer portal with golden path templates.",
+    "interests": "Interested in platform engineering and developer experience and runtime security and kernel-level threat detection.",
+    "goals": [
+      "evaluate-tools",
+      "job-seeking"
+    ],
+    "available_days": [
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Coffee Bar",
+    "bookmarked_talks": [
+      "t095",
+      "t159"
+    ]
+  },
+  {
+    "id": "a054",
+    "name": "Noah Chen",
+    "role": "Product Manager",
+    "company": "KernelGuard",
+    "experience_level": "advanced",
+    "working_on": "MCP servers that let assistants safely query our clusters.",
+    "interests": "Interested in AI agents for operations.",
+    "goals": [
+      "meet-maintainers",
+      "job-seeking"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-11"
+    ],
+    "checked_in": true,
+    "current_location": "Room 7",
+    "bookmarked_talks": [
+      "t091",
+      "t121",
+      "t127"
+    ]
+  },
+  {
+    "id": "a055",
+    "name": "Leila Carter",
+    "role": "SRE",
+    "company": "DataForge",
+    "experience_level": "advanced",
+    "working_on": "Right-sizing workloads to cut our cloud bill.",
+    "interests": "Interested in cloud cost optimization and observability and OpenTelemetry.",
+    "goals": [
+      "meet-maintainers",
+      "learn"
+    ],
+    "available_days": [
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t106",
+      "t140"
+    ]
+  },
+  {
+    "id": "a056",
+    "name": "Nadia Berg",
+    "role": "Platform Engineer",
+    "company": "EdgeLink",
+    "experience_level": "intermediate",
+    "working_on": "Canary releases with automatic rollback.",
+    "interests": "Interested in GitOps and progressive delivery and running LLM inference on Kubernetes.",
+    "goals": [
+      "evaluate-tools",
+      "job-seeking"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t158"
+    ]
+  },
+  {
+    "id": "a057",
+    "name": "Diego Kim",
+    "role": "Security Engineer",
+    "company": "NetScale",
+    "experience_level": "beginner",
+    "working_on": "Replacing static service passwords with short-lived workload identities.",
+    "interests": "Interested in zero trust and workload identity and software supply chain security.",
+    "goals": [
+      "find-contributors",
+      "job-seeking"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t081",
+      "t107",
+      "t120"
+    ]
+  },
+  {
+    "id": "a058",
+    "name": "Tomás Larsen",
+    "role": "ML Engineer",
+    "company": "Northwind Cloud",
+    "experience_level": "beginner",
+    "working_on": "A RAG chatbot over our internal runbooks that cites sources.",
+    "interests": "Interested in RAG and vector search.",
+    "goals": [
+      "share-work",
+      "job-seeking"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t055",
+      "t083"
+    ]
+  },
+  {
+    "id": "a059",
+    "name": "Ethan Mensah",
+    "role": "Data Engineer",
+    "company": "OrbitOps",
+    "experience_level": "intermediate",
+    "working_on": "Running Postgres on Kubernetes with an operator.",
+    "interests": "Interested in databases and stateful workloads on Kubernetes.",
+    "goals": [
+      "learn",
+      "meet-maintainers"
+    ],
+    "available_days": [
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "checked_in": true,
+    "current_location": "Room 4",
+    "bookmarked_talks": [
+      "t068",
+      "t088",
+      "t133"
+    ]
+  },
+  {
+    "id": "a060",
+    "name": "Ingrid Murphy",
+    "role": "Backend Engineer",
+    "company": "VectorWorks",
+    "experience_level": "intermediate",
+    "working_on": "Hybrid keyword plus vector search for product documentation.",
+    "interests": "Interested in RAG and vector search and GitOps and progressive delivery.",
+    "goals": [
+      "job-seeking",
+      "learn"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 1",
+    "bookmarked_talks": [
+      "t092",
+      "t108"
+    ]
+  },
+  {
+    "id": "a061",
+    "name": "Isla Nilsson",
+    "role": "Network Engineer",
+    "company": "DataForge",
+    "experience_level": "intermediate",
+    "working_on": "Detecting cryptominers in Kubernetes pods by watching syscalls.",
+    "interests": "Interested in runtime security and kernel-level threat detection.",
+    "goals": [
+      "find-contributors",
+      "hiring"
+    ],
+    "available_days": [
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Sponsor Showcase",
+    "bookmarked_talks": [
+      "t062",
+      "t173"
+    ]
+  },
+  {
+    "id": "a062",
+    "name": "Leila Asante",
+    "role": "Student",
+    "company": "Latticeworks",
+    "experience_level": "beginner",
+    "working_on": "Serving open-weight LLMs on a shared GPU cluster.",
+    "interests": "Interested in running LLM inference on Kubernetes and runtime security and kernel-level threat detection.",
+    "goals": [
+      "learn",
+      "share-work"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "checked_in": true,
+    "current_location": "Sponsor Showcase",
+    "bookmarked_talks": []
+  },
+  {
+    "id": "a063",
+    "name": "Kenji Rahman",
+    "role": "Product Manager",
+    "company": "Latticeworks",
+    "experience_level": "advanced",
+    "working_on": "An internal developer portal with golden path templates.",
+    "interests": "Interested in platform engineering and developer experience and AI agents for operations.",
+    "goals": [
+      "find-mentor",
+      "share-work"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 2",
+    "bookmarked_talks": [
+      "t016",
+      "t069",
+      "t072"
+    ]
+  },
+  {
+    "id": "a064",
+    "name": "Fatima Tanaka",
+    "role": "SRE",
+    "company": "Quantix",
+    "experience_level": "advanced",
+    "working_on": "MCP servers that let assistants safely query our clusters.",
+    "interests": "Interested in AI agents for operations and observability and OpenTelemetry.",
+    "goals": [
+      "meet-maintainers",
+      "hiring"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t065",
+      "t121"
+    ]
+  },
+  {
+    "id": "a065",
+    "name": "Diego Mehta",
+    "role": "Platform Engineer",
+    "company": "Helmsman Labs",
+    "experience_level": "beginner",
+    "working_on": "An internal developer portal with golden path templates.",
+    "interests": "Interested in platform engineering and developer experience.",
+    "goals": [
+      "meet-maintainers",
+      "evaluate-tools"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 4",
+    "bookmarked_talks": [
+      "t014",
+      "t015",
+      "t137"
+    ]
+  },
+  {
+    "id": "a066",
+    "name": "Hana Iyer",
+    "role": "Security Engineer",
+    "company": "VectorWorks",
+    "experience_level": "beginner",
+    "working_on": "Signing every container image and enforcing provenance at deploy.",
+    "interests": "Interested in software supply chain security.",
+    "goals": [
+      "learn",
+      "find-mentor"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10"
+    ],
+    "checked_in": true,
+    "current_location": "Room 3",
+    "bookmarked_talks": [
+      "t059",
+      "t071"
+    ]
+  },
+  {
+    "id": "a067",
+    "name": "Chloe Schmidt",
+    "role": "ML Engineer",
+    "company": "LedgerCo",
+    "experience_level": "intermediate",
+    "working_on": "MCP servers that let assistants safely query our clusters.",
+    "interests": "Interested in AI agents for operations and RAG and vector search.",
+    "goals": [
+      "meet-maintainers",
+      "find-mentor"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t051"
+    ]
+  },
+  {
+    "id": "a068",
+    "name": "Samir Mensah",
+    "role": "Data Engineer",
+    "company": "DataForge",
+    "experience_level": "advanced",
+    "working_on": "End-to-end tracing across 300 microservices.",
+    "interests": "Interested in observability and OpenTelemetry.",
+    "goals": [
+      "evaluate-tools",
+      "meet-maintainers"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 1",
+    "bookmarked_talks": [
+      "t109",
+      "t150",
+      "t182"
+    ]
+  },
+  {
+    "id": "a069",
+    "name": "Freya Tanaka",
+    "role": "Backend Engineer",
+    "company": "BlueHarbor",
+    "experience_level": "intermediate",
+    "working_on": "A RAG chatbot over our internal runbooks that cites sources.",
+    "interests": "Interested in RAG and vector search.",
+    "goals": [
+      "find-mentor",
+      "evaluate-tools"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t055",
+      "t083"
+    ]
+  },
+  {
+    "id": "a070",
+    "name": "Yuki Silva",
+    "role": "Network Engineer",
+    "company": "PayNova",
+    "experience_level": "beginner",
+    "working_on": "Rolling out zero trust between microservices.",
+    "interests": "Interested in zero trust and workload identity and AI agents for operations.",
+    "goals": [
+      "meet-maintainers",
+      "learn"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t053",
+      "t057",
+      "t117"
+    ]
+  },
+  {
+    "id": "a071",
+    "name": "Yuki Liu",
+    "role": "Student",
+    "company": "PayNova",
+    "experience_level": "beginner",
+    "working_on": "Building an eBPF sensor that flags container escapes.",
+    "interests": "Interested in runtime security and kernel-level threat detection and cloud cost optimization.",
+    "goals": [
+      "learn",
+      "share-work"
+    ],
+    "available_days": [
+      "2026-11-10",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t049",
+      "t154",
+      "t167"
+    ]
+  },
+  {
+    "id": "a072",
+    "name": "Liam Nilsson",
+    "role": "Product Manager",
+    "company": "CloudNest",
+    "experience_level": "intermediate",
+    "working_on": "MCP servers that let assistants safely query our clusters.",
+    "interests": "Interested in AI agents for operations and cloud cost optimization.",
+    "goals": [
+      "share-work",
+      "evaluate-tools"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t051",
+      "t127"
+    ]
+  },
+  {
+    "id": "a073",
+    "name": "Kenji Joshi",
+    "role": "SRE",
+    "company": "VectorWorks",
+    "experience_level": "beginner",
+    "working_on": "An AI agent that triages alerts and suggests fixes.",
+    "interests": "Interested in AI agents for operations and cloud cost optimization.",
+    "goals": [
+      "share-work",
+      "hiring"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t051",
+      "t065"
+    ]
+  },
+  {
+    "id": "a074",
+    "name": "Neha Sato",
+    "role": "Platform Engineer",
+    "company": "FinSight",
+    "experience_level": "advanced",
+    "working_on": "Debugging packet drops in our CNI with eBPF tooling.",
+    "interests": "Interested in eBPF networking and service mesh and GitOps and progressive delivery.",
+    "goals": [
+      "hiring",
+      "find-mentor"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10"
+    ],
+    "checked_in": true,
+    "current_location": "Room 7",
+    "bookmarked_talks": [
+      "t050"
+    ]
+  },
+  {
+    "id": "a075",
+    "name": "Leila Tanaka",
+    "role": "Security Engineer",
+    "company": "PodPilot",
+    "experience_level": "intermediate",
+    "working_on": "Writing runtime detection rules for our production clusters.",
+    "interests": "Interested in runtime security and kernel-level threat detection and zero trust and workload identity.",
+    "goals": [
+      "share-work",
+      "meet-maintainers"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t031",
+      "t134",
+      "t173"
+    ]
+  },
+  {
+    "id": "a076",
+    "name": "Lena Joshi",
+    "role": "ML Engineer",
+    "company": "LedgerCo",
+    "experience_level": "intermediate",
+    "working_on": "Autoscaling model servers to handle traffic spikes.",
+    "interests": "Interested in running LLM inference on Kubernetes.",
+    "goals": [
+      "share-work",
+      "find-mentor"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 3",
+    "bookmarked_talks": [
+      "t077"
+    ]
+  },
+  {
+    "id": "a077",
+    "name": "Kwame Fischer",
+    "role": "Data Engineer",
+    "company": "EdgeLink",
+    "experience_level": "advanced",
+    "working_on": "Reliable backups and restores for stateful workloads.",
+    "interests": "Interested in databases and stateful workloads on Kubernetes and RAG and vector search.",
+    "goals": [
+      "job-seeking",
+      "evaluate-tools"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t142"
+    ]
+  },
+  {
+    "id": "a078",
+    "name": "Kwame Kobayashi",
+    "role": "Backend Engineer",
+    "company": "SecureOS",
+    "experience_level": "beginner",
+    "working_on": "A RAG chatbot over our internal runbooks that cites sources.",
+    "interests": "Interested in RAG and vector search and GitOps and progressive delivery.",
+    "goals": [
+      "learn",
+      "find-contributors"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "checked_in": true,
+    "current_location": "Room 3",
+    "bookmarked_talks": [
+      "t092",
+      "t108",
+      "t130"
+    ]
+  },
+  {
+    "id": "a079",
+    "name": "Lucas Mensah",
+    "role": "Network Engineer",
+    "company": "NetScale",
+    "experience_level": "intermediate",
+    "working_on": "Debugging packet drops in our CNI with eBPF tooling.",
+    "interests": "Interested in eBPF networking and service mesh.",
+    "goals": [
+      "hiring",
+      "meet-maintainers"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t175"
+    ]
+  },
+  {
+    "id": "a080",
+    "name": "Nadia Nakamura",
+    "role": "Student",
+    "company": "KernelGuard",
+    "experience_level": "beginner",
+    "working_on": "Building an eBPF sensor that flags container escapes.",
+    "interests": "Interested in runtime security and kernel-level threat detection and running LLM inference on Kubernetes.",
+    "goals": [
+      "find-contributors",
+      "meet-maintainers"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 8",
+    "bookmarked_talks": [
+      "t032",
+      "t075",
+      "t103"
+    ]
+  },
+  {
+    "id": "a081",
+    "name": "Mateo Farah",
+    "role": "Product Manager",
+    "company": "DataForge",
+    "experience_level": "advanced",
+    "working_on": "An internal developer portal with golden path templates.",
+    "interests": "Interested in platform engineering and developer experience and cloud cost optimization.",
+    "goals": [
+      "find-mentor",
+      "learn"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 7",
+    "bookmarked_talks": [
+      "t015",
+      "t018",
+      "t159"
+    ]
+  },
+  {
+    "id": "a082",
+    "name": "Amara Farah",
+    "role": "SRE",
+    "company": "Groundwork AI",
+    "experience_level": "intermediate",
+    "working_on": "Right-sizing workloads to cut our cloud bill.",
+    "interests": "Interested in cloud cost optimization and observability and OpenTelemetry.",
+    "goals": [
+      "meet-maintainers",
+      "find-contributors"
+    ],
+    "available_days": [
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t038"
+    ]
+  },
+  {
+    "id": "a083",
+    "name": "Elena Berg",
+    "role": "Platform Engineer",
+    "company": "BlueHarbor",
+    "experience_level": "intermediate",
+    "working_on": "Debugging packet drops in our CNI with eBPF tooling.",
+    "interests": "Interested in eBPF networking and service mesh and platform engineering and developer experience.",
+    "goals": [
+      "evaluate-tools",
+      "job-seeking"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 4",
+    "bookmarked_talks": [
+      "t041",
+      "t050"
+    ]
+  },
+  {
+    "id": "a084",
+    "name": "Priya Tanaka",
+    "role": "Security Engineer",
+    "company": "BlueHarbor",
+    "experience_level": "intermediate",
+    "working_on": "Rolling out zero trust between microservices.",
+    "interests": "Interested in zero trust and workload identity.",
+    "goals": [
+      "hiring",
+      "find-contributors"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "checked_in": true,
+    "current_location": "Room 5",
+    "bookmarked_talks": []
+  },
+  {
+    "id": "a085",
+    "name": "Isla Rossi",
+    "role": "ML Engineer",
+    "company": "Helmsman Labs",
+    "experience_level": "beginner",
+    "working_on": "An AI agent that triages alerts and suggests fixes.",
+    "interests": "Interested in AI agents for operations and running LLM inference on Kubernetes.",
+    "goals": [
+      "job-seeking",
+      "find-mentor"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Expo Hall",
+    "bookmarked_talks": [
+      "t127"
+    ]
+  },
+  {
+    "id": "a086",
+    "name": "Ravi Patel",
+    "role": "Data Engineer",
+    "company": "BlueHarbor",
+    "experience_level": "beginner",
+    "working_on": "A RAG chatbot over our internal runbooks that cites sources.",
+    "interests": "Interested in RAG and vector search and software supply chain security.",
+    "goals": [
+      "share-work",
+      "evaluate-tools"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": []
+  },
+  {
+    "id": "a087",
+    "name": "Hana Rahman",
+    "role": "Backend Engineer",
+    "company": "PayNova",
+    "experience_level": "beginner",
+    "working_on": "Reliable backups and restores for stateful workloads.",
+    "interests": "Interested in databases and stateful workloads on Kubernetes and software supply chain security.",
+    "goals": [
+      "hiring",
+      "meet-maintainers"
+    ],
+    "available_days": [
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "checked_in": true,
+    "current_location": "Room 1",
+    "bookmarked_talks": [
+      "t068",
+      "t088",
+      "t122"
+    ]
+  },
+  {
+    "id": "a088",
+    "name": "Leila Okafor",
+    "role": "Network Engineer",
+    "company": "EdgeLink",
+    "experience_level": "advanced",
+    "working_on": "Rolling out zero trust between microservices.",
+    "interests": "Interested in zero trust and workload identity and eBPF networking and service mesh.",
+    "goals": [
+      "hiring",
+      "job-seeking"
+    ],
+    "available_days": [
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": []
+  },
+  {
+    "id": "a089",
+    "name": "Marco Alvarez",
+    "role": "Student",
+    "company": "EdgeLink",
+    "experience_level": "beginner",
+    "working_on": "Self-service preview environments for every pull request.",
+    "interests": "Interested in platform engineering and developer experience and runtime security and kernel-level threat detection.",
+    "goals": [
+      "learn",
+      "meet-maintainers"
+    ],
+    "available_days": [
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "checked_in": true,
+    "current_location": "Expo Hall",
+    "bookmarked_talks": [
+      "t047",
+      "t086",
+      "t087"
+    ]
+  },
+  {
+    "id": "a090",
+    "name": "Ethan Nilsson",
+    "role": "Product Manager",
+    "company": "Northwind Cloud",
+    "experience_level": "advanced",
+    "working_on": "An internal developer portal with golden path templates.",
+    "interests": "Interested in platform engineering and developer experience and runtime security and kernel-level threat detection.",
+    "goals": [
+      "job-seeking",
+      "hiring"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 4",
+    "bookmarked_talks": [
+      "t114"
+    ]
+  },
+  {
+    "id": "a091",
+    "name": "Kenji Berg",
+    "role": "SRE",
+    "company": "VectorWorks",
+    "experience_level": "beginner",
+    "working_on": "MCP servers that let assistants safely query our clusters.",
+    "interests": "Interested in AI agents for operations and observability and OpenTelemetry.",
+    "goals": [
+      "evaluate-tools",
+      "job-seeking"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 3",
+    "bookmarked_talks": [
+      "t065",
+      "t121"
+    ]
+  },
+  {
+    "id": "a092",
+    "name": "Fatima Reyes",
+    "role": "Platform Engineer",
+    "company": "Skyforge",
+    "experience_level": "beginner",
+    "working_on": "Debugging packet drops in our CNI with eBPF tooling.",
+    "interests": "Interested in eBPF networking and service mesh and platform engineering and developer experience.",
+    "goals": [
+      "evaluate-tools",
+      "find-contributors"
+    ],
+    "available_days": [
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "checked_in": true,
+    "current_location": "Room 3",
+    "bookmarked_talks": [
+      "t066",
+      "t110",
+      "t124"
+    ]
+  },
+  {
+    "id": "a093",
+    "name": "Zara Moreau",
+    "role": "Security Engineer",
+    "company": "EdgeLink",
+    "experience_level": "intermediate",
+    "working_on": "Writing runtime detection rules for our production clusters.",
+    "interests": "Interested in runtime security and kernel-level threat detection.",
+    "goals": [
+      "hiring",
+      "share-work"
+    ],
+    "available_days": [
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t080",
+      "t089",
+      "t103"
+    ]
+  },
+  {
+    "id": "a094",
+    "name": "Lena Kobayashi",
+    "role": "ML Engineer",
+    "company": "Skyforge",
+    "experience_level": "advanced",
+    "working_on": "MCP servers that let assistants safely query our clusters.",
+    "interests": "Interested in AI agents for operations and RAG and vector search.",
+    "goals": [
+      "find-contributors",
+      "learn"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Expo Hall",
+    "bookmarked_talks": []
+  },
+  {
+    "id": "a095",
+    "name": "Diego Silva",
+    "role": "Data Engineer",
+    "company": "LedgerCo",
+    "experience_level": "intermediate",
+    "working_on": "Cutting logging costs with OpenTelemetry tail sampling.",
+    "interests": "Interested in observability and OpenTelemetry and RAG and vector search.",
+    "goals": [
+      "find-contributors",
+      "find-mentor"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-11"
+    ],
+    "checked_in": true,
+    "current_location": "Hallway Track Lounge",
+    "bookmarked_talks": [
+      "t026",
+      "t109",
+      "t119"
+    ]
+  },
+  {
+    "id": "a096",
+    "name": "Lena Schmidt",
+    "role": "Backend Engineer",
+    "company": "CloudNest",
+    "experience_level": "intermediate",
+    "working_on": "A RAG chatbot over our internal runbooks that cites sources.",
+    "interests": "Interested in RAG and vector search and GitOps and progressive delivery.",
+    "goals": [
+      "hiring",
+      "job-seeking"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 6",
+    "bookmarked_talks": []
+  },
+  {
+    "id": "a097",
+    "name": "Yuki Alvarez",
+    "role": "Network Engineer",
+    "company": "Northwind Cloud",
+    "experience_level": "intermediate",
+    "working_on": "Debugging packet drops in our CNI with eBPF tooling.",
+    "interests": "Interested in eBPF networking and service mesh.",
+    "goals": [
+      "job-seeking",
+      "find-contributors"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-11"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t002",
+      "t115"
+    ]
+  },
+  {
+    "id": "a098",
+    "name": "Sofia Murphy",
+    "role": "Student",
+    "company": "Latticeworks",
+    "experience_level": "beginner",
+    "working_on": "Writing runtime detection rules for our production clusters.",
+    "interests": "Interested in runtime security and kernel-level threat detection.",
+    "goals": [
+      "job-seeking",
+      "find-contributors"
+    ],
+    "available_days": [
+      "2026-11-10",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 3",
+    "bookmarked_talks": [
+      "t154",
+      "t173"
+    ]
+  },
+  {
+    "id": "a099",
+    "name": "Lucas Patel",
+    "role": "Product Manager",
+    "company": "BlueHarbor",
+    "experience_level": "beginner",
+    "working_on": "Self-service preview environments for every pull request.",
+    "interests": "Interested in platform engineering and developer experience and cloud cost optimization.",
+    "goals": [
+      "evaluate-tools",
+      "share-work"
+    ],
+    "available_days": [
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 2",
+    "bookmarked_talks": []
+  },
+  {
+    "id": "a100",
+    "name": "Ravi Farah",
+    "role": "SRE",
+    "company": "Groundwork AI",
+    "experience_level": "advanced",
+    "working_on": "Right-sizing workloads to cut our cloud bill.",
+    "interests": "Interested in cloud cost optimization.",
+    "goals": [
+      "job-seeking",
+      "learn"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 3",
+    "bookmarked_talks": [
+      "t113"
+    ]
+  },
+  {
+    "id": "a101",
+    "name": "Grace Nilsson",
+    "role": "Platform Engineer",
+    "company": "Latticeworks",
+    "experience_level": "intermediate",
+    "working_on": "Canary releases with automatic rollback.",
+    "interests": "Interested in GitOps and progressive delivery and eBPF networking and service mesh.",
+    "goals": [
+      "job-seeking",
+      "hiring"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t132"
+    ]
+  },
+  {
+    "id": "a102",
+    "name": "Jonas Reyes",
+    "role": "Security Engineer",
+    "company": "CloudNest",
+    "experience_level": "intermediate",
+    "working_on": "Generating SBOMs and scanning third-party dependencies.",
+    "interests": "Interested in software supply chain security and zero trust and workload identity.",
+    "goals": [
+      "job-seeking",
+      "learn"
+    ],
+    "available_days": [
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 1",
+    "bookmarked_talks": [
+      "t048",
+      "t141",
+      "t169"
+    ]
+  },
+  {
+    "id": "a103",
+    "name": "Samir Silva",
+    "role": "ML Engineer",
+    "company": "PodPilot",
+    "experience_level": "advanced",
+    "working_on": "Serving open-weight LLMs on a shared GPU cluster.",
+    "interests": "Interested in running LLM inference on Kubernetes and AI agents for operations.",
+    "goals": [
+      "hiring",
+      "find-contributors"
+    ],
+    "available_days": [
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Coffee Bar",
+    "bookmarked_talks": []
+  },
+  {
+    "id": "a104",
+    "name": "Priya Abebe",
+    "role": "Data Engineer",
+    "company": "LedgerCo",
+    "experience_level": "intermediate",
+    "working_on": "Running Postgres on Kubernetes with an operator.",
+    "interests": "Interested in databases and stateful workloads on Kubernetes and RAG and vector search.",
+    "goals": [
+      "find-mentor",
+      "hiring"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "checked_in": true,
+    "current_location": "Room 5",
+    "bookmarked_talks": [
+      "t122"
+    ]
+  },
+  {
+    "id": "a105",
+    "name": "Fatima Nilsson",
+    "role": "Backend Engineer",
+    "company": "Skyforge",
+    "experience_level": "advanced",
+    "working_on": "Running Postgres on Kubernetes with an operator.",
+    "interests": "Interested in databases and stateful workloads on Kubernetes and GitOps and progressive delivery.",
+    "goals": [
+      "learn",
+      "find-contributors"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": []
+  },
+  {
+    "id": "a106",
+    "name": "Samir Rossi",
+    "role": "Network Engineer",
+    "company": "BlueHarbor",
+    "experience_level": "intermediate",
+    "working_on": "Replacing static service passwords with short-lived workload identities.",
+    "interests": "Interested in zero trust and workload identity and AI agents for operations.",
+    "goals": [
+      "find-mentor",
+      "meet-maintainers"
+    ],
+    "available_days": [
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Expo Hall",
+    "bookmarked_talks": [
+      "t081",
+      "t151"
+    ]
+  },
+  {
+    "id": "a107",
+    "name": "Nadia Alvarez",
+    "role": "Student",
+    "company": "VectorWorks",
+    "experience_level": "beginner",
+    "working_on": "An internal developer portal with golden path templates.",
+    "interests": "Interested in platform engineering and developer experience and GitOps and progressive delivery.",
+    "goals": [
+      "share-work",
+      "find-mentor"
+    ],
+    "available_days": [
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Sponsor Showcase",
+    "bookmarked_talks": [
+      "t180"
+    ]
+  },
+  {
+    "id": "a108",
+    "name": "Grace Mehta",
+    "role": "Product Manager",
+    "company": "Groundwork AI",
+    "experience_level": "intermediate",
+    "working_on": "Self-service preview environments for every pull request.",
+    "interests": "Interested in platform engineering and developer experience and GitOps and progressive delivery.",
+    "goals": [
+      "hiring",
+      "learn"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": []
+  },
+  {
+    "id": "a109",
+    "name": "Oscar Okafor",
+    "role": "SRE",
+    "company": "ShopWave",
+    "experience_level": "beginner",
+    "working_on": "Right-sizing workloads to cut our cloud bill.",
+    "interests": "Interested in cloud cost optimization and software supply chain security.",
+    "goals": [
+      "meet-maintainers",
+      "hiring"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t178"
+    ]
+  },
+  {
+    "id": "a110",
+    "name": "Isla Novak",
+    "role": "Platform Engineer",
+    "company": "Streamly",
+    "experience_level": "intermediate",
+    "working_on": "Self-service preview environments for every pull request.",
+    "interests": "Interested in platform engineering and developer experience and eBPF networking and service mesh.",
+    "goals": [
+      "find-mentor",
+      "find-contributors"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Hallway Track Lounge",
+    "bookmarked_talks": [
+      "t015"
+    ]
+  },
+  {
+    "id": "a111",
+    "name": "Sofia O'Connor",
+    "role": "Security Engineer",
+    "company": "LedgerCo",
+    "experience_level": "advanced",
+    "working_on": "Detecting cryptominers in Kubernetes pods by watching syscalls.",
+    "interests": "Interested in runtime security and kernel-level threat detection and zero trust and workload identity.",
+    "goals": [
+      "meet-maintainers",
+      "hiring"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 7",
+    "bookmarked_talks": [
+      "t134"
+    ]
+  },
+  {
+    "id": "a112",
+    "name": "Kwame Noor",
+    "role": "ML Engineer",
+    "company": "Skyforge",
+    "experience_level": "intermediate",
+    "working_on": "An AI agent that triages alerts and suggests fixes.",
+    "interests": "Interested in AI agents for operations and software supply chain security.",
+    "goals": [
+      "evaluate-tools",
+      "find-mentor"
+    ],
+    "available_days": [
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 8",
+    "bookmarked_talks": [
+      "t127",
+      "t183"
+    ]
+  },
+  {
+    "id": "a113",
+    "name": "Kenji Sato",
+    "role": "Data Engineer",
+    "company": "Streamly",
+    "experience_level": "beginner",
+    "working_on": "Hybrid keyword plus vector search for product documentation.",
+    "interests": "Interested in RAG and vector search.",
+    "goals": [
+      "hiring",
+      "find-contributors"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Coffee Bar",
+    "bookmarked_talks": [
+      "t055",
+      "t130",
+      "t172"
+    ]
+  },
+  {
+    "id": "a114",
+    "name": "Diego Larsen",
+    "role": "Backend Engineer",
+    "company": "CloudNest",
+    "experience_level": "intermediate",
+    "working_on": "A RAG chatbot over our internal runbooks that cites sources.",
+    "interests": "Interested in RAG and vector search and GitOps and progressive delivery.",
+    "goals": [
+      "find-contributors",
+      "hiring"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 4",
+    "bookmarked_talks": [
+      "t100"
+    ]
+  },
+  {
+    "id": "a115",
+    "name": "Kenji O'Connor",
+    "role": "Network Engineer",
+    "company": "OrbitOps",
+    "experience_level": "advanced",
+    "working_on": "Rolling out zero trust between microservices.",
+    "interests": "Interested in zero trust and workload identity and eBPF networking and service mesh.",
+    "goals": [
+      "share-work",
+      "hiring"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Expo Hall",
+    "bookmarked_talks": [
+      "t093",
+      "t151",
+      "t181"
+    ]
+  },
+  {
+    "id": "a116",
+    "name": "Lena Kim",
+    "role": "Student",
+    "company": "DataForge",
+    "experience_level": "beginner",
+    "working_on": "An internal developer portal with golden path templates.",
+    "interests": "Interested in platform engineering and developer experience and runtime security and kernel-level threat detection.",
+    "goals": [
+      "share-work",
+      "job-seeking"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Sponsor Showcase",
+    "bookmarked_talks": [
+      "t086",
+      "t137"
+    ]
+  },
+  {
+    "id": "a117",
+    "name": "Yuki Farah",
+    "role": "Product Manager",
+    "company": "OrbitOps",
+    "experience_level": "advanced",
+    "working_on": "Self-service preview environments for every pull request.",
+    "interests": "Interested in platform engineering and developer experience and eBPF networking and service mesh.",
+    "goals": [
+      "evaluate-tools",
+      "hiring"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11"
+    ],
+    "checked_in": true,
+    "current_location": "Room 8",
+    "bookmarked_talks": [
+      "t017"
+    ]
+  },
+  {
+    "id": "a118",
+    "name": "Mateo Rossi",
+    "role": "SRE",
+    "company": "Streamly",
+    "experience_level": "beginner",
+    "working_on": "Showback dashboards so teams see their own spend.",
+    "interests": "Interested in cloud cost optimization and databases and stateful workloads on Kubernetes.",
+    "goals": [
+      "find-mentor",
+      "hiring"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t106"
+    ]
+  },
+  {
+    "id": "a119",
+    "name": "Tomás Alvarez",
+    "role": "Platform Engineer",
+    "company": "Northwind Cloud",
+    "experience_level": "advanced",
+    "working_on": "Self-service preview environments for every pull request.",
+    "interests": "Interested in platform engineering and developer experience and eBPF networking and service mesh.",
+    "goals": [
+      "share-work",
+      "job-seeking"
+    ],
+    "available_days": [
+      "2026-11-10",
+      "2026-11-12"
+    ],
+    "checked_in": false,
+    "current_location": null,
+    "bookmarked_talks": [
+      "t180"
+    ]
+  },
+  {
+    "id": "a120",
+    "name": "Neha Mensah",
+    "role": "Security Engineer",
+    "company": "Quantix",
+    "experience_level": "intermediate",
+    "working_on": "Generating SBOMs and scanning third-party dependencies.",
+    "interests": "Interested in software supply chain security and zero trust and workload identity.",
+    "goals": [
+      "evaluate-tools",
+      "learn"
+    ],
+    "available_days": [
+      "2026-11-09",
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "checked_in": true,
+    "current_location": "Room 7",
+    "bookmarked_talks": [
+      "t125",
+      "t145",
+      "t169"
+    ]
+  }
+]

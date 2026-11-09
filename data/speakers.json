@@ -1,0 +1,482 @@
+[
+  {
+    "id": "s001",
+    "name": "Kenji Bianchi",
+    "company": "Streamly",
+    "bio": "Works on runtime security and kernel-level threat detection; speaks regularly at community events."
+  },
+  {
+    "id": "s002",
+    "name": "Elena Weber",
+    "company": "VectorWorks",
+    "bio": "Works on software supply chain security; maintainer of an open-source project."
+  },
+  {
+    "id": "s003",
+    "name": "Leila Abebe",
+    "company": "NetScale",
+    "bio": "Works on zero trust and workload identity; maintainer of an open-source project."
+  },
+  {
+    "id": "s004",
+    "name": "Liam Patel",
+    "company": "CloudNest",
+    "bio": "Works on eBPF networking and service mesh; maintainer of an open-source project."
+  },
+  {
+    "id": "s005",
+    "name": "Nadia Chen",
+    "company": "Northwind Cloud",
+    "bio": "Works on running LLM inference on Kubernetes; previously an SRE."
+  },
+  {
+    "id": "s006",
+    "name": "Elena Schmidt",
+    "company": "Skyforge",
+    "bio": "Works on AI agents for operations; leads a platform team."
+  },
+  {
+    "id": "s007",
+    "name": "Priya Mensah",
+    "company": "SecureOS",
+    "bio": "Works on RAG and vector search; leads a platform team."
+  },
+  {
+    "id": "s008",
+    "name": "Lucas Silva",
+    "company": "FinSight",
+    "bio": "Works on platform engineering and developer experience; leads a platform team."
+  },
+  {
+    "id": "s009",
+    "name": "Neha O'Connor",
+    "company": "LedgerCo",
+    "bio": "Works on GitOps and progressive delivery; maintainer of an open-source project."
+  },
+  {
+    "id": "s010",
+    "name": "Chloe Dubois",
+    "company": "Latticeworks",
+    "bio": "Works on observability and OpenTelemetry; leads a platform team."
+  },
+  {
+    "id": "s011",
+    "name": "Aisha Iyer",
+    "company": "PodPilot",
+    "bio": "Works on cloud cost optimization; maintainer of an open-source project."
+  },
+  {
+    "id": "s012",
+    "name": "Yuki O'Connor",
+    "company": "PodPilot",
+    "bio": "Works on databases and stateful workloads on Kubernetes; leads a platform team."
+  },
+  {
+    "id": "s013",
+    "name": "Maya Rossi",
+    "company": "Skyforge",
+    "bio": "Works on runtime security and kernel-level threat detection; speaks regularly at community events."
+  },
+  {
+    "id": "s014",
+    "name": "Sofia Okafor",
+    "company": "BlueHarbor",
+    "bio": "Works on software supply chain security; speaks regularly at community events."
+  },
+  {
+    "id": "s015",
+    "name": "Fatima O'Connor",
+    "company": "CloudNest",
+    "bio": "Works on zero trust and workload identity; maintainer of an open-source project."
+  },
+  {
+    "id": "s016",
+    "name": "Yuki Moreau",
+    "company": "ShopWave",
+    "bio": "Works on eBPF networking and service mesh; leads a platform team."
+  },
+  {
+    "id": "s017",
+    "name": "Amara Rossi",
+    "company": "Quantix",
+    "bio": "Works on running LLM inference on Kubernetes; speaks regularly at community events."
+  },
+  {
+    "id": "s018",
+    "name": "Lucas Martinez",
+    "company": "Latticeworks",
+    "bio": "Works on AI agents for operations; speaks regularly at community events."
+  },
+  {
+    "id": "s019",
+    "name": "Hiro Haddad",
+    "company": "DataForge",
+    "bio": "Works on RAG and vector search; previously an SRE."
+  },
+  {
+    "id": "s020",
+    "name": "Nadia Novak",
+    "company": "BlueHarbor",
+    "bio": "Works on platform engineering and developer experience; leads a platform team."
+  },
+  {
+    "id": "s021",
+    "name": "Daniel Novak",
+    "company": "NetScale",
+    "bio": "Works on GitOps and progressive delivery; leads a platform team."
+  },
+  {
+    "id": "s022",
+    "name": "Grace Moreau",
+    "company": "TrustLayer",
+    "bio": "Works on observability and OpenTelemetry; speaks regularly at community events."
+  },
+  {
+    "id": "s023",
+    "name": "Ethan Larsen",
+    "company": "FinSight",
+    "bio": "Works on cloud cost optimization; previously an SRE."
+  },
+  {
+    "id": "s024",
+    "name": "Grace Iyer",
+    "company": "Groundwork AI",
+    "bio": "Works on databases and stateful workloads on Kubernetes; leads a platform team."
+  },
+  {
+    "id": "s025",
+    "name": "Lena Haddad",
+    "company": "PodPilot",
+    "bio": "Works on runtime security and kernel-level threat detection; leads a platform team."
+  },
+  {
+    "id": "s026",
+    "name": "Leila Liu",
+    "company": "Quantix",
+    "bio": "Works on software supply chain security; speaks regularly at community events."
+  },
+  {
+    "id": "s027",
+    "name": "Lena Asante",
+    "company": "OrbitOps",
+    "bio": "Works on zero trust and workload identity; maintainer of an open-source project."
+  },
+  {
+    "id": "s028",
+    "name": "Daniel Tanaka",
+    "company": "Groundwork AI",
+    "bio": "Works on eBPF networking and service mesh; speaks regularly at community events."
+  },
+  {
+    "id": "s029",
+    "name": "Zara Nilsson",
+    "company": "TrustLayer",
+    "bio": "Works on running LLM inference on Kubernetes; previously an SRE."
+  },
+  {
+    "id": "s030",
+    "name": "Yuki Nilsson",
+    "company": "ShopWave",
+    "bio": "Works on AI agents for operations; leads a platform team."
+  },
+  {
+    "id": "s031",
+    "name": "Nadia Raman",
+    "company": "BlueHarbor",
+    "bio": "Works on RAG and vector search; maintainer of an open-source project."
+  },
+  {
+    "id": "s032",
+    "name": "Hiro Moreau",
+    "company": "Northwind Cloud",
+    "bio": "Works on platform engineering and developer experience; leads a platform team."
+  },
+  {
+    "id": "s033",
+    "name": "Kenji Noor",
+    "company": "SecureOS",
+    "bio": "Works on GitOps and progressive delivery; speaks regularly at community events."
+  },
+  {
+    "id": "s034",
+    "name": "Ananya Raman",
+    "company": "Streamly",
+    "bio": "Works on observability and OpenTelemetry; speaks regularly at community events."
+  },
+  {
+    "id": "s035",
+    "name": "Kwame Joshi",
+    "company": "Northwind Cloud",
+    "bio": "Works on cloud cost optimization; leads a platform team."
+  },
+  {
+    "id": "s036",
+    "name": "Kwame Nilsson",
+    "company": "FinSight",
+    "bio": "Works on databases and stateful workloads on Kubernetes; speaks regularly at community events."
+  },
+  {
+    "id": "s037",
+    "name": "Mateo Mensah",
+    "company": "PodPilot",
+    "bio": "Works on runtime security and kernel-level threat detection; maintainer of an open-source project."
+  },
+  {
+    "id": "s038",
+    "name": "Oscar Larsen",
+    "company": "OrbitOps",
+    "bio": "Works on software supply chain security; maintainer of an open-source project."
+  },
+  {
+    "id": "s039",
+    "name": "Kenji Rossi",
+    "company": "EdgeLink",
+    "bio": "Works on zero trust and workload identity; speaks regularly at community events."
+  },
+  {
+    "id": "s040",
+    "name": "Daniel Haddad",
+    "company": "Skyforge",
+    "bio": "Works on eBPF networking and service mesh; maintainer of an open-source project."
+  },
+  {
+    "id": "s041",
+    "name": "Liam Lindqvist",
+    "company": "TrustLayer",
+    "bio": "Works on running LLM inference on Kubernetes; speaks regularly at community events."
+  },
+  {
+    "id": "s042",
+    "name": "Lena Alvarez",
+    "company": "PodPilot",
+    "bio": "Works on AI agents for operations; speaks regularly at community events."
+  },
+  {
+    "id": "s043",
+    "name": "Hana Murphy",
+    "company": "Latticeworks",
+    "bio": "Works on RAG and vector search; previously an SRE."
+  },
+  {
+    "id": "s044",
+    "name": "Ravi Kobayashi",
+    "company": "FinSight",
+    "bio": "Works on platform engineering and developer experience; leads a platform team."
+  },
+  {
+    "id": "s045",
+    "name": "Grace Rossi",
+    "company": "ShopWave",
+    "bio": "Works on GitOps and progressive delivery; previously an SRE."
+  },
+  {
+    "id": "s046",
+    "name": "Kenji Haddad",
+    "company": "CloudNest",
+    "bio": "Works on observability and OpenTelemetry; maintainer of an open-source project."
+  },
+  {
+    "id": "s047",
+    "name": "Arjun Bianchi",
+    "company": "Skyforge",
+    "bio": "Works on cloud cost optimization; speaks regularly at community events."
+  },
+  {
+    "id": "s048",
+    "name": "Leila Novak",
+    "company": "KernelGuard",
+    "bio": "Works on databases and stateful workloads on Kubernetes; maintainer of an open-source project."
+  },
+  {
+    "id": "s049",
+    "name": "Arjun Martinez",
+    "company": "Helmsman Labs",
+    "bio": "Works on runtime security and kernel-level threat detection; speaks regularly at community events."
+  },
+  {
+    "id": "s050",
+    "name": "Lucas Lindqvist",
+    "company": "FinSight",
+    "bio": "Works on software supply chain security; speaks regularly at community events."
+  },
+  {
+    "id": "s051",
+    "name": "Ethan Carter",
+    "company": "OrbitOps",
+    "bio": "Works on zero trust and workload identity; speaks regularly at community events."
+  },
+  {
+    "id": "s052",
+    "name": "Diego Khan",
+    "company": "FinSight",
+    "bio": "Works on eBPF networking and service mesh; maintainer of an open-source project."
+  },
+  {
+    "id": "s053",
+    "name": "Neha Abebe",
+    "company": "Quantix",
+    "bio": "Works on running LLM inference on Kubernetes; previously an SRE."
+  },
+  {
+    "id": "s054",
+    "name": "Samir Iyer",
+    "company": "NetScale",
+    "bio": "Works on AI agents for operations; maintainer of an open-source project."
+  },
+  {
+    "id": "s055",
+    "name": "Daniel Liu",
+    "company": "PayNova",
+    "bio": "Works on RAG and vector search; maintainer of an open-source project."
+  },
+  {
+    "id": "s056",
+    "name": "Omar Chen",
+    "company": "FinSight",
+    "bio": "Works on platform engineering and developer experience; previously an SRE."
+  },
+  {
+    "id": "s057",
+    "name": "Lena Abebe",
+    "company": "DataForge",
+    "bio": "Works on GitOps and progressive delivery; leads a platform team."
+  },
+  {
+    "id": "s058",
+    "name": "Ananya Haddad",
+    "company": "TrustLayer",
+    "bio": "Works on observability and OpenTelemetry; previously an SRE."
+  },
+  {
+    "id": "s059",
+    "name": "Nadia Joshi",
+    "company": "NetScale",
+    "bio": "Works on cloud cost optimization; maintainer of an open-source project."
+  },
+  {
+    "id": "s060",
+    "name": "Liam Haddad",
+    "company": "DataForge",
+    "bio": "Works on databases and stateful workloads on Kubernetes; previously an SRE."
+  },
+  {
+    "id": "s061",
+    "name": "Freya Alvarez",
+    "company": "FinSight",
+    "bio": "Works on runtime security and kernel-level threat detection; previously an SRE."
+  },
+  {
+    "id": "s062",
+    "name": "Daniel Mensah",
+    "company": "LedgerCo",
+    "bio": "Works on software supply chain security; maintainer of an open-source project."
+  },
+  {
+    "id": "s063",
+    "name": "Yuki Sato",
+    "company": "ShopWave",
+    "bio": "Works on zero trust and workload identity; leads a platform team."
+  },
+  {
+    "id": "s064",
+    "name": "Zara Rahman",
+    "company": "BlueHarbor",
+    "bio": "Works on eBPF networking and service mesh; previously an SRE."
+  },
+  {
+    "id": "s065",
+    "name": "Tomás Chen",
+    "company": "EdgeLink",
+    "bio": "Works on running LLM inference on Kubernetes; speaks regularly at community events."
+  },
+  {
+    "id": "s066",
+    "name": "Daniel Farah",
+    "company": "PodPilot",
+    "bio": "Works on AI agents for operations; maintainer of an open-source project."
+  },
+  {
+    "id": "s067",
+    "name": "Ingrid Kim",
+    "company": "NetScale",
+    "bio": "Works on RAG and vector search; previously an SRE."
+  },
+  {
+    "id": "s068",
+    "name": "Kwame Murphy",
+    "company": "DataForge",
+    "bio": "Works on platform engineering and developer experience; maintainer of an open-source project."
+  },
+  {
+    "id": "s069",
+    "name": "Kwame O'Connor",
+    "company": "DataForge",
+    "bio": "Works on GitOps and progressive delivery; maintainer of an open-source project."
+  },
+  {
+    "id": "s070",
+    "name": "Oscar Martinez",
+    "company": "BlueHarbor",
+    "bio": "Works on observability and OpenTelemetry; speaks regularly at community events."
+  },
+  {
+    "id": "s071",
+    "name": "Grace Tanaka",
+    "company": "Skyforge",
+    "bio": "Works on cloud cost optimization; speaks regularly at community events."
+  },
+  {
+    "id": "s072",
+    "name": "Leila Nilsson",
+    "company": "NetScale",
+    "bio": "Works on databases and stateful workloads on Kubernetes; maintainer of an open-source project."
+  },
+  {
+    "id": "s073",
+    "name": "Samir Farah",
+    "company": "Skyforge",
+    "bio": "Works on runtime security and kernel-level threat detection; leads a platform team."
+  },
+  {
+    "id": "s074",
+    "name": "Hana Patel",
+    "company": "BlueHarbor",
+    "bio": "Works on software supply chain security; leads a platform team."
+  },
+  {
+    "id": "s075",
+    "name": "Omar Sato",
+    "company": "LedgerCo",
+    "bio": "Works on zero trust and workload identity; speaks regularly at community events."
+  },
+  {
+    "id": "s076",
+    "name": "Noah Iyer",
+    "company": "PayNova",
+    "bio": "Works on eBPF networking and service mesh; maintainer of an open-source project."
+  },
+  {
+    "id": "s077",
+    "name": "Priya Iyer",
+    "company": "Latticeworks",
+    "bio": "Works on running LLM inference on Kubernetes; maintainer of an open-source project."
+  },
+  {
+    "id": "s078",
+    "name": "Sofia Kobayashi",
+    "company": "FinSight",
+    "bio": "Works on AI agents for operations; leads a platform team."
+  },
+  {
+    "id": "s079",
+    "name": "Lena Dubois",
+    "company": "TrustLayer",
+    "bio": "Works on RAG and vector search; speaks regularly at community events."
+  },
+  {
+    "id": "s080",
+    "name": "Mateo Noor",
+    "company": "DataForge",
+    "bio": "Works on platform engineering and developer experience; previously an SRE."
+  }
+]

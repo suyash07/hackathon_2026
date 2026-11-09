@@ -1,0 +1,4379 @@
+[
+  {
+    "id": "t001",
+    "title": "Debugging Dropped Packets: Beyond the Hype",
+    "abstract": "Cilium uses eBPF to enforce identity-aware network policy. We replaced kube-proxy with an eBPF datapath. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Diego Khan",
+      "Liam Patel"
+    ],
+    "speaker_ids": [
+      "s052",
+      "s004"
+    ],
+    "track": "CiliumCon",
+    "tags": [
+      "eBPF",
+      "service-mesh",
+      "Cilium"
+    ],
+    "format": "lightning",
+    "level": "beginner",
+    "room": "Room 1",
+    "start": "2026-11-09T10:30:00-07:00",
+    "end": "2026-11-09T10:45:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t002",
+    "title": "Network Policy That Scales: Patterns and Pitfalls",
+    "abstract": "Tracing traffic between services when the network plugin is someone else's code. Packets get filtered before they ever reach the network stack, which cut our latency in half. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Diego Khan"
+    ],
+    "speaker_ids": [
+      "s052"
+    ],
+    "track": "CiliumCon",
+    "tags": [
+      "service-mesh",
+      "eBPF",
+      "Cilium"
+    ],
+    "format": "lightning",
+    "level": "beginner",
+    "room": "Room 1",
+    "start": "2026-11-09T11:30:00-07:00",
+    "end": "2026-11-09T11:45:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t003",
+    "title": "Debugging Dropped Packets: Lessons from Production",
+    "abstract": "Cilium uses eBPF to enforce identity-aware network policy. Packets get filtered before they ever reach the network stack, which cut our latency in half. No prior experience required.",
+    "speakers": [
+      "Daniel Tanaka"
+    ],
+    "speaker_ids": [
+      "s028"
+    ],
+    "track": "CiliumCon",
+    "tags": [
+      "service-mesh",
+      "networking",
+      "Cilium"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 1",
+    "start": "2026-11-09T13:30:00-07:00",
+    "end": "2026-11-09T14:05:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t004",
+    "title": "Network Policy That Scales: in 30 Minutes",
+    "abstract": "Tracing traffic between services when the network plugin is someone else's code. We replaced kube-proxy with an eBPF datapath. Includes a live demo and open-source code.",
+    "speakers": [
+      "Noah Iyer"
+    ],
+    "speaker_ids": [
+      "s076"
+    ],
+    "track": "CiliumCon",
+    "tags": [
+      "Cilium",
+      "eBPF",
+      "networking"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 1",
+    "start": "2026-11-09T14:30:00-07:00",
+    "end": "2026-11-09T15:05:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t005",
+    "title": "Network Policy That Scales: From Zero to Production",
+    "abstract": "We replaced kube-proxy with an eBPF datapath. Cilium uses eBPF to enforce identity-aware network policy. Includes a live demo and open-source code.",
+    "speakers": [
+      "Liam Patel",
+      "Daniel Tanaka"
+    ],
+    "speaker_ids": [
+      "s004",
+      "s028"
+    ],
+    "track": "CiliumCon",
+    "tags": [
+      "eBPF",
+      "Cilium",
+      "networking"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 1",
+    "start": "2026-11-09T15:45:00-07:00",
+    "end": "2026-11-09T16:20:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t006",
+    "title": "Network Policy That Scales: A Live Demo",
+    "abstract": "Tracing traffic between services when the network plugin is someone else's code. We replaced kube-proxy with an eBPF datapath. Includes a live demo and open-source code.",
+    "speakers": [
+      "Noah Iyer"
+    ],
+    "speaker_ids": [
+      "s076"
+    ],
+    "track": "CiliumCon",
+    "tags": [
+      "Cilium",
+      "eBPF",
+      "service-mesh"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 1",
+    "start": "2026-11-09T16:45:00-07:00",
+    "end": "2026-11-09T17:20:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t007",
+    "title": "GitOps at 500 Clusters: the Hard Way",
+    "abstract": "Every change to production is a reviewed commit, and undoing a bad release is a revert away. Flux reconciles every cluster from a single repository. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Kenji Noor"
+    ],
+    "speaker_ids": [
+      "s033"
+    ],
+    "track": "ArgoCon",
+    "tags": [
+      "Argo CD",
+      "delivery",
+      "Flux"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 2",
+    "start": "2026-11-09T10:30:00-07:00",
+    "end": "2026-11-09T11:05:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t008",
+    "title": "Progressive Delivery Done Right: A Live Demo",
+    "abstract": "Flux reconciles every cluster from a single repository. Argo CD and Argo Rollouts drive canary releases across regions. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Lena Abebe",
+      "Grace Rossi"
+    ],
+    "speaker_ids": [
+      "s057",
+      "s045"
+    ],
+    "track": "ArgoCon",
+    "tags": [
+      "GitOps",
+      "Argo CD",
+      "delivery"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 2",
+    "start": "2026-11-09T11:30:00-07:00",
+    "end": "2026-11-09T12:05:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t009",
+    "title": "GitOps at 500 Clusters: A Field Guide",
+    "abstract": "Argo CD and Argo Rollouts drive canary releases across regions. Flux reconciles every cluster from a single repository. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Grace Rossi",
+      "Kenji Noor"
+    ],
+    "speaker_ids": [
+      "s045",
+      "s033"
+    ],
+    "track": "ArgoCon",
+    "tags": [
+      "GitOps",
+      "Argo CD",
+      "delivery"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 2",
+    "start": "2026-11-09T13:30:00-07:00",
+    "end": "2026-11-09T14:05:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t010",
+    "title": "Rollbacks Nobody Notices: at Scale",
+    "abstract": "Flux reconciles every cluster from a single repository. Every change to production is a reviewed commit, and undoing a bad release is a revert away. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Lena Abebe"
+    ],
+    "speaker_ids": [
+      "s057"
+    ],
+    "track": "ArgoCon",
+    "tags": [
+      "delivery",
+      "GitOps",
+      "Argo CD"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 2",
+    "start": "2026-11-09T14:30:00-07:00",
+    "end": "2026-11-09T15:05:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t011",
+    "title": "Rollbacks Nobody Notices: A Field Guide",
+    "abstract": "Argo CD and Argo Rollouts drive canary releases across regions. Flux reconciles every cluster from a single repository. No prior experience required.",
+    "speakers": [
+      "Kenji Noor",
+      "Lena Abebe"
+    ],
+    "speaker_ids": [
+      "s033",
+      "s057"
+    ],
+    "track": "ArgoCon",
+    "tags": [
+      "Flux",
+      "delivery",
+      "GitOps"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 2",
+    "start": "2026-11-09T15:45:00-07:00",
+    "end": "2026-11-09T16:20:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t012",
+    "title": "Rollbacks Nobody Notices: What We Got Wrong",
+    "abstract": "Every change to production is a reviewed commit, and undoing a bad release is a revert away. Argo CD and Argo Rollouts drive canary releases across regions. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Lena Abebe",
+      "Kenji Noor"
+    ],
+    "speaker_ids": [
+      "s057",
+      "s033"
+    ],
+    "track": "ArgoCon",
+    "tags": [
+      "Argo CD",
+      "delivery",
+      "Flux"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 2",
+    "start": "2026-11-09T16:45:00-07:00",
+    "end": "2026-11-09T17:20:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t013",
+    "title": "Measuring Developer Happiness: From Zero to Production",
+    "abstract": "Our Backstage-based internal developer platform serves 900 engineers. Golden path templates cut new service setup to ten minutes. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Omar Chen",
+      "Ravi Kobayashi",
+      "Nadia Novak"
+    ],
+    "speaker_ids": [
+      "s056",
+      "s044",
+      "s020"
+    ],
+    "track": "BackstageCon",
+    "tags": [
+      "platform",
+      "Backstage",
+      "developer-experience"
+    ],
+    "format": "panel",
+    "level": "advanced",
+    "room": "Room 3",
+    "start": "2026-11-09T10:30:00-07:00",
+    "end": "2026-11-09T11:05:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t014",
+    "title": "Your Platform Is a Product: From Zero to Production",
+    "abstract": "Developers get a working environment in minutes without filing a ticket. Treating internal engineers as customers changed how we built everything. No prior experience required.",
+    "speakers": [
+      "Lucas Silva"
+    ],
+    "speaker_ids": [
+      "s008"
+    ],
+    "track": "BackstageCon",
+    "tags": [
+      "developer-experience",
+      "platform",
+      "Backstage"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 3",
+    "start": "2026-11-09T11:30:00-07:00",
+    "end": "2026-11-09T12:05:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t015",
+    "title": "Measuring Developer Happiness: at Scale",
+    "abstract": "Treating internal engineers as customers changed how we built everything. Golden path templates cut new service setup to ten minutes. No prior experience required.",
+    "speakers": [
+      "Nadia Novak"
+    ],
+    "speaker_ids": [
+      "s020"
+    ],
+    "track": "BackstageCon",
+    "tags": [
+      "IDP",
+      "Backstage",
+      "developer-experience"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 3",
+    "start": "2026-11-09T13:30:00-07:00",
+    "end": "2026-11-09T14:05:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t016",
+    "title": "Your Platform Is a Product: A Field Guide",
+    "abstract": "Our Backstage-based internal developer platform serves 900 engineers. Developers get a working environment in minutes without filing a ticket. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Nadia Novak"
+    ],
+    "speaker_ids": [
+      "s020"
+    ],
+    "track": "BackstageCon",
+    "tags": [
+      "developer-experience",
+      "platform",
+      "IDP"
+    ],
+    "format": "lightning",
+    "level": "beginner",
+    "room": "Room 3",
+    "start": "2026-11-09T14:30:00-07:00",
+    "end": "2026-11-09T14:45:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t017",
+    "title": "Measuring Developer Happiness: Patterns and Pitfalls",
+    "abstract": "Golden path templates cut new service setup to ten minutes. Our Backstage-based internal developer platform serves 900 engineers. Includes a live demo and open-source code.",
+    "speakers": [
+      "Mateo Noor",
+      "Nadia Novak",
+      "Hiro Moreau"
+    ],
+    "speaker_ids": [
+      "s080",
+      "s020",
+      "s032"
+    ],
+    "track": "BackstageCon",
+    "tags": [
+      "platform",
+      "IDP",
+      "Backstage"
+    ],
+    "format": "panel",
+    "level": "advanced",
+    "room": "Room 3",
+    "start": "2026-11-09T15:45:00-07:00",
+    "end": "2026-11-09T16:20:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t018",
+    "title": "Your Platform Is a Product: Patterns and Pitfalls",
+    "abstract": "Treating internal engineers as customers changed how we built everything. Golden path templates cut new service setup to ten minutes. Includes a live demo and open-source code.",
+    "speakers": [
+      "Hiro Moreau"
+    ],
+    "speaker_ids": [
+      "s032"
+    ],
+    "track": "BackstageCon",
+    "tags": [
+      "IDP",
+      "developer-experience",
+      "Backstage"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 3",
+    "start": "2026-11-09T16:45:00-07:00",
+    "end": "2026-11-09T17:20:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t019",
+    "title": "Serving LLMs on Kubernetes: at Scale",
+    "abstract": "GPU partitioning and request batching tripled throughput. Running large models for thousands of users without a separate accelerator for every team. Includes a live demo and open-source code.",
+    "speakers": [
+      "Zara Nilsson"
+    ],
+    "speaker_ids": [
+      "s029"
+    ],
+    "track": "Cloud Native AI + Inference Day",
+    "tags": [
+      "AI",
+      "inference",
+      "LLM"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 4",
+    "start": "2026-11-09T10:30:00-07:00",
+    "end": "2026-11-09T11:05:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t020",
+    "title": "Low-Latency Inference at the Edge: Lessons from Production",
+    "abstract": "GPU partitioning and request batching tripled throughput. We serve LLM inference with vLLM and KServe on shared GPU pools. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Zara Nilsson"
+    ],
+    "speaker_ids": [
+      "s029"
+    ],
+    "track": "Cloud Native AI + Inference Day",
+    "tags": [
+      "inference",
+      "AI",
+      "LLM"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 4",
+    "start": "2026-11-09T11:30:00-07:00",
+    "end": "2026-11-09T12:05:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t021",
+    "title": "Low-Latency Inference at the Edge: A Live Demo",
+    "abstract": "GPU partitioning and request batching tripled throughput. Running large models for thousands of users without a separate accelerator for every team. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Tomás Chen",
+      "Liam Lindqvist"
+    ],
+    "speaker_ids": [
+      "s065",
+      "s041"
+    ],
+    "track": "Cloud Native AI + Inference Day",
+    "tags": [
+      "LLM",
+      "inference",
+      "AI"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 4",
+    "start": "2026-11-09T13:30:00-07:00",
+    "end": "2026-11-09T14:05:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t022",
+    "title": "GPU Scheduling That Doesn't Waste Money: the Hard Way",
+    "abstract": "What we learned keeping response times low when traffic to our model spiked tenfold. Running large models for thousands of users without a separate accelerator for every team. No prior experience required.",
+    "speakers": [
+      "Nadia Chen"
+    ],
+    "speaker_ids": [
+      "s005"
+    ],
+    "track": "Cloud Native AI + Inference Day",
+    "tags": [
+      "GPU",
+      "inference",
+      "AI"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 4",
+    "start": "2026-11-09T14:30:00-07:00",
+    "end": "2026-11-09T15:05:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t023",
+    "title": "Autoscaling Model Servers: A Field Guide",
+    "abstract": "Running large models for thousands of users without a separate accelerator for every team. What we learned keeping response times low when traffic to our model spiked tenfold. Includes a live demo and open-source code.",
+    "speakers": [
+      "Nadia Chen"
+    ],
+    "speaker_ids": [
+      "s005"
+    ],
+    "track": "Cloud Native AI + Inference Day",
+    "tags": [
+      "LLM",
+      "GPU",
+      "AI"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 4",
+    "start": "2026-11-09T15:45:00-07:00",
+    "end": "2026-11-09T16:20:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t024",
+    "title": "GPU Scheduling That Doesn't Waste Money: Lessons from Production",
+    "abstract": "Running large models for thousands of users without a separate accelerator for every team. What we learned keeping response times low when traffic to our model spiked tenfold. No prior experience required.",
+    "speakers": [
+      "Amara Rossi",
+      "Priya Iyer"
+    ],
+    "speaker_ids": [
+      "s017",
+      "s077"
+    ],
+    "track": "Cloud Native AI + Inference Day",
+    "tags": [
+      "GPU",
+      "inference",
+      "LLM"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 4",
+    "start": "2026-11-09T16:45:00-07:00",
+    "end": "2026-11-09T17:20:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t025",
+    "title": "Observability on a Budget: What We Got Wrong",
+    "abstract": "OpenTelemetry collectors with tail sampling cut our bill by 60%. Distributed tracing found the slow dependency in minutes. No prior experience required.",
+    "speakers": [
+      "Chloe Dubois"
+    ],
+    "speaker_ids": [
+      "s010"
+    ],
+    "track": "OpenTelemetry Community Day",
+    "tags": [
+      "observability",
+      "logging",
+      "OpenTelemetry"
+    ],
+    "format": "workshop",
+    "level": "beginner",
+    "room": "Room 5",
+    "start": "2026-11-09T10:30:00-07:00",
+    "end": "2026-11-09T11:55:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t026",
+    "title": "Tracing Every Request: A Field Guide",
+    "abstract": "We stopped storing everything and started keeping only the signals that help during an outage. Figuring out why one request in a thousand is slow. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Ananya Raman",
+      "Ananya Haddad"
+    ],
+    "speaker_ids": [
+      "s034",
+      "s058"
+    ],
+    "track": "OpenTelemetry Community Day",
+    "tags": [
+      "observability",
+      "logging",
+      "tracing"
+    ],
+    "format": "workshop",
+    "level": "beginner",
+    "room": "Room 5",
+    "start": "2026-11-09T11:30:00-07:00",
+    "end": "2026-11-09T12:55:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t027",
+    "title": "Alerts That Mean Something: Lessons from Production",
+    "abstract": "Figuring out why one request in a thousand is slow. We stopped storing everything and started keeping only the signals that help during an outage. Includes a live demo and open-source code.",
+    "speakers": [
+      "Kenji Haddad"
+    ],
+    "speaker_ids": [
+      "s046"
+    ],
+    "track": "OpenTelemetry Community Day",
+    "tags": [
+      "observability",
+      "OpenTelemetry",
+      "tracing"
+    ],
+    "format": "lightning",
+    "level": "advanced",
+    "room": "Room 5",
+    "start": "2026-11-09T13:30:00-07:00",
+    "end": "2026-11-09T13:45:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t028",
+    "title": "Logs You Can Afford: the Hard Way",
+    "abstract": "OpenTelemetry collectors with tail sampling cut our bill by 60%. We stopped storing everything and started keeping only the signals that help during an outage. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Oscar Martinez"
+    ],
+    "speaker_ids": [
+      "s070"
+    ],
+    "track": "OpenTelemetry Community Day",
+    "tags": [
+      "logging",
+      "tracing",
+      "OpenTelemetry"
+    ],
+    "format": "lightning",
+    "level": "intermediate",
+    "room": "Room 5",
+    "start": "2026-11-09T14:30:00-07:00",
+    "end": "2026-11-09T14:45:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t029",
+    "title": "Logs You Can Afford: A Live Demo",
+    "abstract": "Figuring out why one request in a thousand is slow. Distributed tracing found the slow dependency in minutes. Includes a live demo and open-source code.",
+    "speakers": [
+      "Kenji Haddad"
+    ],
+    "speaker_ids": [
+      "s046"
+    ],
+    "track": "OpenTelemetry Community Day",
+    "tags": [
+      "logging",
+      "tracing",
+      "observability"
+    ],
+    "format": "workshop",
+    "level": "intermediate",
+    "room": "Room 5",
+    "start": "2026-11-09T15:45:00-07:00",
+    "end": "2026-11-09T17:10:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t030",
+    "title": "Alerts That Mean Something: in 30 Minutes",
+    "abstract": "We stopped storing everything and started keeping only the signals that help during an outage. Distributed tracing found the slow dependency in minutes. No prior experience required.",
+    "speakers": [
+      "Ananya Haddad"
+    ],
+    "speaker_ids": [
+      "s058"
+    ],
+    "track": "OpenTelemetry Community Day",
+    "tags": [
+      "observability",
+      "logging",
+      "OpenTelemetry"
+    ],
+    "format": "workshop",
+    "level": "advanced",
+    "room": "Room 5",
+    "start": "2026-11-09T16:45:00-07:00",
+    "end": "2026-11-09T18:10:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t031",
+    "title": "Detecting Cryptominers in Pods: the Hard Way",
+    "abstract": "Kernel-level visibility let us spot privilege escalation in seconds, without installing heavyweight agents. We watch what processes do deep inside the operating system and flag anything that looks like an attacker breaking out of a container. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Samir Farah",
+      "Kenji Bianchi",
+      "Freya Alvarez"
+    ],
+    "speaker_ids": [
+      "s073",
+      "s001",
+      "s061"
+    ],
+    "track": "Cloud Native Security Day",
+    "tags": [
+      "runtime",
+      "security",
+      "Falco"
+    ],
+    "format": "panel",
+    "level": "intermediate",
+    "room": "Room 6",
+    "start": "2026-11-09T10:30:00-07:00",
+    "end": "2026-11-09T11:05:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t032",
+    "title": "Syscall-Level Defense: A Live Demo",
+    "abstract": "Kernel-level visibility let us spot privilege escalation in seconds, without installing heavyweight agents. We watch what processes do deep inside the operating system and flag anything that looks like an attacker breaking out of a container. Includes a live demo and open-source code.",
+    "speakers": [
+      "Mateo Mensah",
+      "Lena Haddad"
+    ],
+    "speaker_ids": [
+      "s037",
+      "s025"
+    ],
+    "track": "Cloud Native Security Day",
+    "tags": [
+      "runtime",
+      "eBPF",
+      "Falco"
+    ],
+    "format": "lightning",
+    "level": "beginner",
+    "room": "Room 6",
+    "start": "2026-11-09T11:30:00-07:00",
+    "end": "2026-11-09T11:45:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t033",
+    "title": "Detecting Cryptominers in Pods: Patterns and Pitfalls",
+    "abstract": "We watch what processes do deep inside the operating system and flag anything that looks like an attacker breaking out of a container. Kernel-level visibility let us spot privilege escalation in seconds, without installing heavyweight agents. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Arjun Martinez",
+      "Samir Farah"
+    ],
+    "speaker_ids": [
+      "s049",
+      "s073"
+    ],
+    "track": "Cloud Native Security Day",
+    "tags": [
+      "security",
+      "Falco",
+      "eBPF"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 6",
+    "start": "2026-11-09T13:30:00-07:00",
+    "end": "2026-11-09T14:05:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t034",
+    "title": "Kernel Tracing for Incident Response: What We Got Wrong",
+    "abstract": "Falco rules flag shells spawned inside production pods. Learn how to notice a compromised workload by its behavior rather than its signature. Includes a live demo and open-source code.",
+    "speakers": [
+      "Kenji Bianchi"
+    ],
+    "speaker_ids": [
+      "s001"
+    ],
+    "track": "Cloud Native Security Day",
+    "tags": [
+      "Falco",
+      "eBPF",
+      "runtime"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 6",
+    "start": "2026-11-09T14:30:00-07:00",
+    "end": "2026-11-09T15:05:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t035",
+    "title": "Detecting Cryptominers in Pods: A Live Demo",
+    "abstract": "Kernel-level visibility let us spot privilege escalation in seconds, without installing heavyweight agents. We watch what processes do deep inside the operating system and flag anything that looks like an attacker breaking out of a container. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Kenji Bianchi"
+    ],
+    "speaker_ids": [
+      "s001"
+    ],
+    "track": "Cloud Native Security Day",
+    "tags": [
+      "Falco",
+      "security",
+      "eBPF"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 6",
+    "start": "2026-11-09T15:45:00-07:00",
+    "end": "2026-11-09T16:20:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t036",
+    "title": "Catching Container Escapes: What We Got Wrong",
+    "abstract": "We watch what processes do deep inside the operating system and flag anything that looks like an attacker breaking out of a container. Falco rules flag shells spawned inside production pods. No prior experience required.",
+    "speakers": [
+      "Lena Haddad",
+      "Kenji Bianchi"
+    ],
+    "speaker_ids": [
+      "s025",
+      "s001"
+    ],
+    "track": "Cloud Native Security Day",
+    "tags": [
+      "security",
+      "runtime",
+      "Falco"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 6",
+    "start": "2026-11-09T16:45:00-07:00",
+    "end": "2026-11-09T17:20:00-07:00",
+    "day": "2026-11-09"
+  },
+  {
+    "id": "t037",
+    "title": "Self-Service Environments: Beyond the Hype",
+    "abstract": "Treating internal engineers as customers changed how we built everything. Our Backstage-based internal developer platform serves 900 engineers. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Hiro Moreau"
+    ],
+    "speaker_ids": [
+      "s032"
+    ],
+    "track": "Keynote",
+    "tags": [
+      "IDP",
+      "platform",
+      "Backstage"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Main Stage",
+    "start": "2026-11-10T09:00:00-07:00",
+    "end": "2026-11-10T09:35:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t038",
+    "title": "Right-Sizing Without Tears: the Hard Way",
+    "abstract": "Paying only for what we actually use, and showing every team what their services cost. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Nadia Joshi",
+      "Arjun Bianchi"
+    ],
+    "speaker_ids": [
+      "s059",
+      "s047"
+    ],
+    "track": "Operations",
+    "tags": [
+      "cost",
+      "autoscaling",
+      "FinOps"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 1",
+    "start": "2026-11-10T10:30:00-07:00",
+    "end": "2026-11-10T11:05:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t039",
+    "title": "Provenance at Deploy Time: Beyond the Hype",
+    "abstract": "A walkthrough of a poisoned third-party package and the checks that would have stopped it. We sign images with Sigstore and verify SBOMs at admission. Includes a live demo and open-source code.",
+    "speakers": [
+      "Hana Patel",
+      "Sofia Okafor"
+    ],
+    "speaker_ids": [
+      "s074",
+      "s014"
+    ],
+    "track": "Security",
+    "tags": [
+      "SBOM",
+      "supply-chain",
+      "security"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 2",
+    "start": "2026-11-10T10:30:00-07:00",
+    "end": "2026-11-10T11:05:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t040",
+    "title": "Workload Identity in Practice: Beyond the Hype",
+    "abstract": "SPIFFE identities replace static secrets for service-to-service auth. Every service proves who it is on every request, and nobody holds a password that lasts longer than an hour. No prior experience required.",
+    "speakers": [
+      "Omar Sato",
+      "Ethan Carter"
+    ],
+    "speaker_ids": [
+      "s075",
+      "s051"
+    ],
+    "track": "Security",
+    "tags": [
+      "identity",
+      "security",
+      "SPIFFE"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 3",
+    "start": "2026-11-10T10:30:00-07:00",
+    "end": "2026-11-10T11:05:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t041",
+    "title": "XDP Load Balancing: the Hard Way",
+    "abstract": "Tracing traffic between services when the network plugin is someone else's code. Packets get filtered before they ever reach the network stack, which cut our latency in half. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Diego Khan"
+    ],
+    "speaker_ids": [
+      "s052"
+    ],
+    "track": "Networking",
+    "tags": [
+      "networking",
+      "Cilium",
+      "service-mesh"
+    ],
+    "format": "lightning",
+    "level": "beginner",
+    "room": "Room 4",
+    "start": "2026-11-10T10:30:00-07:00",
+    "end": "2026-11-10T10:45:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t042",
+    "title": "Observability on a Budget: Patterns and Pitfalls",
+    "abstract": "Distributed tracing found the slow dependency in minutes. Figuring out why one request in a thousand is slow. Includes a live demo and open-source code.",
+    "speakers": [
+      "Chloe Dubois",
+      "Grace Moreau"
+    ],
+    "speaker_ids": [
+      "s010",
+      "s022"
+    ],
+    "track": "Observability",
+    "tags": [
+      "observability",
+      "logging",
+      "tracing"
+    ],
+    "format": "workshop",
+    "level": "beginner",
+    "room": "Room 5",
+    "start": "2026-11-10T10:30:00-07:00",
+    "end": "2026-11-10T11:55:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t043",
+    "title": "Autoscaling Model Servers: at Scale",
+    "abstract": "We serve LLM inference with vLLM and KServe on shared GPU pools. What we learned keeping response times low when traffic to our model spiked tenfold. No prior experience required.",
+    "speakers": [
+      "Zara Nilsson",
+      "Priya Iyer",
+      "Nadia Chen"
+    ],
+    "speaker_ids": [
+      "s029",
+      "s077",
+      "s005"
+    ],
+    "track": "AI Inference + Agentic",
+    "tags": [
+      "GPU",
+      "AI",
+      "inference"
+    ],
+    "format": "panel",
+    "level": "advanced",
+    "room": "Room 6",
+    "start": "2026-11-10T10:30:00-07:00",
+    "end": "2026-11-10T11:05:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t044",
+    "title": "Detecting Cryptominers in Pods: A Field Guide",
+    "abstract": "We use eBPF probes to detect suspicious behavior in containers. Falco rules flag shells spawned inside production pods. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Lena Haddad"
+    ],
+    "speaker_ids": [
+      "s025"
+    ],
+    "track": "Security",
+    "tags": [
+      "Falco",
+      "security",
+      "eBPF"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 7",
+    "start": "2026-11-10T10:30:00-07:00",
+    "end": "2026-11-10T11:05:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t045",
+    "title": "Operators for Stateful Apps: Beyond the Hype",
+    "abstract": "Keeping a database alive inside a system that loves to restart things. Stateful workloads need careful storage class and anti-affinity design. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Leila Nilsson"
+    ],
+    "speaker_ids": [
+      "s072"
+    ],
+    "track": "Operations",
+    "tags": [
+      "stateful",
+      "databases",
+      "operators"
+    ],
+    "format": "lightning",
+    "level": "intermediate",
+    "room": "Room 8",
+    "start": "2026-11-10T10:30:00-07:00",
+    "end": "2026-11-10T10:45:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t046",
+    "title": "Postgres on Kubernetes, Honestly: in 30 Minutes",
+    "abstract": "Keeping a database alive inside a system that loves to restart things. No prior experience required.",
+    "speakers": [
+      "Yuki O'Connor"
+    ],
+    "speaker_ids": [
+      "s012"
+    ],
+    "track": "Operations",
+    "tags": [
+      "databases",
+      "stateful",
+      "operators"
+    ],
+    "format": "lightning",
+    "level": "advanced",
+    "room": "Room 1",
+    "start": "2026-11-10T11:30:00-07:00",
+    "end": "2026-11-10T11:45:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t047",
+    "title": "Self-Service Environments: at Scale",
+    "abstract": "Treating internal engineers as customers changed how we built everything. Developers get a working environment in minutes without filing a ticket. Includes a live demo and open-source code.",
+    "speakers": [
+      "Ravi Kobayashi"
+    ],
+    "speaker_ids": [
+      "s044"
+    ],
+    "track": "Platform Engineering",
+    "tags": [
+      "IDP",
+      "Backstage",
+      "developer-experience"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 2",
+    "start": "2026-11-10T11:30:00-07:00",
+    "end": "2026-11-10T12:05:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t048",
+    "title": "Provenance at Deploy Time: Lessons from Production",
+    "abstract": "A walkthrough of a poisoned third-party package and the checks that would have stopped it. How do you prove the code running in production is the code you reviewed? We trace every artifact back to its source. No prior experience required.",
+    "speakers": [
+      "Daniel Mensah"
+    ],
+    "speaker_ids": [
+      "s062"
+    ],
+    "track": "Security",
+    "tags": [
+      "security",
+      "Sigstore",
+      "SBOM"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 3",
+    "start": "2026-11-10T11:30:00-07:00",
+    "end": "2026-11-10T12:05:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t049",
+    "title": "Syscall-Level Defense: From Zero to Production",
+    "abstract": "We use eBPF probes to detect suspicious behavior in containers. We watch what processes do deep inside the operating system and flag anything that looks like an attacker breaking out of a container. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Maya Rossi",
+      "Arjun Martinez"
+    ],
+    "speaker_ids": [
+      "s013",
+      "s049"
+    ],
+    "track": "Security",
+    "tags": [
+      "Falco",
+      "runtime",
+      "security"
+    ],
+    "format": "lightning",
+    "level": "intermediate",
+    "room": "Room 4",
+    "start": "2026-11-10T11:30:00-07:00",
+    "end": "2026-11-10T11:45:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t050",
+    "title": "XDP Load Balancing: Lessons from Production",
+    "abstract": "Cilium uses eBPF to enforce identity-aware network policy. Packets get filtered before they ever reach the network stack, which cut our latency in half. No prior experience required.",
+    "speakers": [
+      "Diego Khan"
+    ],
+    "speaker_ids": [
+      "s052"
+    ],
+    "track": "Networking",
+    "tags": [
+      "Cilium",
+      "networking",
+      "eBPF"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 5",
+    "start": "2026-11-10T11:30:00-07:00",
+    "end": "2026-11-10T12:05:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t051",
+    "title": "AI-Assisted Incident Response: What We Got Wrong",
+    "abstract": "LLM agents call Kubernetes tools through MCP with strict guardrails. An assistant that reads alerts, gathers evidence and proposes a fix before the on-call engineer wakes up. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Lena Alvarez"
+    ],
+    "speaker_ids": [
+      "s042"
+    ],
+    "track": "AI Inference + Agentic",
+    "tags": [
+      "LLM",
+      "MCP",
+      "AI"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 6",
+    "start": "2026-11-10T11:30:00-07:00",
+    "end": "2026-11-10T12:05:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t052",
+    "title": "Logs You Can Afford: in 30 Minutes",
+    "abstract": "Figuring out why one request in a thousand is slow. We stopped storing everything and started keeping only the signals that help during an outage. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Ananya Haddad"
+    ],
+    "speaker_ids": [
+      "s058"
+    ],
+    "track": "Observability",
+    "tags": [
+      "observability",
+      "OpenTelemetry",
+      "logging"
+    ],
+    "format": "lightning",
+    "level": "intermediate",
+    "room": "Room 7",
+    "start": "2026-11-10T11:30:00-07:00",
+    "end": "2026-11-10T11:45:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t053",
+    "title": "Killing Long-Lived Credentials: Patterns and Pitfalls",
+    "abstract": "Every service proves who it is on every request, and nobody holds a password that lasts longer than an hour. SPIFFE identities replace static secrets for service-to-service auth. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Leila Abebe"
+    ],
+    "speaker_ids": [
+      "s003"
+    ],
+    "track": "Security",
+    "tags": [
+      "identity",
+      "SPIFFE",
+      "zero-trust"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 8",
+    "start": "2026-11-10T11:30:00-07:00",
+    "end": "2026-11-10T12:05:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t054",
+    "title": "Rollbacks Nobody Notices: From Zero to Production",
+    "abstract": "Every change to production is a reviewed commit, and undoing a bad release is a revert away. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Lena Abebe"
+    ],
+    "speaker_ids": [
+      "s057"
+    ],
+    "track": "Platform Engineering",
+    "tags": [
+      "delivery",
+      "Argo CD",
+      "GitOps"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 1",
+    "start": "2026-11-10T13:30:00-07:00",
+    "end": "2026-11-10T14:05:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t055",
+    "title": "Grounding Chatbots in Your Docs: in 30 Minutes",
+    "abstract": "Hybrid BM25 and vector retrieval with a reranker improved RAG answers. We run a vector database as a stateful workload with operators. No prior experience required.",
+    "speakers": [
+      "Priya Mensah"
+    ],
+    "speaker_ids": [
+      "s007"
+    ],
+    "track": "AI Inference + Agentic",
+    "tags": [
+      "LLM",
+      "vector-search",
+      "AI"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 2",
+    "start": "2026-11-10T13:30:00-07:00",
+    "end": "2026-11-10T14:05:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t056",
+    "title": "Logs You Can Afford: A Field Guide",
+    "abstract": "OpenTelemetry collectors with tail sampling cut our bill by 60%. Distributed tracing found the slow dependency in minutes. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Kenji Haddad"
+    ],
+    "speaker_ids": [
+      "s046"
+    ],
+    "track": "Observability",
+    "tags": [
+      "OpenTelemetry",
+      "logging",
+      "tracing"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 3",
+    "start": "2026-11-10T13:30:00-07:00",
+    "end": "2026-11-10T14:05:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t057",
+    "title": "Killing Long-Lived Credentials: Lessons from Production",
+    "abstract": "SPIFFE identities replace static secrets for service-to-service auth. Every service proves who it is on every request, and nobody holds a password that lasts longer than an hour. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Yuki Sato",
+      "Kenji Rossi"
+    ],
+    "speaker_ids": [
+      "s063",
+      "s039"
+    ],
+    "track": "Security",
+    "tags": [
+      "identity",
+      "zero-trust",
+      "security"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 4",
+    "start": "2026-11-10T13:30:00-07:00",
+    "end": "2026-11-10T14:05:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t058",
+    "title": "Backups You Have Actually Restored: What We Got Wrong",
+    "abstract": "We run Postgres with an operator, logical replication and PITR. Keeping a database alive inside a system that loves to restart things. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Yuki O'Connor",
+      "Leila Nilsson"
+    ],
+    "speaker_ids": [
+      "s012",
+      "s072"
+    ],
+    "track": "Operations",
+    "tags": [
+      "operators",
+      "databases",
+      "stateful"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 5",
+    "start": "2026-11-10T13:30:00-07:00",
+    "end": "2026-11-10T14:05:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t059",
+    "title": "Surviving a Dependency Compromise: What We Got Wrong",
+    "abstract": "We sign images with Sigstore and verify SBOMs at admission. SLSA provenance blocks unverified builds from reaching production. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Sofia Okafor"
+    ],
+    "speaker_ids": [
+      "s014"
+    ],
+    "track": "Security",
+    "tags": [
+      "SBOM",
+      "supply-chain",
+      "Sigstore"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 6",
+    "start": "2026-11-10T13:30:00-07:00",
+    "end": "2026-11-10T14:05:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t060",
+    "title": "Syscall-Level Defense: A Field Guide",
+    "abstract": "We watch what processes do deep inside the operating system and flag anything that looks like an attacker breaking out of a container. Kernel-level visibility let us spot privilege escalation in seconds, without installing heavyweight agents. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Kenji Bianchi"
+    ],
+    "speaker_ids": [
+      "s001"
+    ],
+    "track": "Security",
+    "tags": [
+      "runtime",
+      "eBPF",
+      "security"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 7",
+    "start": "2026-11-10T13:30:00-07:00",
+    "end": "2026-11-10T14:05:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t061",
+    "title": "Serving LLMs on Kubernetes: the Hard Way",
+    "abstract": "We serve LLM inference with vLLM and KServe on shared GPU pools. GPU partitioning and request batching tripled throughput. No prior experience required.",
+    "speakers": [
+      "Tomás Chen"
+    ],
+    "speaker_ids": [
+      "s065"
+    ],
+    "track": "AI Inference + Agentic",
+    "tags": [
+      "GPU",
+      "LLM",
+      "AI"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 8",
+    "start": "2026-11-10T13:30:00-07:00",
+    "end": "2026-11-10T14:05:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t062",
+    "title": "Catching Container Escapes: Lessons from Production",
+    "abstract": "We watch what processes do deep inside the operating system and flag anything that looks like an attacker breaking out of a container. eBPF-based sensors watch every syscall with negligible overhead. Includes a live demo and open-source code.",
+    "speakers": [
+      "Lena Haddad"
+    ],
+    "speaker_ids": [
+      "s025"
+    ],
+    "track": "Security",
+    "tags": [
+      "security",
+      "Falco",
+      "runtime"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 1",
+    "start": "2026-11-10T14:30:00-07:00",
+    "end": "2026-11-10T15:05:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t063",
+    "title": "Logs You Can Afford: Beyond the Hype",
+    "abstract": "We stopped storing everything and started keeping only the signals that help during an outage. Figuring out why one request in a thousand is slow. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Oscar Martinez",
+      "Grace Moreau"
+    ],
+    "speaker_ids": [
+      "s070",
+      "s022"
+    ],
+    "track": "Observability",
+    "tags": [
+      "observability",
+      "tracing",
+      "OpenTelemetry"
+    ],
+    "format": "lightning",
+    "level": "advanced",
+    "room": "Room 2",
+    "start": "2026-11-10T14:30:00-07:00",
+    "end": "2026-11-10T14:45:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t064",
+    "title": "Progressive Delivery Done Right: From Zero to Production",
+    "abstract": "Argo CD and Argo Rollouts drive canary releases across regions. Flux reconciles every cluster from a single repository. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Neha O'Connor"
+    ],
+    "speaker_ids": [
+      "s009"
+    ],
+    "track": "Platform Engineering",
+    "tags": [
+      "delivery",
+      "Argo CD",
+      "GitOps"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 3",
+    "start": "2026-11-10T14:30:00-07:00",
+    "end": "2026-11-10T15:05:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t065",
+    "title": "Agents That Operate Clusters: From Zero to Production",
+    "abstract": "Letting software make operational decisions on its own, safely, and knowing exactly why it did what it did. An assistant that reads alerts, gathers evidence and proposes a fix before the on-call engineer wakes up. Includes a live demo and open-source code.",
+    "speakers": [
+      "Daniel Farah",
+      "Sofia Kobayashi",
+      "Samir Iyer"
+    ],
+    "speaker_ids": [
+      "s066",
+      "s078",
+      "s054"
+    ],
+    "track": "AI Inference + Agentic",
+    "tags": [
+      "agents",
+      "MCP",
+      "AI"
+    ],
+    "format": "panel",
+    "level": "beginner",
+    "room": "Room 4",
+    "start": "2026-11-10T14:30:00-07:00",
+    "end": "2026-11-10T15:05:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t066",
+    "title": "Network Policy That Scales: Beyond the Hype",
+    "abstract": "Cilium uses eBPF to enforce identity-aware network policy. Packets get filtered before they ever reach the network stack, which cut our latency in half. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Noah Iyer"
+    ],
+    "speaker_ids": [
+      "s076"
+    ],
+    "track": "Networking",
+    "tags": [
+      "Cilium",
+      "eBPF",
+      "service-mesh"
+    ],
+    "format": "lightning",
+    "level": "beginner",
+    "room": "Room 5",
+    "start": "2026-11-10T14:30:00-07:00",
+    "end": "2026-11-10T14:45:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t067",
+    "title": "Right-Sizing Without Tears: What We Got Wrong",
+    "abstract": "Paying only for what we actually use, and showing every team what their services cost. Showback dashboards made each team own its spend. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Grace Tanaka"
+    ],
+    "speaker_ids": [
+      "s071"
+    ],
+    "track": "Operations",
+    "tags": [
+      "FinOps",
+      "autoscaling",
+      "cost"
+    ],
+    "format": "lightning",
+    "level": "beginner",
+    "room": "Room 6",
+    "start": "2026-11-10T14:30:00-07:00",
+    "end": "2026-11-10T14:45:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t068",
+    "title": "Postgres on Kubernetes, Honestly: What We Got Wrong",
+    "abstract": "Keeping a database alive inside a system that loves to restart things. No prior experience required.",
+    "speakers": [
+      "Leila Novak",
+      "Liam Haddad"
+    ],
+    "speaker_ids": [
+      "s048",
+      "s060"
+    ],
+    "track": "Operations",
+    "tags": [
+      "operators",
+      "stateful",
+      "databases"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 7",
+    "start": "2026-11-10T14:30:00-07:00",
+    "end": "2026-11-10T15:05:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t069",
+    "title": "Your Platform Is a Product: Beyond the Hype",
+    "abstract": "Our Backstage-based internal developer platform serves 900 engineers. Developers get a working environment in minutes without filing a ticket. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Kwame Murphy"
+    ],
+    "speaker_ids": [
+      "s068"
+    ],
+    "track": "Platform Engineering",
+    "tags": [
+      "Backstage",
+      "IDP",
+      "platform"
+    ],
+    "format": "lightning",
+    "level": "intermediate",
+    "room": "Room 8",
+    "start": "2026-11-10T14:30:00-07:00",
+    "end": "2026-11-10T14:45:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t070",
+    "title": "Cutting the Cloud Bill: What We Got Wrong",
+    "abstract": "Showback dashboards made each team own its spend. Karpenter and right-sizing recommendations cut compute cost 40%. No prior experience required.",
+    "speakers": [
+      "Nadia Joshi"
+    ],
+    "speaker_ids": [
+      "s059"
+    ],
+    "track": "Operations",
+    "tags": [
+      "cost",
+      "autoscaling",
+      "FinOps"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 1",
+    "start": "2026-11-10T15:45:00-07:00",
+    "end": "2026-11-10T16:20:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t071",
+    "title": "Surviving a Dependency Compromise: A Field Guide",
+    "abstract": "A walkthrough of a poisoned third-party package and the checks that would have stopped it. SLSA provenance blocks unverified builds from reaching production. No prior experience required.",
+    "speakers": [
+      "Elena Weber",
+      "Daniel Mensah"
+    ],
+    "speaker_ids": [
+      "s002",
+      "s062"
+    ],
+    "track": "Security",
+    "tags": [
+      "Sigstore",
+      "security",
+      "SBOM"
+    ],
+    "format": "workshop",
+    "level": "intermediate",
+    "room": "Room 2",
+    "start": "2026-11-10T15:45:00-07:00",
+    "end": "2026-11-10T17:10:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t072",
+    "title": "Measuring Developer Happiness: A Field Guide",
+    "abstract": "Our Backstage-based internal developer platform serves 900 engineers. Developers get a working environment in minutes without filing a ticket. Includes a live demo and open-source code.",
+    "speakers": [
+      "Ravi Kobayashi"
+    ],
+    "speaker_ids": [
+      "s044"
+    ],
+    "track": "Platform Engineering",
+    "tags": [
+      "developer-experience",
+      "Backstage",
+      "platform"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 3",
+    "start": "2026-11-10T15:45:00-07:00",
+    "end": "2026-11-10T16:20:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t073",
+    "title": "Alerts That Mean Something: What We Got Wrong",
+    "abstract": "OpenTelemetry collectors with tail sampling cut our bill by 60%. Distributed tracing found the slow dependency in minutes. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Chloe Dubois",
+      "Ananya Haddad"
+    ],
+    "speaker_ids": [
+      "s010",
+      "s058"
+    ],
+    "track": "Observability",
+    "tags": [
+      "observability",
+      "tracing",
+      "logging"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 4",
+    "start": "2026-11-10T15:45:00-07:00",
+    "end": "2026-11-10T16:20:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t074",
+    "title": "Operators for Stateful Apps: A Live Demo",
+    "abstract": "Keeping a database alive inside a system that loves to restart things. We run Postgres with an operator, logical replication and PITR. Includes a live demo and open-source code.",
+    "speakers": [
+      "Liam Haddad"
+    ],
+    "speaker_ids": [
+      "s060"
+    ],
+    "track": "Operations",
+    "tags": [
+      "databases",
+      "operators",
+      "stateful"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 5",
+    "start": "2026-11-10T15:45:00-07:00",
+    "end": "2026-11-10T16:20:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t075",
+    "title": "Kernel Tracing for Incident Response: From Zero to Production",
+    "abstract": "Falco rules flag shells spawned inside production pods. eBPF-based sensors watch every syscall with negligible overhead. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Samir Farah"
+    ],
+    "speaker_ids": [
+      "s073"
+    ],
+    "track": "Security",
+    "tags": [
+      "eBPF",
+      "runtime",
+      "security"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 6",
+    "start": "2026-11-10T15:45:00-07:00",
+    "end": "2026-11-10T16:20:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t076",
+    "title": "Workload Identity in Practice: Patterns and Pitfalls",
+    "abstract": "Every service proves who it is on every request, and nobody holds a password that lasts longer than an hour. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Lena Asante"
+    ],
+    "speaker_ids": [
+      "s027"
+    ],
+    "track": "Security",
+    "tags": [
+      "security",
+      "zero-trust",
+      "identity"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 7",
+    "start": "2026-11-10T15:45:00-07:00",
+    "end": "2026-11-10T16:20:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t077",
+    "title": "Serving LLMs on Kubernetes: in 30 Minutes",
+    "abstract": "We serve LLM inference with vLLM and KServe on shared GPU pools. Running large models for thousands of users without a separate accelerator for every team. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Liam Lindqvist"
+    ],
+    "speaker_ids": [
+      "s041"
+    ],
+    "track": "AI Inference + Agentic",
+    "tags": [
+      "GPU",
+      "AI",
+      "inference"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 8",
+    "start": "2026-11-10T15:45:00-07:00",
+    "end": "2026-11-10T16:20:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t078",
+    "title": "Alerts That Mean Something: the Hard Way",
+    "abstract": "Distributed tracing found the slow dependency in minutes. Figuring out why one request in a thousand is slow. Includes a live demo and open-source code.",
+    "speakers": [
+      "Kenji Haddad",
+      "Oscar Martinez"
+    ],
+    "speaker_ids": [
+      "s046",
+      "s070"
+    ],
+    "track": "Observability",
+    "tags": [
+      "OpenTelemetry",
+      "tracing",
+      "logging"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 1",
+    "start": "2026-11-10T16:45:00-07:00",
+    "end": "2026-11-10T17:20:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t079",
+    "title": "Surviving a Dependency Compromise: in 30 Minutes",
+    "abstract": "How do you prove the code running in production is the code you reviewed? We trace every artifact back to its source. A walkthrough of a poisoned third-party package and the checks that would have stopped it. Includes a live demo and open-source code.",
+    "speakers": [
+      "Leila Liu",
+      "Elena Weber"
+    ],
+    "speaker_ids": [
+      "s026",
+      "s002"
+    ],
+    "track": "Security",
+    "tags": [
+      "SBOM",
+      "supply-chain",
+      "security"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 2",
+    "start": "2026-11-10T16:45:00-07:00",
+    "end": "2026-11-10T17:20:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t080",
+    "title": "Runtime Threat Detection: the Hard Way",
+    "abstract": "Learn how to notice a compromised workload by its behavior rather than its signature. We watch what processes do deep inside the operating system and flag anything that looks like an attacker breaking out of a container. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Mateo Mensah",
+      "Maya Rossi"
+    ],
+    "speaker_ids": [
+      "s037",
+      "s013"
+    ],
+    "track": "Security",
+    "tags": [
+      "runtime",
+      "eBPF",
+      "security"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 3",
+    "start": "2026-11-10T16:45:00-07:00",
+    "end": "2026-11-10T17:20:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t081",
+    "title": "Workload Identity in Practice: Lessons from Production",
+    "abstract": "We rolled out zero trust networking across 40 clusters. SPIFFE identities replace static secrets for service-to-service auth. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Leila Abebe"
+    ],
+    "speaker_ids": [
+      "s003"
+    ],
+    "track": "Security",
+    "tags": [
+      "security",
+      "identity",
+      "SPIFFE"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 4",
+    "start": "2026-11-10T16:45:00-07:00",
+    "end": "2026-11-10T17:20:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t082",
+    "title": "Progressive Delivery Done Right: Lessons from Production",
+    "abstract": "Flux reconciles every cluster from a single repository. Argo CD and Argo Rollouts drive canary releases across regions. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Daniel Novak"
+    ],
+    "speaker_ids": [
+      "s021"
+    ],
+    "track": "Platform Engineering",
+    "tags": [
+      "GitOps",
+      "Argo CD",
+      "delivery"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 5",
+    "start": "2026-11-10T16:45:00-07:00",
+    "end": "2026-11-10T17:20:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t083",
+    "title": "Grounding Chatbots in Your Docs: at Scale",
+    "abstract": "We run a vector database as a stateful workload with operators. Hybrid BM25 and vector retrieval with a reranker improved RAG answers. Includes a live demo and open-source code.",
+    "speakers": [
+      "Priya Mensah",
+      "Hana Murphy"
+    ],
+    "speaker_ids": [
+      "s007",
+      "s043"
+    ],
+    "track": "AI Inference + Agentic",
+    "tags": [
+      "LLM",
+      "RAG",
+      "AI"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 6",
+    "start": "2026-11-10T16:45:00-07:00",
+    "end": "2026-11-10T17:20:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t084",
+    "title": "GPU Scheduling That Doesn't Waste Money: A Live Demo",
+    "abstract": "What we learned keeping response times low when traffic to our model spiked tenfold. Running large models for thousands of users without a separate accelerator for every team. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Tomás Chen"
+    ],
+    "speaker_ids": [
+      "s065"
+    ],
+    "track": "AI Inference + Agentic",
+    "tags": [
+      "inference",
+      "AI",
+      "LLM"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 7",
+    "start": "2026-11-10T16:45:00-07:00",
+    "end": "2026-11-10T17:20:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t085",
+    "title": "Postgres on Kubernetes, Honestly: A Field Guide",
+    "abstract": "Stateful workloads need careful storage class and anti-affinity design. We run Postgres with an operator, logical replication and PITR. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Leila Nilsson"
+    ],
+    "speaker_ids": [
+      "s072"
+    ],
+    "track": "Operations",
+    "tags": [
+      "stateful",
+      "operators",
+      "databases"
+    ],
+    "format": "workshop",
+    "level": "beginner",
+    "room": "Room 8",
+    "start": "2026-11-10T16:45:00-07:00",
+    "end": "2026-11-10T18:10:00-07:00",
+    "day": "2026-11-10"
+  },
+  {
+    "id": "t086",
+    "title": "Golden Paths That People Use: the Hard Way",
+    "abstract": "Our Backstage-based internal developer platform serves 900 engineers. Golden path templates cut new service setup to ten minutes. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Kwame Murphy"
+    ],
+    "speaker_ids": [
+      "s068"
+    ],
+    "track": "Keynote",
+    "tags": [
+      "platform",
+      "developer-experience",
+      "Backstage"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Main Stage",
+    "start": "2026-11-11T09:00:00-07:00",
+    "end": "2026-11-11T09:35:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t087",
+    "title": "Measuring Developer Happiness: the Hard Way",
+    "abstract": "Golden path templates cut new service setup to ten minutes. Our Backstage-based internal developer platform serves 900 engineers. Includes a live demo and open-source code.",
+    "speakers": [
+      "Omar Chen",
+      "Kwame Murphy"
+    ],
+    "speaker_ids": [
+      "s056",
+      "s068"
+    ],
+    "track": "Platform Engineering",
+    "tags": [
+      "platform",
+      "developer-experience",
+      "IDP"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 1",
+    "start": "2026-11-11T10:30:00-07:00",
+    "end": "2026-11-11T11:05:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t088",
+    "title": "Postgres on Kubernetes, Honestly: the Hard Way",
+    "abstract": "Keeping a database alive inside a system that loves to restart things. Stateful workloads need careful storage class and anti-affinity design. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Kwame Nilsson"
+    ],
+    "speaker_ids": [
+      "s036"
+    ],
+    "track": "Operations",
+    "tags": [
+      "databases",
+      "operators",
+      "stateful"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 2",
+    "start": "2026-11-11T10:30:00-07:00",
+    "end": "2026-11-11T11:05:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t089",
+    "title": "Syscall-Level Defense: at Scale",
+    "abstract": "Falco rules flag shells spawned inside production pods. We watch what processes do deep inside the operating system and flag anything that looks like an attacker breaking out of a container. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Samir Farah"
+    ],
+    "speaker_ids": [
+      "s073"
+    ],
+    "track": "Security",
+    "tags": [
+      "eBPF",
+      "security",
+      "Falco"
+    ],
+    "format": "lightning",
+    "level": "advanced",
+    "room": "Room 3",
+    "start": "2026-11-11T10:30:00-07:00",
+    "end": "2026-11-11T10:45:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t090",
+    "title": "Alerts That Mean Something: Patterns and Pitfalls",
+    "abstract": "OpenTelemetry collectors with tail sampling cut our bill by 60%. We stopped storing everything and started keeping only the signals that help during an outage. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Oscar Martinez",
+      "Ananya Haddad"
+    ],
+    "speaker_ids": [
+      "s070",
+      "s058"
+    ],
+    "track": "Observability",
+    "tags": [
+      "tracing",
+      "observability",
+      "logging"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 4",
+    "start": "2026-11-11T10:30:00-07:00",
+    "end": "2026-11-11T11:05:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t091",
+    "title": "MCP Servers for Platform Teams: Beyond the Hype",
+    "abstract": "LLM agents call Kubernetes tools through MCP with strict guardrails. Letting software make operational decisions on its own, safely, and knowing exactly why it did what it did. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Elena Schmidt",
+      "Yuki Nilsson"
+    ],
+    "speaker_ids": [
+      "s006",
+      "s030"
+    ],
+    "track": "AI Inference + Agentic",
+    "tags": [
+      "AI",
+      "MCP",
+      "agents"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 5",
+    "start": "2026-11-11T10:30:00-07:00",
+    "end": "2026-11-11T11:05:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t092",
+    "title": "RAG Without Hallucinations: A Live Demo",
+    "abstract": "Hybrid BM25 and vector retrieval with a reranker improved RAG answers. We run a vector database as a stateful workload with operators. Includes a live demo and open-source code.",
+    "speakers": [
+      "Hiro Haddad"
+    ],
+    "speaker_ids": [
+      "s019"
+    ],
+    "track": "AI Inference + Agentic",
+    "tags": [
+      "vector-search",
+      "RAG",
+      "LLM"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 6",
+    "start": "2026-11-11T10:30:00-07:00",
+    "end": "2026-11-11T11:05:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t093",
+    "title": "Zero Trust Between Services: in 30 Minutes",
+    "abstract": "Every service proves who it is on every request, and nobody holds a password that lasts longer than an hour. SPIFFE identities replace static secrets for service-to-service auth. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Omar Sato",
+      "Yuki Sato"
+    ],
+    "speaker_ids": [
+      "s075",
+      "s063"
+    ],
+    "track": "Security",
+    "tags": [
+      "SPIFFE",
+      "identity",
+      "security"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 7",
+    "start": "2026-11-11T10:30:00-07:00",
+    "end": "2026-11-11T11:05:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t094",
+    "title": "GitOps at 500 Clusters: Beyond the Hype",
+    "abstract": "Argo CD and Argo Rollouts drive canary releases across regions. Flux reconciles every cluster from a single repository. Includes a live demo and open-source code.",
+    "speakers": [
+      "Kwame O'Connor"
+    ],
+    "speaker_ids": [
+      "s069"
+    ],
+    "track": "Platform Engineering",
+    "tags": [
+      "delivery",
+      "Flux",
+      "Argo CD"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 8",
+    "start": "2026-11-11T10:30:00-07:00",
+    "end": "2026-11-11T11:05:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t095",
+    "title": "Measuring Developer Happiness: What We Got Wrong",
+    "abstract": "Our Backstage-based internal developer platform serves 900 engineers. Treating internal engineers as customers changed how we built everything. No prior experience required.",
+    "speakers": [
+      "Mateo Noor"
+    ],
+    "speaker_ids": [
+      "s080"
+    ],
+    "track": "Platform Engineering",
+    "tags": [
+      "platform",
+      "developer-experience",
+      "Backstage"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 1",
+    "start": "2026-11-11T11:30:00-07:00",
+    "end": "2026-11-11T12:05:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t096",
+    "title": "Sidecar-Free Service Mesh: Patterns and Pitfalls",
+    "abstract": "Tracing traffic between services when the network plugin is someone else's code. Packets get filtered before they ever reach the network stack, which cut our latency in half. No prior experience required.",
+    "speakers": [
+      "Noah Iyer"
+    ],
+    "speaker_ids": [
+      "s076"
+    ],
+    "track": "Networking",
+    "tags": [
+      "Cilium",
+      "service-mesh",
+      "eBPF"
+    ],
+    "format": "lightning",
+    "level": "intermediate",
+    "room": "Room 2",
+    "start": "2026-11-11T11:30:00-07:00",
+    "end": "2026-11-11T11:45:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t097",
+    "title": "Progressive Delivery Done Right: in 30 Minutes",
+    "abstract": "Every change to production is a reviewed commit, and undoing a bad release is a revert away. Argo CD and Argo Rollouts drive canary releases across regions. Includes a live demo and open-source code.",
+    "speakers": [
+      "Daniel Novak"
+    ],
+    "speaker_ids": [
+      "s021"
+    ],
+    "track": "Platform Engineering",
+    "tags": [
+      "GitOps",
+      "Argo CD",
+      "delivery"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 3",
+    "start": "2026-11-11T11:30:00-07:00",
+    "end": "2026-11-11T12:05:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t098",
+    "title": "Cutting the Cloud Bill: Patterns and Pitfalls",
+    "abstract": "Showback dashboards made each team own its spend. Karpenter and right-sizing recommendations cut compute cost 40%. No prior experience required.",
+    "speakers": [
+      "Grace Tanaka"
+    ],
+    "speaker_ids": [
+      "s071"
+    ],
+    "track": "Operations",
+    "tags": [
+      "cost",
+      "FinOps",
+      "autoscaling"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 4",
+    "start": "2026-11-11T11:30:00-07:00",
+    "end": "2026-11-11T12:05:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t099",
+    "title": "GPU Scheduling That Doesn't Waste Money: What We Got Wrong",
+    "abstract": "Running large models for thousands of users without a separate accelerator for every team. What we learned keeping response times low when traffic to our model spiked tenfold. Includes a live demo and open-source code.",
+    "speakers": [
+      "Tomás Chen",
+      "Neha Abebe"
+    ],
+    "speaker_ids": [
+      "s065",
+      "s053"
+    ],
+    "track": "AI Inference + Agentic",
+    "tags": [
+      "GPU",
+      "LLM",
+      "AI"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 5",
+    "start": "2026-11-11T11:30:00-07:00",
+    "end": "2026-11-11T12:05:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t100",
+    "title": "Grounding Chatbots in Your Docs: Beyond the Hype",
+    "abstract": "Making an internal assistant answer only from trusted documents and cite where every answer came from. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Priya Mensah"
+    ],
+    "speaker_ids": [
+      "s007"
+    ],
+    "track": "AI Inference + Agentic",
+    "tags": [
+      "RAG",
+      "LLM",
+      "AI"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 6",
+    "start": "2026-11-11T11:30:00-07:00",
+    "end": "2026-11-11T12:05:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t101",
+    "title": "Alerts That Mean Something: at Scale",
+    "abstract": "Distributed tracing found the slow dependency in minutes. We stopped storing everything and started keeping only the signals that help during an outage. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Ananya Haddad"
+    ],
+    "speaker_ids": [
+      "s058"
+    ],
+    "track": "Observability",
+    "tags": [
+      "logging",
+      "OpenTelemetry",
+      "observability"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 7",
+    "start": "2026-11-11T11:30:00-07:00",
+    "end": "2026-11-11T12:05:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t102",
+    "title": "Signing Everything: at Scale",
+    "abstract": "How do you prove the code running in production is the code you reviewed? We trace every artifact back to its source. A walkthrough of a poisoned third-party package and the checks that would have stopped it. Includes a live demo and open-source code.",
+    "speakers": [
+      "Leila Liu",
+      "Hana Patel",
+      "Elena Weber"
+    ],
+    "speaker_ids": [
+      "s026",
+      "s074",
+      "s002"
+    ],
+    "track": "Security",
+    "tags": [
+      "supply-chain",
+      "SBOM",
+      "Sigstore"
+    ],
+    "format": "panel",
+    "level": "beginner",
+    "room": "Room 8",
+    "start": "2026-11-11T11:30:00-07:00",
+    "end": "2026-11-11T12:05:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t103",
+    "title": "Runtime Threat Detection: Patterns and Pitfalls",
+    "abstract": "Learn how to notice a compromised workload by its behavior rather than its signature. eBPF-based sensors watch every syscall with negligible overhead. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Maya Rossi",
+      "Kenji Bianchi",
+      "Samir Farah"
+    ],
+    "speaker_ids": [
+      "s013",
+      "s001",
+      "s073"
+    ],
+    "track": "Security",
+    "tags": [
+      "Falco",
+      "runtime",
+      "security"
+    ],
+    "format": "panel",
+    "level": "intermediate",
+    "room": "Room 1",
+    "start": "2026-11-11T13:30:00-07:00",
+    "end": "2026-11-11T14:05:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t104",
+    "title": "MCP Servers for Platform Teams: Patterns and Pitfalls",
+    "abstract": "LLM agents call Kubernetes tools through MCP with strict guardrails. An assistant that reads alerts, gathers evidence and proposes a fix before the on-call engineer wakes up. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Sofia Kobayashi"
+    ],
+    "speaker_ids": [
+      "s078"
+    ],
+    "track": "AI Inference + Agentic",
+    "tags": [
+      "MCP",
+      "agents",
+      "LLM"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 2",
+    "start": "2026-11-11T13:30:00-07:00",
+    "end": "2026-11-11T14:05:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t105",
+    "title": "Rollbacks Nobody Notices: the Hard Way",
+    "abstract": "Flux reconciles every cluster from a single repository. Argo CD and Argo Rollouts drive canary releases across regions. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Kenji Noor",
+      "Lena Abebe",
+      "Kwame O'Connor"
+    ],
+    "speaker_ids": [
+      "s033",
+      "s057",
+      "s069"
+    ],
+    "track": "Platform Engineering",
+    "tags": [
+      "delivery",
+      "Flux",
+      "GitOps"
+    ],
+    "format": "panel",
+    "level": "advanced",
+    "room": "Room 3",
+    "start": "2026-11-11T13:30:00-07:00",
+    "end": "2026-11-11T14:05:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t106",
+    "title": "Right-Sizing Without Tears: A Field Guide",
+    "abstract": "Karpenter and right-sizing recommendations cut compute cost 40%. Showback dashboards made each team own its spend. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Kwame Joshi"
+    ],
+    "speaker_ids": [
+      "s035"
+    ],
+    "track": "Operations",
+    "tags": [
+      "cost",
+      "autoscaling",
+      "FinOps"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 4",
+    "start": "2026-11-11T13:30:00-07:00",
+    "end": "2026-11-11T14:05:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t107",
+    "title": "Workload Identity in Practice: the Hard Way",
+    "abstract": "SPIFFE identities replace static secrets for service-to-service auth. We rolled out zero trust networking across 40 clusters. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Leila Abebe",
+      "Yuki Sato",
+      "Lena Asante"
+    ],
+    "speaker_ids": [
+      "s003",
+      "s063",
+      "s027"
+    ],
+    "track": "Security",
+    "tags": [
+      "zero-trust",
+      "identity",
+      "SPIFFE"
+    ],
+    "format": "panel",
+    "level": "intermediate",
+    "room": "Room 5",
+    "start": "2026-11-11T13:30:00-07:00",
+    "end": "2026-11-11T14:05:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t108",
+    "title": "Grounding Chatbots in Your Docs: What We Got Wrong",
+    "abstract": "We run a vector database as a stateful workload with operators. Hybrid BM25 and vector retrieval with a reranker improved RAG answers. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Hiro Haddad"
+    ],
+    "speaker_ids": [
+      "s019"
+    ],
+    "track": "AI Inference + Agentic",
+    "tags": [
+      "vector-search",
+      "RAG",
+      "LLM"
+    ],
+    "format": "lightning",
+    "level": "advanced",
+    "room": "Room 6",
+    "start": "2026-11-11T13:30:00-07:00",
+    "end": "2026-11-11T13:45:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t109",
+    "title": "Observability on a Budget: Beyond the Hype",
+    "abstract": "OpenTelemetry collectors with tail sampling cut our bill by 60%. Figuring out why one request in a thousand is slow. No prior experience required.",
+    "speakers": [
+      "Oscar Martinez"
+    ],
+    "speaker_ids": [
+      "s070"
+    ],
+    "track": "Observability",
+    "tags": [
+      "OpenTelemetry",
+      "logging",
+      "observability"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 7",
+    "start": "2026-11-11T13:30:00-07:00",
+    "end": "2026-11-11T14:05:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t110",
+    "title": "XDP Load Balancing: A Live Demo",
+    "abstract": "Packets get filtered before they ever reach the network stack, which cut our latency in half. Cilium uses eBPF to enforce identity-aware network policy. Includes a live demo and open-source code.",
+    "speakers": [
+      "Daniel Tanaka",
+      "Yuki Moreau"
+    ],
+    "speaker_ids": [
+      "s028",
+      "s016"
+    ],
+    "track": "Networking",
+    "tags": [
+      "service-mesh",
+      "networking",
+      "eBPF"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 8",
+    "start": "2026-11-11T13:30:00-07:00",
+    "end": "2026-11-11T14:05:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t111",
+    "title": "Signing Everything: What We Got Wrong",
+    "abstract": "A walkthrough of a poisoned third-party package and the checks that would have stopped it. How do you prove the code running in production is the code you reviewed? We trace every artifact back to its source. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Oscar Larsen"
+    ],
+    "speaker_ids": [
+      "s038"
+    ],
+    "track": "Security",
+    "tags": [
+      "SBOM",
+      "security",
+      "supply-chain"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 1",
+    "start": "2026-11-11T14:30:00-07:00",
+    "end": "2026-11-11T15:05:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t112",
+    "title": "Autoscaling Model Servers: Patterns and Pitfalls",
+    "abstract": "What we learned keeping response times low when traffic to our model spiked tenfold. GPU partitioning and request batching tripled throughput. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Tomás Chen"
+    ],
+    "speaker_ids": [
+      "s065"
+    ],
+    "track": "AI Inference + Agentic",
+    "tags": [
+      "inference",
+      "LLM",
+      "GPU"
+    ],
+    "format": "lightning",
+    "level": "beginner",
+    "room": "Room 2",
+    "start": "2026-11-11T14:30:00-07:00",
+    "end": "2026-11-11T14:45:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t113",
+    "title": "Right-Sizing Without Tears: Lessons from Production",
+    "abstract": "Karpenter and right-sizing recommendations cut compute cost 40%. Paying only for what we actually use, and showing every team what their services cost. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Nadia Joshi"
+    ],
+    "speaker_ids": [
+      "s059"
+    ],
+    "track": "Operations",
+    "tags": [
+      "FinOps",
+      "cost",
+      "autoscaling"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 3",
+    "start": "2026-11-11T14:30:00-07:00",
+    "end": "2026-11-11T15:05:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t114",
+    "title": "Golden Paths That People Use: What We Got Wrong",
+    "abstract": "Our Backstage-based internal developer platform serves 900 engineers. Treating internal engineers as customers changed how we built everything. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Hiro Moreau",
+      "Kwame Murphy",
+      "Lucas Silva"
+    ],
+    "speaker_ids": [
+      "s032",
+      "s068",
+      "s008"
+    ],
+    "track": "Platform Engineering",
+    "tags": [
+      "IDP",
+      "Backstage",
+      "developer-experience"
+    ],
+    "format": "panel",
+    "level": "advanced",
+    "room": "Room 4",
+    "start": "2026-11-11T14:30:00-07:00",
+    "end": "2026-11-11T15:05:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t115",
+    "title": "Sidecar-Free Service Mesh: in 30 Minutes",
+    "abstract": "Tracing traffic between services when the network plugin is someone else's code. Packets get filtered before they ever reach the network stack, which cut our latency in half. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Daniel Tanaka"
+    ],
+    "speaker_ids": [
+      "s028"
+    ],
+    "track": "Networking",
+    "tags": [
+      "networking",
+      "Cilium",
+      "eBPF"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 5",
+    "start": "2026-11-11T14:30:00-07:00",
+    "end": "2026-11-11T15:05:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t116",
+    "title": "Alerts That Mean Something: Beyond the Hype",
+    "abstract": "Figuring out why one request in a thousand is slow. We stopped storing everything and started keeping only the signals that help during an outage. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Chloe Dubois",
+      "Ananya Haddad"
+    ],
+    "speaker_ids": [
+      "s010",
+      "s058"
+    ],
+    "track": "Observability",
+    "tags": [
+      "logging",
+      "observability",
+      "OpenTelemetry"
+    ],
+    "format": "lightning",
+    "level": "beginner",
+    "room": "Room 6",
+    "start": "2026-11-11T14:30:00-07:00",
+    "end": "2026-11-11T14:45:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t117",
+    "title": "Zero Trust Between Services: Beyond the Hype",
+    "abstract": "Every service proves who it is on every request, and nobody holds a password that lasts longer than an hour. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Yuki Sato"
+    ],
+    "speaker_ids": [
+      "s063"
+    ],
+    "track": "Security",
+    "tags": [
+      "zero-trust",
+      "SPIFFE",
+      "identity"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 7",
+    "start": "2026-11-11T14:30:00-07:00",
+    "end": "2026-11-11T15:05:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t118",
+    "title": "Progressive Delivery Done Right: the Hard Way",
+    "abstract": "Every change to production is a reviewed commit, and undoing a bad release is a revert away. No prior experience required.",
+    "speakers": [
+      "Kwame O'Connor"
+    ],
+    "speaker_ids": [
+      "s069"
+    ],
+    "track": "Platform Engineering",
+    "tags": [
+      "delivery",
+      "Argo CD",
+      "GitOps"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 8",
+    "start": "2026-11-11T14:30:00-07:00",
+    "end": "2026-11-11T15:05:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t119",
+    "title": "Observability on a Budget: A Live Demo",
+    "abstract": "Figuring out why one request in a thousand is slow. We stopped storing everything and started keeping only the signals that help during an outage. Includes a live demo and open-source code.",
+    "speakers": [
+      "Kenji Haddad"
+    ],
+    "speaker_ids": [
+      "s046"
+    ],
+    "track": "Observability",
+    "tags": [
+      "OpenTelemetry",
+      "observability",
+      "tracing"
+    ],
+    "format": "lightning",
+    "level": "intermediate",
+    "room": "Room 1",
+    "start": "2026-11-11T15:45:00-07:00",
+    "end": "2026-11-11T16:00:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t120",
+    "title": "Workload Identity in Practice: From Zero to Production",
+    "abstract": "We rolled out zero trust networking across 40 clusters. SPIFFE identities replace static secrets for service-to-service auth. Includes a live demo and open-source code.",
+    "speakers": [
+      "Omar Sato"
+    ],
+    "speaker_ids": [
+      "s075"
+    ],
+    "track": "Security",
+    "tags": [
+      "SPIFFE",
+      "security",
+      "identity"
+    ],
+    "format": "workshop",
+    "level": "intermediate",
+    "room": "Room 2",
+    "start": "2026-11-11T15:45:00-07:00",
+    "end": "2026-11-11T17:10:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t121",
+    "title": "AI-Assisted Incident Response: Lessons from Production",
+    "abstract": "An assistant that reads alerts, gathers evidence and proposes a fix before the on-call engineer wakes up. Letting software make operational decisions on its own, safely, and knowing exactly why it did what it did. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Lena Alvarez"
+    ],
+    "speaker_ids": [
+      "s042"
+    ],
+    "track": "AI Inference + Agentic",
+    "tags": [
+      "MCP",
+      "AI",
+      "LLM"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 3",
+    "start": "2026-11-11T15:45:00-07:00",
+    "end": "2026-11-11T16:20:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t122",
+    "title": "Backups You Have Actually Restored: the Hard Way",
+    "abstract": "We run Postgres with an operator, logical replication and PITR. Keeping a database alive inside a system that loves to restart things. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Kwame Nilsson",
+      "Liam Haddad",
+      "Yuki O'Connor"
+    ],
+    "speaker_ids": [
+      "s036",
+      "s060",
+      "s012"
+    ],
+    "track": "Operations",
+    "tags": [
+      "stateful",
+      "operators",
+      "databases"
+    ],
+    "format": "panel",
+    "level": "intermediate",
+    "room": "Room 4",
+    "start": "2026-11-11T15:45:00-07:00",
+    "end": "2026-11-11T16:20:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t123",
+    "title": "Rollbacks Nobody Notices: in 30 Minutes",
+    "abstract": "Every change to production is a reviewed commit, and undoing a bad release is a revert away. Argo CD and Argo Rollouts drive canary releases across regions. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Kenji Noor"
+    ],
+    "speaker_ids": [
+      "s033"
+    ],
+    "track": "Platform Engineering",
+    "tags": [
+      "delivery",
+      "Flux",
+      "Argo CD"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 5",
+    "start": "2026-11-11T15:45:00-07:00",
+    "end": "2026-11-11T16:20:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t124",
+    "title": "Sidecar-Free Service Mesh: What We Got Wrong",
+    "abstract": "Cilium uses eBPF to enforce identity-aware network policy. We replaced kube-proxy with an eBPF datapath. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Daniel Haddad"
+    ],
+    "speaker_ids": [
+      "s040"
+    ],
+    "track": "Networking",
+    "tags": [
+      "eBPF",
+      "Cilium",
+      "service-mesh"
+    ],
+    "format": "workshop",
+    "level": "advanced",
+    "room": "Room 6",
+    "start": "2026-11-11T15:45:00-07:00",
+    "end": "2026-11-11T17:10:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t125",
+    "title": "Signing Everything: Lessons from Production",
+    "abstract": "SLSA provenance blocks unverified builds from reaching production. We sign images with Sigstore and verify SBOMs at admission. No prior experience required.",
+    "speakers": [
+      "Daniel Mensah"
+    ],
+    "speaker_ids": [
+      "s062"
+    ],
+    "track": "Security",
+    "tags": [
+      "Sigstore",
+      "SBOM",
+      "supply-chain"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 7",
+    "start": "2026-11-11T15:45:00-07:00",
+    "end": "2026-11-11T16:20:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t126",
+    "title": "Right-Sizing Without Tears: Beyond the Hype",
+    "abstract": "Showback dashboards made each team own its spend. Karpenter and right-sizing recommendations cut compute cost 40%. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Kwame Joshi",
+      "Nadia Joshi"
+    ],
+    "speaker_ids": [
+      "s035",
+      "s059"
+    ],
+    "track": "Operations",
+    "tags": [
+      "autoscaling",
+      "cost",
+      "FinOps"
+    ],
+    "format": "workshop",
+    "level": "intermediate",
+    "room": "Room 8",
+    "start": "2026-11-11T15:45:00-07:00",
+    "end": "2026-11-11T17:10:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t127",
+    "title": "AI-Assisted Incident Response: Patterns and Pitfalls",
+    "abstract": "Letting software make operational decisions on its own, safely, and knowing exactly why it did what it did. LLM agents call Kubernetes tools through MCP with strict guardrails. No prior experience required.",
+    "speakers": [
+      "Sofia Kobayashi",
+      "Samir Iyer"
+    ],
+    "speaker_ids": [
+      "s078",
+      "s054"
+    ],
+    "track": "AI Inference + Agentic",
+    "tags": [
+      "agents",
+      "MCP",
+      "LLM"
+    ],
+    "format": "workshop",
+    "level": "beginner",
+    "room": "Room 1",
+    "start": "2026-11-11T16:45:00-07:00",
+    "end": "2026-11-11T18:10:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t128",
+    "title": "Cutting the Cloud Bill: Beyond the Hype",
+    "abstract": "Paying only for what we actually use, and showing every team what their services cost. No prior experience required.",
+    "speakers": [
+      "Aisha Iyer",
+      "Ethan Larsen"
+    ],
+    "speaker_ids": [
+      "s011",
+      "s023"
+    ],
+    "track": "Operations",
+    "tags": [
+      "FinOps",
+      "autoscaling",
+      "cost"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 2",
+    "start": "2026-11-11T16:45:00-07:00",
+    "end": "2026-11-11T17:20:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t129",
+    "title": "Surviving a Dependency Compromise: Lessons from Production",
+    "abstract": "A walkthrough of a poisoned third-party package and the checks that would have stopped it. How do you prove the code running in production is the code you reviewed? We trace every artifact back to its source. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Sofia Okafor",
+      "Lucas Lindqvist"
+    ],
+    "speaker_ids": [
+      "s014",
+      "s050"
+    ],
+    "track": "Security",
+    "tags": [
+      "security",
+      "Sigstore",
+      "supply-chain"
+    ],
+    "format": "lightning",
+    "level": "intermediate",
+    "room": "Room 3",
+    "start": "2026-11-11T16:45:00-07:00",
+    "end": "2026-11-11T17:00:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t130",
+    "title": "Vector Search on Kubernetes: in 30 Minutes",
+    "abstract": "We run a vector database as a stateful workload with operators. Hybrid BM25 and vector retrieval with a reranker improved RAG answers. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Ingrid Kim"
+    ],
+    "speaker_ids": [
+      "s067"
+    ],
+    "track": "AI Inference + Agentic",
+    "tags": [
+      "AI",
+      "RAG",
+      "LLM"
+    ],
+    "format": "lightning",
+    "level": "intermediate",
+    "room": "Room 4",
+    "start": "2026-11-11T16:45:00-07:00",
+    "end": "2026-11-11T17:00:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t131",
+    "title": "Autoscaling Model Servers: From Zero to Production",
+    "abstract": "Running large models for thousands of users without a separate accelerator for every team. What we learned keeping response times low when traffic to our model spiked tenfold. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Priya Iyer"
+    ],
+    "speaker_ids": [
+      "s077"
+    ],
+    "track": "AI Inference + Agentic",
+    "tags": [
+      "AI",
+      "inference",
+      "GPU"
+    ],
+    "format": "lightning",
+    "level": "intermediate",
+    "room": "Room 5",
+    "start": "2026-11-11T16:45:00-07:00",
+    "end": "2026-11-11T17:00:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t132",
+    "title": "Progressive Delivery Done Right: at Scale",
+    "abstract": "Every change to production is a reviewed commit, and undoing a bad release is a revert away. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Daniel Novak"
+    ],
+    "speaker_ids": [
+      "s021"
+    ],
+    "track": "Platform Engineering",
+    "tags": [
+      "Flux",
+      "Argo CD",
+      "delivery"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 6",
+    "start": "2026-11-11T16:45:00-07:00",
+    "end": "2026-11-11T17:20:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t133",
+    "title": "Postgres on Kubernetes, Honestly: From Zero to Production",
+    "abstract": "Keeping a database alive inside a system that loves to restart things. Includes a live demo and open-source code.",
+    "speakers": [
+      "Liam Haddad",
+      "Kwame Nilsson",
+      "Leila Nilsson"
+    ],
+    "speaker_ids": [
+      "s060",
+      "s036",
+      "s072"
+    ],
+    "track": "Operations",
+    "tags": [
+      "databases",
+      "stateful",
+      "operators"
+    ],
+    "format": "panel",
+    "level": "beginner",
+    "room": "Room 7",
+    "start": "2026-11-11T16:45:00-07:00",
+    "end": "2026-11-11T17:20:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t134",
+    "title": "Detecting Cryptominers in Pods: From Zero to Production",
+    "abstract": "We watch what processes do deep inside the operating system and flag anything that looks like an attacker breaking out of a container. Learn how to notice a compromised workload by its behavior rather than its signature. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Lena Haddad"
+    ],
+    "speaker_ids": [
+      "s025"
+    ],
+    "track": "Security",
+    "tags": [
+      "security",
+      "runtime",
+      "eBPF"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 8",
+    "start": "2026-11-11T16:45:00-07:00",
+    "end": "2026-11-11T17:20:00-07:00",
+    "day": "2026-11-11"
+  },
+  {
+    "id": "t135",
+    "title": "RAG Without Hallucinations: Lessons from Production",
+    "abstract": "We run a vector database as a stateful workload with operators. Hybrid BM25 and vector retrieval with a reranker improved RAG answers. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Lena Dubois"
+    ],
+    "speaker_ids": [
+      "s079"
+    ],
+    "track": "Keynote",
+    "tags": [
+      "RAG",
+      "vector-search",
+      "AI"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Main Stage",
+    "start": "2026-11-12T09:00:00-07:00",
+    "end": "2026-11-12T09:35:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t136",
+    "title": "GPU Scheduling That Doesn't Waste Money: A Field Guide",
+    "abstract": "We serve LLM inference with vLLM and KServe on shared GPU pools. GPU partitioning and request batching tripled throughput. Includes a live demo and open-source code.",
+    "speakers": [
+      "Amara Rossi"
+    ],
+    "speaker_ids": [
+      "s017"
+    ],
+    "track": "AI Inference + Agentic",
+    "tags": [
+      "LLM",
+      "GPU",
+      "inference"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 1",
+    "start": "2026-11-12T10:30:00-07:00",
+    "end": "2026-11-12T11:05:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t137",
+    "title": "Your Platform Is a Product: What We Got Wrong",
+    "abstract": "Golden path templates cut new service setup to ten minutes. Our Backstage-based internal developer platform serves 900 engineers. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Mateo Noor",
+      "Kwame Murphy"
+    ],
+    "speaker_ids": [
+      "s080",
+      "s068"
+    ],
+    "track": "Platform Engineering",
+    "tags": [
+      "Backstage",
+      "IDP",
+      "developer-experience"
+    ],
+    "format": "workshop",
+    "level": "beginner",
+    "room": "Room 2",
+    "start": "2026-11-12T10:30:00-07:00",
+    "end": "2026-11-12T11:55:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t138",
+    "title": "GitOps at 500 Clusters: Lessons from Production",
+    "abstract": "Every change to production is a reviewed commit, and undoing a bad release is a revert away. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Grace Rossi"
+    ],
+    "speaker_ids": [
+      "s045"
+    ],
+    "track": "Platform Engineering",
+    "tags": [
+      "Flux",
+      "delivery",
+      "GitOps"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 3",
+    "start": "2026-11-12T10:30:00-07:00",
+    "end": "2026-11-12T11:05:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t139",
+    "title": "Tracing Every Request: Lessons from Production",
+    "abstract": "Distributed tracing found the slow dependency in minutes. OpenTelemetry collectors with tail sampling cut our bill by 60%. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Chloe Dubois",
+      "Kenji Haddad"
+    ],
+    "speaker_ids": [
+      "s010",
+      "s046"
+    ],
+    "track": "Observability",
+    "tags": [
+      "logging",
+      "observability",
+      "OpenTelemetry"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 4",
+    "start": "2026-11-12T10:30:00-07:00",
+    "end": "2026-11-12T11:05:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t140",
+    "title": "Cutting the Cloud Bill: From Zero to Production",
+    "abstract": "Paying only for what we actually use, and showing every team what their services cost. No prior experience required.",
+    "speakers": [
+      "Arjun Bianchi"
+    ],
+    "speaker_ids": [
+      "s047"
+    ],
+    "track": "Operations",
+    "tags": [
+      "cost",
+      "autoscaling",
+      "FinOps"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 5",
+    "start": "2026-11-12T10:30:00-07:00",
+    "end": "2026-11-12T11:05:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t141",
+    "title": "Signing Everything: in 30 Minutes",
+    "abstract": "How do you prove the code running in production is the code you reviewed? We trace every artifact back to its source. We sign images with Sigstore and verify SBOMs at admission. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Lucas Lindqvist"
+    ],
+    "speaker_ids": [
+      "s050"
+    ],
+    "track": "Security",
+    "tags": [
+      "supply-chain",
+      "SBOM",
+      "security"
+    ],
+    "format": "workshop",
+    "level": "advanced",
+    "room": "Room 6",
+    "start": "2026-11-12T10:30:00-07:00",
+    "end": "2026-11-12T11:55:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t142",
+    "title": "Operators for Stateful Apps: in 30 Minutes",
+    "abstract": "Stateful workloads need careful storage class and anti-affinity design. We run Postgres with an operator, logical replication and PITR. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Yuki O'Connor"
+    ],
+    "speaker_ids": [
+      "s012"
+    ],
+    "track": "Operations",
+    "tags": [
+      "stateful",
+      "operators",
+      "databases"
+    ],
+    "format": "lightning",
+    "level": "intermediate",
+    "room": "Room 7",
+    "start": "2026-11-12T10:30:00-07:00",
+    "end": "2026-11-12T10:45:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t143",
+    "title": "XDP Load Balancing: Patterns and Pitfalls",
+    "abstract": "Packets get filtered before they ever reach the network stack, which cut our latency in half. Tracing traffic between services when the network plugin is someone else's code. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Liam Patel",
+      "Daniel Haddad"
+    ],
+    "speaker_ids": [
+      "s004",
+      "s040"
+    ],
+    "track": "Networking",
+    "tags": [
+      "Cilium",
+      "service-mesh",
+      "eBPF"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 8",
+    "start": "2026-11-12T10:30:00-07:00",
+    "end": "2026-11-12T11:05:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t144",
+    "title": "Backups You Have Actually Restored: at Scale",
+    "abstract": "We run Postgres with an operator, logical replication and PITR. Stateful workloads need careful storage class and anti-affinity design. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Leila Novak"
+    ],
+    "speaker_ids": [
+      "s048"
+    ],
+    "track": "Operations",
+    "tags": [
+      "stateful",
+      "databases",
+      "operators"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 1",
+    "start": "2026-11-12T11:30:00-07:00",
+    "end": "2026-11-12T12:05:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t145",
+    "title": "SBOMs That Actually Help: From Zero to Production",
+    "abstract": "A walkthrough of a poisoned third-party package and the checks that would have stopped it. How do you prove the code running in production is the code you reviewed? We trace every artifact back to its source. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Hana Patel"
+    ],
+    "speaker_ids": [
+      "s074"
+    ],
+    "track": "Security",
+    "tags": [
+      "security",
+      "SBOM",
+      "Sigstore"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 2",
+    "start": "2026-11-12T11:30:00-07:00",
+    "end": "2026-11-12T12:05:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t146",
+    "title": "GitOps at 500 Clusters: Patterns and Pitfalls",
+    "abstract": "Every change to production is a reviewed commit, and undoing a bad release is a revert away. Argo CD and Argo Rollouts drive canary releases across regions. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Kwame O'Connor"
+    ],
+    "speaker_ids": [
+      "s069"
+    ],
+    "track": "Platform Engineering",
+    "tags": [
+      "GitOps",
+      "delivery",
+      "Flux"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 3",
+    "start": "2026-11-12T11:30:00-07:00",
+    "end": "2026-11-12T12:05:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t147",
+    "title": "Kernel Tracing for Incident Response: Lessons from Production",
+    "abstract": "We watch what processes do deep inside the operating system and flag anything that looks like an attacker breaking out of a container. Kernel-level visibility let us spot privilege escalation in seconds, without installing heavyweight agents. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Arjun Martinez"
+    ],
+    "speaker_ids": [
+      "s049"
+    ],
+    "track": "Security",
+    "tags": [
+      "Falco",
+      "security",
+      "eBPF"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 4",
+    "start": "2026-11-12T11:30:00-07:00",
+    "end": "2026-11-12T12:05:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t148",
+    "title": "Spot Instances in Production: Patterns and Pitfalls",
+    "abstract": "Showback dashboards made each team own its spend. Karpenter and right-sizing recommendations cut compute cost 40%. Includes a live demo and open-source code.",
+    "speakers": [
+      "Grace Tanaka"
+    ],
+    "speaker_ids": [
+      "s071"
+    ],
+    "track": "Operations",
+    "tags": [
+      "autoscaling",
+      "FinOps",
+      "cost"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 5",
+    "start": "2026-11-12T11:30:00-07:00",
+    "end": "2026-11-12T12:05:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t149",
+    "title": "Network Policy That Scales: at Scale",
+    "abstract": "We replaced kube-proxy with an eBPF datapath. Cilium uses eBPF to enforce identity-aware network policy. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Daniel Haddad",
+      "Liam Patel"
+    ],
+    "speaker_ids": [
+      "s040",
+      "s004"
+    ],
+    "track": "Networking",
+    "tags": [
+      "service-mesh",
+      "eBPF",
+      "Cilium"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 6",
+    "start": "2026-11-12T11:30:00-07:00",
+    "end": "2026-11-12T12:05:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t150",
+    "title": "Tracing Every Request: in 30 Minutes",
+    "abstract": "OpenTelemetry collectors with tail sampling cut our bill by 60%. Distributed tracing found the slow dependency in minutes. Includes a live demo and open-source code.",
+    "speakers": [
+      "Grace Moreau"
+    ],
+    "speaker_ids": [
+      "s022"
+    ],
+    "track": "Observability",
+    "tags": [
+      "observability",
+      "OpenTelemetry",
+      "tracing"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 7",
+    "start": "2026-11-12T11:30:00-07:00",
+    "end": "2026-11-12T12:05:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t151",
+    "title": "Killing Long-Lived Credentials: What We Got Wrong",
+    "abstract": "Every service proves who it is on every request, and nobody holds a password that lasts longer than an hour. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Fatima O'Connor"
+    ],
+    "speaker_ids": [
+      "s015"
+    ],
+    "track": "Security",
+    "tags": [
+      "security",
+      "SPIFFE",
+      "zero-trust"
+    ],
+    "format": "lightning",
+    "level": "advanced",
+    "room": "Room 8",
+    "start": "2026-11-12T11:30:00-07:00",
+    "end": "2026-11-12T11:45:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t152",
+    "title": "Backups You Have Actually Restored: in 30 Minutes",
+    "abstract": "Keeping a database alive inside a system that loves to restart things. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Leila Novak"
+    ],
+    "speaker_ids": [
+      "s048"
+    ],
+    "track": "Operations",
+    "tags": [
+      "databases",
+      "stateful",
+      "operators"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 1",
+    "start": "2026-11-12T13:30:00-07:00",
+    "end": "2026-11-12T14:05:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t153",
+    "title": "XDP Load Balancing: From Zero to Production",
+    "abstract": "Packets get filtered before they ever reach the network stack, which cut our latency in half. Tracing traffic between services when the network plugin is someone else's code. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Diego Khan",
+      "Zara Rahman"
+    ],
+    "speaker_ids": [
+      "s052",
+      "s064"
+    ],
+    "track": "Networking",
+    "tags": [
+      "service-mesh",
+      "eBPF",
+      "networking"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 2",
+    "start": "2026-11-12T13:30:00-07:00",
+    "end": "2026-11-12T14:05:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t154",
+    "title": "Syscall-Level Defense: in 30 Minutes",
+    "abstract": "Learn how to notice a compromised workload by its behavior rather than its signature. Kernel-level visibility let us spot privilege escalation in seconds, without installing heavyweight agents. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Mateo Mensah"
+    ],
+    "speaker_ids": [
+      "s037"
+    ],
+    "track": "Security",
+    "tags": [
+      "security",
+      "Falco",
+      "runtime"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 3",
+    "start": "2026-11-12T13:30:00-07:00",
+    "end": "2026-11-12T14:05:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t155",
+    "title": "Serving LLMs on Kubernetes: Patterns and Pitfalls",
+    "abstract": "We serve LLM inference with vLLM and KServe on shared GPU pools. Running large models for thousands of users without a separate accelerator for every team. Includes a live demo and open-source code.",
+    "speakers": [
+      "Neha Abebe",
+      "Priya Iyer"
+    ],
+    "speaker_ids": [
+      "s053",
+      "s077"
+    ],
+    "track": "AI Inference + Agentic",
+    "tags": [
+      "GPU",
+      "LLM",
+      "inference"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 4",
+    "start": "2026-11-12T13:30:00-07:00",
+    "end": "2026-11-12T14:05:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t156",
+    "title": "Grounding Chatbots in Your Docs: A Live Demo",
+    "abstract": "We run a vector database as a stateful workload with operators. Hybrid BM25 and vector retrieval with a reranker improved RAG answers. No prior experience required.",
+    "speakers": [
+      "Lena Dubois"
+    ],
+    "speaker_ids": [
+      "s079"
+    ],
+    "track": "AI Inference + Agentic",
+    "tags": [
+      "vector-search",
+      "LLM",
+      "AI"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 5",
+    "start": "2026-11-12T13:30:00-07:00",
+    "end": "2026-11-12T14:05:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t157",
+    "title": "Agents That Operate Clusters: in 30 Minutes",
+    "abstract": "Letting software make operational decisions on its own, safely, and knowing exactly why it did what it did. We trace every agent step so we can audit what it changed. No prior experience required.",
+    "speakers": [
+      "Sofia Kobayashi"
+    ],
+    "speaker_ids": [
+      "s078"
+    ],
+    "track": "AI Inference + Agentic",
+    "tags": [
+      "agents",
+      "MCP",
+      "AI"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 6",
+    "start": "2026-11-12T13:30:00-07:00",
+    "end": "2026-11-12T14:05:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t158",
+    "title": "GitOps at 500 Clusters: From Zero to Production",
+    "abstract": "Every change to production is a reviewed commit, and undoing a bad release is a revert away. No prior experience required.",
+    "speakers": [
+      "Grace Rossi",
+      "Kenji Noor"
+    ],
+    "speaker_ids": [
+      "s045",
+      "s033"
+    ],
+    "track": "Platform Engineering",
+    "tags": [
+      "GitOps",
+      "delivery",
+      "Argo CD"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 7",
+    "start": "2026-11-12T13:30:00-07:00",
+    "end": "2026-11-12T14:05:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t159",
+    "title": "Self-Service Environments: in 30 Minutes",
+    "abstract": "Golden path templates cut new service setup to ten minutes. Treating internal engineers as customers changed how we built everything. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Lucas Silva"
+    ],
+    "speaker_ids": [
+      "s008"
+    ],
+    "track": "Platform Engineering",
+    "tags": [
+      "Backstage",
+      "platform",
+      "developer-experience"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 8",
+    "start": "2026-11-12T13:30:00-07:00",
+    "end": "2026-11-12T14:05:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t160",
+    "title": "Debugging Dropped Packets: A Field Guide",
+    "abstract": "Packets get filtered before they ever reach the network stack, which cut our latency in half. Tracing traffic between services when the network plugin is someone else's code. No prior experience required.",
+    "speakers": [
+      "Noah Iyer",
+      "Zara Rahman"
+    ],
+    "speaker_ids": [
+      "s076",
+      "s064"
+    ],
+    "track": "Networking",
+    "tags": [
+      "service-mesh",
+      "networking",
+      "eBPF"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 1",
+    "start": "2026-11-12T14:30:00-07:00",
+    "end": "2026-11-12T15:05:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t161",
+    "title": "Logs You Can Afford: at Scale",
+    "abstract": "We stopped storing everything and started keeping only the signals that help during an outage. OpenTelemetry collectors with tail sampling cut our bill by 60%. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Ananya Raman",
+      "Ananya Haddad"
+    ],
+    "speaker_ids": [
+      "s034",
+      "s058"
+    ],
+    "track": "Observability",
+    "tags": [
+      "tracing",
+      "OpenTelemetry",
+      "observability"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 2",
+    "start": "2026-11-12T14:30:00-07:00",
+    "end": "2026-11-12T15:05:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t162",
+    "title": "Rollbacks Nobody Notices: Beyond the Hype",
+    "abstract": "Argo CD and Argo Rollouts drive canary releases across regions. Every change to production is a reviewed commit, and undoing a bad release is a revert away. Includes a live demo and open-source code.",
+    "speakers": [
+      "Neha O'Connor",
+      "Daniel Novak"
+    ],
+    "speaker_ids": [
+      "s009",
+      "s021"
+    ],
+    "track": "Platform Engineering",
+    "tags": [
+      "Argo CD",
+      "Flux",
+      "delivery"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 3",
+    "start": "2026-11-12T14:30:00-07:00",
+    "end": "2026-11-12T15:05:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t163",
+    "title": "GPU Scheduling That Doesn't Waste Money: Beyond the Hype",
+    "abstract": "GPU partitioning and request batching tripled throughput. We serve LLM inference with vLLM and KServe on shared GPU pools. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Neha Abebe"
+    ],
+    "speaker_ids": [
+      "s053"
+    ],
+    "track": "AI Inference + Agentic",
+    "tags": [
+      "GPU",
+      "inference",
+      "LLM"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 4",
+    "start": "2026-11-12T14:30:00-07:00",
+    "end": "2026-11-12T15:05:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t164",
+    "title": "Guardrails for Autonomous Ops: Lessons from Production",
+    "abstract": "Letting software make operational decisions on its own, safely, and knowing exactly why it did what it did. An assistant that reads alerts, gathers evidence and proposes a fix before the on-call engineer wakes up. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Lena Alvarez"
+    ],
+    "speaker_ids": [
+      "s042"
+    ],
+    "track": "AI Inference + Agentic",
+    "tags": [
+      "LLM",
+      "agents",
+      "AI"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 5",
+    "start": "2026-11-12T14:30:00-07:00",
+    "end": "2026-11-12T15:05:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t165",
+    "title": "Zero Trust Between Services: A Live Demo",
+    "abstract": "Every service proves who it is on every request, and nobody holds a password that lasts longer than an hour. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Kenji Rossi",
+      "Omar Sato"
+    ],
+    "speaker_ids": [
+      "s039",
+      "s075"
+    ],
+    "track": "Security",
+    "tags": [
+      "identity",
+      "zero-trust",
+      "security"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 6",
+    "start": "2026-11-12T14:30:00-07:00",
+    "end": "2026-11-12T15:05:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t166",
+    "title": "Postgres on Kubernetes, Honestly: at Scale",
+    "abstract": "We run Postgres with an operator, logical replication and PITR. Stateful workloads need careful storage class and anti-affinity design. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Leila Nilsson",
+      "Grace Iyer"
+    ],
+    "speaker_ids": [
+      "s072",
+      "s024"
+    ],
+    "track": "Operations",
+    "tags": [
+      "databases",
+      "stateful",
+      "operators"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 7",
+    "start": "2026-11-12T14:30:00-07:00",
+    "end": "2026-11-12T15:05:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t167",
+    "title": "Catching Container Escapes: A Field Guide",
+    "abstract": "Falco rules flag shells spawned inside production pods. eBPF-based sensors watch every syscall with negligible overhead. No prior experience required.",
+    "speakers": [
+      "Mateo Mensah"
+    ],
+    "speaker_ids": [
+      "s037"
+    ],
+    "track": "Security",
+    "tags": [
+      "eBPF",
+      "Falco",
+      "runtime"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 8",
+    "start": "2026-11-12T14:30:00-07:00",
+    "end": "2026-11-12T15:05:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t168",
+    "title": "GitOps at 500 Clusters: in 30 Minutes",
+    "abstract": "Flux reconciles every cluster from a single repository. Argo CD and Argo Rollouts drive canary releases across regions. Includes a live demo and open-source code.",
+    "speakers": [
+      "Lena Abebe"
+    ],
+    "speaker_ids": [
+      "s057"
+    ],
+    "track": "Platform Engineering",
+    "tags": [
+      "Argo CD",
+      "delivery",
+      "Flux"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 1",
+    "start": "2026-11-12T15:45:00-07:00",
+    "end": "2026-11-12T16:20:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t169",
+    "title": "SBOMs That Actually Help: A Field Guide",
+    "abstract": "SLSA provenance blocks unverified builds from reaching production. How do you prove the code running in production is the code you reviewed? We trace every artifact back to its source. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Sofia Okafor",
+      "Oscar Larsen",
+      "Leila Liu"
+    ],
+    "speaker_ids": [
+      "s014",
+      "s038",
+      "s026"
+    ],
+    "track": "Security",
+    "tags": [
+      "SBOM",
+      "supply-chain",
+      "Sigstore"
+    ],
+    "format": "panel",
+    "level": "advanced",
+    "room": "Room 2",
+    "start": "2026-11-12T15:45:00-07:00",
+    "end": "2026-11-12T16:20:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t170",
+    "title": "Tracing Every Request: the Hard Way",
+    "abstract": "Distributed tracing found the slow dependency in minutes. Figuring out why one request in a thousand is slow. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Grace Moreau"
+    ],
+    "speaker_ids": [
+      "s022"
+    ],
+    "track": "Observability",
+    "tags": [
+      "observability",
+      "tracing",
+      "logging"
+    ],
+    "format": "workshop",
+    "level": "intermediate",
+    "room": "Room 3",
+    "start": "2026-11-12T15:45:00-07:00",
+    "end": "2026-11-12T17:10:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t171",
+    "title": "Guardrails for Autonomous Ops: Beyond the Hype",
+    "abstract": "We trace every agent step so we can audit what it changed. An assistant that reads alerts, gathers evidence and proposes a fix before the on-call engineer wakes up. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Lucas Martinez",
+      "Lena Alvarez"
+    ],
+    "speaker_ids": [
+      "s018",
+      "s042"
+    ],
+    "track": "AI Inference + Agentic",
+    "tags": [
+      "LLM",
+      "MCP",
+      "AI"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 4",
+    "start": "2026-11-12T15:45:00-07:00",
+    "end": "2026-11-12T16:20:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t172",
+    "title": "Vector Search on Kubernetes: at Scale",
+    "abstract": "Making an internal assistant answer only from trusted documents and cite where every answer came from. We run a vector database as a stateful workload with operators. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Priya Mensah"
+    ],
+    "speaker_ids": [
+      "s007"
+    ],
+    "track": "AI Inference + Agentic",
+    "tags": [
+      "RAG",
+      "LLM",
+      "vector-search"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 5",
+    "start": "2026-11-12T15:45:00-07:00",
+    "end": "2026-11-12T16:20:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t173",
+    "title": "Runtime Threat Detection: at Scale",
+    "abstract": "Kernel-level visibility let us spot privilege escalation in seconds, without installing heavyweight agents. Learn how to notice a compromised workload by its behavior rather than its signature. Includes a live demo and open-source code.",
+    "speakers": [
+      "Mateo Mensah",
+      "Maya Rossi"
+    ],
+    "speaker_ids": [
+      "s037",
+      "s013"
+    ],
+    "track": "Security",
+    "tags": [
+      "Falco",
+      "security",
+      "eBPF"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 6",
+    "start": "2026-11-12T15:45:00-07:00",
+    "end": "2026-11-12T16:20:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t174",
+    "title": "Workload Identity in Practice: in 30 Minutes",
+    "abstract": "Every service proves who it is on every request, and nobody holds a password that lasts longer than an hour. SPIFFE identities replace static secrets for service-to-service auth. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Omar Sato",
+      "Yuki Sato"
+    ],
+    "speaker_ids": [
+      "s075",
+      "s063"
+    ],
+    "track": "Security",
+    "tags": [
+      "zero-trust",
+      "security",
+      "identity"
+    ],
+    "format": "workshop",
+    "level": "advanced",
+    "room": "Room 7",
+    "start": "2026-11-12T15:45:00-07:00",
+    "end": "2026-11-12T17:10:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t175",
+    "title": "Sidecar-Free Service Mesh: Beyond the Hype",
+    "abstract": "Cilium uses eBPF to enforce identity-aware network policy. Tracing traffic between services when the network plugin is someone else's code. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Zara Rahman",
+      "Noah Iyer"
+    ],
+    "speaker_ids": [
+      "s064",
+      "s076"
+    ],
+    "track": "Networking",
+    "tags": [
+      "Cilium",
+      "service-mesh",
+      "eBPF"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 8",
+    "start": "2026-11-12T15:45:00-07:00",
+    "end": "2026-11-12T16:20:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t176",
+    "title": "GitOps at 500 Clusters: A Live Demo",
+    "abstract": "Every change to production is a reviewed commit, and undoing a bad release is a revert away. Attendees leave with a working reference architecture.",
+    "speakers": [
+      "Grace Rossi"
+    ],
+    "speaker_ids": [
+      "s045"
+    ],
+    "track": "Platform Engineering",
+    "tags": [
+      "GitOps",
+      "Flux",
+      "delivery"
+    ],
+    "format": "workshop",
+    "level": "intermediate",
+    "room": "Room 1",
+    "start": "2026-11-12T16:45:00-07:00",
+    "end": "2026-11-12T18:10:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t177",
+    "title": "Operators for Stateful Apps: the Hard Way",
+    "abstract": "We run Postgres with an operator, logical replication and PITR. Keeping a database alive inside a system that loves to restart things. No prior experience required.",
+    "speakers": [
+      "Liam Haddad"
+    ],
+    "speaker_ids": [
+      "s060"
+    ],
+    "track": "Operations",
+    "tags": [
+      "stateful",
+      "operators",
+      "databases"
+    ],
+    "format": "talk",
+    "level": "beginner",
+    "room": "Room 2",
+    "start": "2026-11-12T16:45:00-07:00",
+    "end": "2026-11-12T17:20:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t178",
+    "title": "Cutting the Cloud Bill: A Field Guide",
+    "abstract": "Showback dashboards made each team own its spend. Paying only for what we actually use, and showing every team what their services cost. Includes a live demo and open-source code.",
+    "speakers": [
+      "Kwame Joshi"
+    ],
+    "speaker_ids": [
+      "s035"
+    ],
+    "track": "Operations",
+    "tags": [
+      "cost",
+      "FinOps",
+      "autoscaling"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 3",
+    "start": "2026-11-12T16:45:00-07:00",
+    "end": "2026-11-12T17:20:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t179",
+    "title": "Network Policy That Scales: What We Got Wrong",
+    "abstract": "Tracing traffic between services when the network plugin is someone else's code. We replaced kube-proxy with an eBPF datapath. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Zara Rahman",
+      "Daniel Haddad"
+    ],
+    "speaker_ids": [
+      "s064",
+      "s040"
+    ],
+    "track": "Networking",
+    "tags": [
+      "service-mesh",
+      "eBPF",
+      "Cilium"
+    ],
+    "format": "lightning",
+    "level": "advanced",
+    "room": "Room 4",
+    "start": "2026-11-12T16:45:00-07:00",
+    "end": "2026-11-12T17:00:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t180",
+    "title": "Golden Paths That People Use: Beyond the Hype",
+    "abstract": "Developers get a working environment in minutes without filing a ticket. Golden path templates cut new service setup to ten minutes. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Mateo Noor"
+    ],
+    "speaker_ids": [
+      "s080"
+    ],
+    "track": "Platform Engineering",
+    "tags": [
+      "IDP",
+      "developer-experience",
+      "Backstage"
+    ],
+    "format": "talk",
+    "level": "intermediate",
+    "room": "Room 5",
+    "start": "2026-11-12T16:45:00-07:00",
+    "end": "2026-11-12T17:20:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t181",
+    "title": "Killing Long-Lived Credentials: A Live Demo",
+    "abstract": "Every service proves who it is on every request, and nobody holds a password that lasts longer than an hour. SPIFFE identities replace static secrets for service-to-service auth. We share benchmarks, failures and the fixes that stuck.",
+    "speakers": [
+      "Ethan Carter",
+      "Kenji Rossi",
+      "Omar Sato"
+    ],
+    "speaker_ids": [
+      "s051",
+      "s039",
+      "s075"
+    ],
+    "track": "Security",
+    "tags": [
+      "security",
+      "identity",
+      "zero-trust"
+    ],
+    "format": "panel",
+    "level": "advanced",
+    "room": "Room 6",
+    "start": "2026-11-12T16:45:00-07:00",
+    "end": "2026-11-12T17:20:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t182",
+    "title": "Alerts That Mean Something: A Field Guide",
+    "abstract": "Figuring out why one request in a thousand is slow. We stopped storing everything and started keeping only the signals that help during an outage. Expect real numbers from a large production environment.",
+    "speakers": [
+      "Ananya Raman"
+    ],
+    "speaker_ids": [
+      "s034"
+    ],
+    "track": "Observability",
+    "tags": [
+      "observability",
+      "tracing",
+      "OpenTelemetry"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 7",
+    "start": "2026-11-12T16:45:00-07:00",
+    "end": "2026-11-12T17:20:00-07:00",
+    "day": "2026-11-12"
+  },
+  {
+    "id": "t183",
+    "title": "AI-Assisted Incident Response: in 30 Minutes",
+    "abstract": "We trace every agent step so we can audit what it changed. An assistant that reads alerts, gathers evidence and proposes a fix before the on-call engineer wakes up. Includes a live demo and open-source code.",
+    "speakers": [
+      "Daniel Farah",
+      "Lucas Martinez"
+    ],
+    "speaker_ids": [
+      "s066",
+      "s018"
+    ],
+    "track": "AI Inference + Agentic",
+    "tags": [
+      "agents",
+      "LLM",
+      "MCP"
+    ],
+    "format": "talk",
+    "level": "advanced",
+    "room": "Room 8",
+    "start": "2026-11-12T16:45:00-07:00",
+    "end": "2026-11-12T17:20:00-07:00",
+    "day": "2026-11-12"
+  }
+]
