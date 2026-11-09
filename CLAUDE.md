@@ -22,7 +22,7 @@ One profile per attendee in the `attendees` index — the single source of perso
 |---|---|---|
 | `id` | keyword | all |
 | `name`, `role`, `company` | keyword | display, filters |
-| `experience_level` (`beginner` / `intermediate` / `expert`) | keyword | agenda builder, assistant |
+| `experience_level` (`beginner` / `intermediate` / `advanced`) | keyword | agenda builder, assistant |
 | `working_on` | semantic_text | matchmaker, who-to-meet |
 | `interests` (1–2 sentences) | semantic_text | search boosting, agenda builder, who-to-meet |
 | `goals` (list, e.g. `hiring`, `learn kubernetes`, `find contributors`) | keyword | assistant context, matchmaker |

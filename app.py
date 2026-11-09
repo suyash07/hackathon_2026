@@ -27,6 +27,7 @@ from overview import (  # noqa: E402
     up_next,
 )
 from profiles import DEMO_USER_ID, get_profile, list_profiles  # noqa: E402
+from resume_profile import GOALS, LEVELS, draft_profile, save_profile  # noqa: E402
 from search import recommend_talks, search_talks  # noqa: E402
 from voice import (  # noqa: E402
     SPOKEN,
@@ -122,7 +123,8 @@ def sidebar_profile() -> dict | None:
     choices = profile_choices()
     labels = [NO_PROFILE] + [f"{p['name']} — {p['role']}" for p in choices]
     ids = [None] + [p["id"] for p in choices]
-    default = ids.index(DEMO_USER_ID) if DEMO_USER_ID in ids else 0
+    wanted = st.session_state.get("profile_id", DEMO_USER_ID)
+    default = ids.index(wanted) if wanted in ids else 0
     picked = st.sidebar.selectbox(
         "Profile", range(len(labels)), index=default, format_func=lambda i: labels[i]
     )
@@ -134,6 +136,52 @@ def sidebar_profile() -> dict | None:
     st.sidebar.markdown(f"**Interests:** {profile['interests']}")
     st.sidebar.caption(f"Attending: {', '.join(profile['available_days'])}")
     return profile
+
+
+def profile_form(draft: dict) -> None:
+    """Review the drafted fields, then save them as a new attendee."""
+    with st.form("profile_form"):
+        fields = {
+            "name": st.text_input("Name", draft["name"]),
+            "role": st.text_input("Role", draft["role"]),
+            "company": st.text_input("Company", draft["company"]),
+            "experience_level": st.selectbox(
+                "Experience", LEVELS, index=LEVELS.index(draft["experience_level"])
+            ),
+            "working_on": st.text_area("Working on", draft["working_on"]),
+            "interests": st.text_area("Interests", draft["interests"]),
+            "goals": st.multiselect("Goals", GOALS, default=draft["goals"]),
+        }
+        if not st.form_submit_button("Save profile"):
+            return
+    if not fields["working_on"].strip() or not fields["interests"].strip():
+        st.error("'Working on' and 'Interests' can't be empty.")
+        return
+    try:
+        with st.spinner("Saving..."):
+            st.session_state["profile_id"] = save_profile(es_client(), fields)
+    except RuntimeError as err:
+        st.error(str(err))
+        return
+    st.session_state.pop("draft", None)
+    profile_choices.clear()
+    st.rerun()
+
+
+def resume_builder() -> None:
+    """Sidebar: draft a profile from a resume PDF, review it, save it."""
+    with st.sidebar.expander("📄 Build my profile from a resume"):
+        st.caption("Only the profile fields are saved, never your resume.")
+        resume = st.file_uploader("Resume (PDF)", type=["pdf"])
+        if resume is not None and st.button("Read resume"):
+            try:
+                with st.spinner("Reading your resume..."):
+                    st.session_state["draft"] = draft_profile(es_client(), resume.getvalue())
+            except (ValueError, RuntimeError) as err:
+                st.error(str(err))
+        draft = st.session_state.get("draft")
+        if draft:
+            profile_form(draft)
 
 
 def talk_search_tab(profile: dict | None) -> None:
@@ -311,6 +359,7 @@ def main() -> None:
     except Exception as err:  # connection problems should show, not crash
         st.error(f"Can't reach Elasticsearch: {err}")
         st.stop()
+    resume_builder()
 
     overview, search_tab, match_tab, assistant = st.tabs(
         ["Overview", "Talk Search", "Hallway Matchmaker", "Assistant"]
