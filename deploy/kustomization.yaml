@@ -11,4 +11,4 @@ resources:
 images:
   - name: app
     newName: ghcr.io/suyash07/hackathon_2026
-    newTag: 5df15c5
+    newTag: 3cb2203
