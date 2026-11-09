@@ -1,0 +1,113 @@
+"""Streamlit UI. Displays results only; all logic lives in src/.
+
+Run from the project root:  streamlit run app.py
+"""
+
+from __future__ import annotations
+
+import sys
+from datetime import datetime
+from pathlib import Path
+
+import streamlit as st
+
+sys.path.insert(0, str(Path(__file__).resolve().parent / "src"))
+
+from es_client import get_client  # noqa: E402
+from profiles import DEMO_USER_ID, get_profile, list_profiles  # noqa: E402
+from search import recommend_talks, search_talks  # noqa: E402
+
+NO_PROFILE = "(no profile)"
+
+st.set_page_config(page_title="Conference Search", page_icon="🔎", layout="wide")
+
+
+@st.cache_resource
+def es_client():
+    """One Elasticsearch client for the whole app session."""
+    return get_client()
+
+
+@st.cache_data(ttl=300)
+def profile_choices() -> list[dict]:
+    return list_profiles(es_client())
+
+
+def clock(t: datetime) -> str:
+    """'2:30' instead of '02:30'."""
+    return t.strftime("%I:%M").lstrip("0")
+
+
+def format_time(start: str, end: str) -> str:
+    """'Tue Nov 10 · 2:30–3:05 PM' from ISO timestamps."""
+    s, e = datetime.fromisoformat(start), datetime.fromisoformat(end)
+    return f"{s:%a %b} {s.day} · {clock(s)}–{clock(e)} {e:%p}"
+
+
+def talk_card(talk: dict, bookmarked: set[str]) -> None:
+    """Render one talk."""
+    with st.container(border=True):
+        star = "★ " if talk["id"] in bookmarked else ""
+        st.markdown(f"**{star}{talk['title']}**")
+        st.caption(
+            f"{format_time(talk['start'], talk['end'])} · {talk['room']} · "
+            f"{talk['track']} · {talk['format']}"
+        )
+        st.write(", ".join(talk["speakers"]))
+        st.caption(" ".join(f"`{tag}`" for tag in talk.get("tags", [])))
+
+
+def sidebar_profile() -> dict | None:
+    """Profile picker. Returns the selected profile, or None."""
+    st.sidebar.header("Who are you?")
+    choices = profile_choices()
+    labels = [NO_PROFILE] + [f"{p['name']} — {p['role']}" for p in choices]
+    ids = [None] + [p["id"] for p in choices]
+    default = ids.index(DEMO_USER_ID) if DEMO_USER_ID in ids else 0
+    picked = st.sidebar.selectbox(
+        "Profile", range(len(labels)), index=default, format_func=lambda i: labels[i]
+    )
+    if ids[picked] is None:
+        return None
+
+    profile = get_profile(es_client(), ids[picked])
+    st.sidebar.markdown(f"**Working on:** {profile['working_on']}")
+    st.sidebar.markdown(f"**Interests:** {profile['interests']}")
+    st.sidebar.caption(f"Attending: {', '.join(profile['available_days'])}")
+    return profile
+
+
+def talk_search_tab(profile: dict | None) -> None:
+    query = st.text_input("Search")
+    bookmarked = set(profile["bookmarked_talks"]) if profile else set()
+
+    results = search_talks(es_client(), query) if query else []
+    if query:
+        st.subheader(f"Results for “{query}”")
+        if not results:
+            st.info("No matching talks.")
+        for talk in results:
+            talk_card(talk, bookmarked)
+
+    if profile:
+        st.subheader("Based on your profile, you might like")
+        shown = [t["id"] for t in results]
+        for talk in recommend_talks(es_client(), profile, exclude_ids=shown):
+            talk_card(talk, bookmarked)
+
+
+def main() -> None:
+    st.title("🔎 Conference Search")
+    st.caption("Conference companion · all data synthetic")
+    try:
+        profile = sidebar_profile()
+    except Exception as err:  # connection problems should show, not crash
+        st.error(f"Can't reach Elasticsearch: {err}")
+        st.stop()
+
+    (search_tab,) = st.tabs(["Talk Search"])
+    with search_tab:
+        talk_search_tab(profile)
+
+
+main()
