@@ -11,7 +11,7 @@ from __future__ import annotations
 
 import sys
 
-from elasticsearch import ApiError, Elasticsearch
+from elasticsearch import ApiError, Elasticsearch, TransportError
 
 import config
 from es_client import get_client
@@ -20,7 +20,7 @@ from search import TALK_FIELDS, search_talks
 
 RAG_TOP_K = 6
 RAG_FIELDS = [*TALK_FIELDS, "abstract"]
-LLM_TIMEOUT = "60s"
+LLM_TIMEOUT_SECONDS = 60
 
 INSTRUCTIONS = """You are a helpful conference assistant.
 Answer the attendee's question using ONLY the talks listed below.
@@ -58,12 +58,12 @@ def ask(es: Elasticsearch, question: str, profile: dict | None = None) -> tuple[
     if not talks:
         return "I couldn't find any talks related to that.", []
     try:
-        res = es.inference.completion(
+        res = es.options(request_timeout=LLM_TIMEOUT_SECONDS).inference.completion(
             inference_id=config.LLM_INFERENCE_ID,
             input=build_prompt(question, talks, profile),
-            timeout=LLM_TIMEOUT,
+            timeout=f"{LLM_TIMEOUT_SECONDS}s",
         )
-    except ApiError as err:
+    except (ApiError, TransportError) as err:
         raise RuntimeError(
             f"LLM call failed ({config.LLM_INFERENCE_ID}). Is this endpoint available on your "
             f"Elasticsearch deployment? Details: {err}"
