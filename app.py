@@ -192,7 +192,7 @@ def voice_question() -> str:
 def assistant_tab(profile: dict | None) -> None:
     typed = st.text_input("Ask a question")
     spoken = voice_question()
-    question = typed or spoken
+    question = spoken or typed
     if not question:
         return
     try:
