@@ -33,9 +33,9 @@ One profile per attendee in the `attendees` index — the single source of perso
 - The RAG assistant receives the profile as context so "what should I attend?" is personalized.
 
 ## Data rules
-- **Talks/speakers:** real KubeCon + CloudNativeCon NA 2026 public schedule (Salt Lake City, Nov 9–12) if permission is confirmed; record the source in README → Data. If unavailable, generate synthetic talks in the same schema.
+- **Talks/speakers:** synthetic, KubeCon-style (~150–300 talks over Nov 9–12, Salt Lake City). Use realistic cloud-native tracks: AI Inference + Agentic, Platform Engineering, Security, Observability, Networking (eBPF/Cilium), plus co-located-event style sessions (CiliumCon, ArgoCon, BackstageCon). Fictional speakers and companies. Do not scrape the real schedule.
 - **Talk schema:** `id, title, abstract, speakers (list), track, level, room, start, end, day`. Times in ISO 8601 with timezone `America/Denver`.
-- **Attendees, side events:** always **synthetic** (fictional names/companies) — public repo, no real personal data.
+- **Attendees, side events:** also synthetic (fictional names/companies) — public repo, no real personal data. README → Data states that all data is synthetic.
 - Generate with a script `src/generate_data.py` using a fixed random seed so data is reproducible; write to `data/*.json`. Never hand-edit generated files.
 - Make synthetic data realistic enough to demo every feature:
   - ~100–150 attendees spanning roles (SRE, platform, security, ML, data, student, PM) and all experience levels.
@@ -134,6 +134,16 @@ tests/                   pytest tests
 - `pytest` for query builders and pure helpers (no network).
 - Before saying a feature is done: run it end to end against local Elasticsearch and show the output.
 - Keep `python src/check_setup.py` passing.
+
+## Commit checklist (run every time the user says "commit" or "commit and push")
+1. `git status` — review what changed; nothing unexpected staged.
+2. **Secret scan:** `git diff --cached` must not contain `sk-ant`, passwords, API keys, or `.env`; `.env`, `hackathon/`, `__pycache__/` must not be staged. Stop and warn if found.
+3. `ruff format . && ruff check .` — fix issues before committing.
+4. `pytest -q` (if tests exist) — must pass.
+5. Feature actually runs end to end (or say clearly what's untested).
+6. README updated if a feature, setup step, or data source changed.
+7. Commit with a Conventional Commit message (`feat:`, `fix:`, `docs:`…) describing *why*, not just what.
+8. Push to `origin main`; report the commit hash and a one-line summary.
 
 ## Git workflow
 - Small commits after each working step, Conventional Commits: `feat:`, `fix:`, `docs:`, `refactor:`, `test:`, `chore:`.
