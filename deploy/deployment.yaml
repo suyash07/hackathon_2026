@@ -16,6 +16,13 @@ spec:
       labels:
         app: app
     spec:
+      # The app never calls the Kubernetes API, so it doesn't need a token.
+      automountServiceAccountToken: false
+      volumes:
+        # HOME=/tmp (Dockerfile): Streamlit's only writable path on a read-only root.
+        - name: tmp
+          emptyDir:
+            sizeLimit: 64Mi
       containers:
         - name: app
           image: app
@@ -63,8 +70,12 @@ spec:
               port: http
             initialDelaySeconds: 20
             periodSeconds: 10
+          volumeMounts:
+            - name: tmp
+              mountPath: /tmp
           securityContext:
             runAsNonRoot: true
+            readOnlyRootFilesystem: true
             allowPrivilegeEscalation: false
             seccompProfile:
               type: RuntimeDefault
