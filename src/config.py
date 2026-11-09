@@ -22,6 +22,7 @@ LLM_INFERENCE_ID = os.getenv("LLM_INFERENCE_ID", "openai-completion")
 CONFERENCE_NAME = "Cloud Native Conference 2026"
 CONFERENCE_PLACE = "Salt Lake City, Utah"
 CONFERENCE_DATES = "Nov 9–12, 2026"
+CONFERENCE_DAYS = ["2026-11-09", "2026-11-10", "2026-11-11", "2026-11-12"]
 VENUE_TZ = timezone(timedelta(hours=-7))  # Salt Lake City in November (MST)
 
 # Optional fixed "now" for demos, e.g. 2026-11-10T11:40:00-07:00. Empty = real clock.
