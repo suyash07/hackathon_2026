@@ -36,6 +36,12 @@ def profile_choices() -> list[dict]:
     return list_profiles(es_client())
 
 
+@st.cache_data(ttl=300)
+def cached_who_to_meet(talk_id: str, exclude_ids: tuple[str, ...]) -> list[dict]:
+    """Cached people-to-meet lookup for one talk."""
+    return who_to_meet(es_client(), talk_id, exclude_ids=list(exclude_ids) or None)
+
+
 def clock(t: datetime) -> str:
     """'2:30' instead of '02:30'."""
     return t.strftime("%I:%M").lstrip("0")
@@ -96,10 +102,10 @@ def talk_search_tab(profile: dict | None) -> None:
     query = st.text_input("Search")
     show_people = st.checkbox("Show who to meet at each talk")
     bookmarked = set(profile["bookmarked_talks"]) if profile else set()
-    me = [profile["id"]] if profile else None
+    me = (profile["id"],) if profile else ()
 
     def people_for(talk: dict) -> list[dict] | None:
-        return who_to_meet(es_client(), talk["id"], exclude_ids=me) if show_people else None
+        return cached_who_to_meet(talk["id"], me) if show_people else None
 
     results = search_talks(es_client(), query) if query else []
     if query:
