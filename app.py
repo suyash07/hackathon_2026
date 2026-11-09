@@ -52,6 +52,12 @@ def cached_who_to_meet(talk_id: str, exclude_ids: tuple[str, ...]) -> list[dict]
     return who_to_meet(es_client(), talk_id, exclude_ids=list(exclude_ids) or None)
 
 
+@st.cache_data(ttl=60)
+def cached_key_numbers() -> dict:
+    """Cached metric tiles."""
+    return key_numbers(es_client())
+
+
 def clock(t: datetime) -> str:
     """'2:30' instead of '02:30'."""
     return t.strftime("%I:%M").lstrip("0")
@@ -188,7 +194,7 @@ def overview_tab() -> None:
     if config.DEMO_NOW:
         st.caption(f"Demo time: {now:%a %b} {now.day} · {clock(now)} {now:%p}")
 
-    numbers = key_numbers(es)
+    numbers = cached_key_numbers()
     for col, (label, key) in zip(
         st.columns(4),
         [

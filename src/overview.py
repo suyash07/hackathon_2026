@@ -17,7 +17,10 @@ MAX_BUCKETS = 50
 def current_time() -> datetime:
     """'Now' in venue time: DEMO_NOW if set, otherwise the real clock."""
     if config.DEMO_NOW:
-        return datetime.fromisoformat(config.DEMO_NOW).astimezone(config.VENUE_TZ)
+        pinned = datetime.fromisoformat(config.DEMO_NOW)
+        if pinned.tzinfo is None:
+            pinned = pinned.replace(tzinfo=config.VENUE_TZ)
+        return pinned.astimezone(config.VENUE_TZ)
     return datetime.now(config.VENUE_TZ)
 
 
