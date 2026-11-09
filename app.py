@@ -176,7 +176,11 @@ def voice_question() -> str:
     if not voice_enabled():
         st.caption("🎤 Voice questions are off: add OPENAI_API_KEY to .env to enable them.")
         return ""
-    recording = st.audio_input("Or ask by voice")
+    recording = st.audio_input(
+        "Or ask by voice",
+        key="voice_q",
+        on_change=lambda: st.session_state.update(last_input="voice"),
+    )
     if recording is None:
         return ""
     try:
@@ -190,9 +194,14 @@ def voice_question() -> str:
 
 
 def assistant_tab(profile: dict | None) -> None:
-    typed = st.text_input("Ask a question")
+    typed = st.text_input(
+        "Ask a question",
+        key="typed_q",
+        on_change=lambda: st.session_state.update(last_input="typed"),
+    )
     spoken = voice_question()
-    question = spoken or typed
+    last = st.session_state.get("last_input")
+    question = (spoken or typed) if last == "voice" else (typed or spoken)
     if not question:
         return
     try:
