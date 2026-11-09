@@ -6,6 +6,27 @@ from openai import OpenAI, OpenAIError
 
 import config
 
+TYPED = "typed"
+SPOKEN = "spoken"
+
+
+def pick_question(typed: str, spoken: str, last_source: str | None) -> str:
+    """Answer the input the user changed last; a stale recording or old text never wins.
+
+    Args:
+        typed: text box value ('' if empty).
+        spoken: transcript of the current recording ('' if none).
+        last_source: TYPED or SPOKEN, whichever widget changed most recently (None if neither).
+
+    Returns:
+        The question to answer, or '' if there is none.
+    """
+    if last_source == SPOKEN:
+        return spoken
+    if last_source == TYPED:
+        return typed
+    return typed or spoken
+
 
 def voice_enabled() -> bool:
     """True when an OpenAI key is configured."""
