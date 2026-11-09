@@ -5,6 +5,7 @@ Run from the project root:  streamlit run app.py
 
 from __future__ import annotations
 
+import os
 import sys
 from datetime import datetime
 from pathlib import Path
@@ -162,7 +163,6 @@ def assistant_tab(profile: dict | None) -> None:
 
 def main() -> None:
     st.title("🔎 Conference Search")
-    st.caption("Conference companion · all data synthetic")
     try:
         profile = sidebar_profile()
     except Exception as err:  # connection problems should show, not crash
@@ -176,6 +176,10 @@ def main() -> None:
         matchmaker_tab(profile)
     with assistant:
         assistant_tab(profile)
+
+    st.caption(
+        f"Conference companion · all data synthetic · version {os.getenv('APP_VERSION', 'dev')}"
+    )
 
 
 main()
