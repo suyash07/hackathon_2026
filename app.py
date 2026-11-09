@@ -13,10 +13,19 @@ import streamlit as st
 
 sys.path.insert(0, str(Path(__file__).resolve().parent / "src"))
 
+import config  # noqa: E402
 from assistant import ask  # noqa: E402
 from calendar_export import talk_to_ics  # noqa: E402
 from es_client import get_client  # noqa: E402
 from matchmaker import find_matches  # noqa: E402
+from overview import (  # noqa: E402
+    count_by,
+    current_time,
+    happening_now,
+    key_numbers,
+    side_events_on,
+    up_next,
+)
 from profiles import DEMO_USER_ID, get_profile, list_profiles  # noqa: E402
 from search import recommend_talks, search_talks  # noqa: E402
 from who_to_meet import who_to_meet  # noqa: E402
@@ -160,6 +169,73 @@ def assistant_tab(profile: dict | None) -> None:
             st.markdown(f"- **{talk['title']}** · {when} · {talk['room']}")
 
 
+def day_label(day: str) -> str:
+    """'2026-11-10' -> 'Tue Nov 10'."""
+    d = datetime.fromisoformat(day)
+    return f"{d:%a %b} {d.day}"
+
+
+def talk_line(talk: dict) -> str:
+    """One talk as a compact markdown line."""
+    return f"- **{talk['title']}** · {format_time(talk['start'], talk['end'])} · {talk['room']}"
+
+
+def overview_tab() -> None:
+    es = es_client()
+    now = current_time()
+    st.subheader(config.CONFERENCE_NAME)
+    st.write(f"📍 {config.CONFERENCE_PLACE} · 🗓 {config.CONFERENCE_DATES}")
+    if config.DEMO_NOW:
+        st.caption(f"Demo time: {now:%a %b} {now.day} · {clock(now)} {now:%p}")
+
+    numbers = key_numbers(es)
+    for col, (label, key) in zip(
+        st.columns(4),
+        [
+            ("Talks", "talks"),
+            ("Speakers", "speakers"),
+            ("Tracks", "tracks"),
+            ("In the building now", "in_building"),
+        ],
+    ):
+        col.metric(label, numbers[key])
+
+    now_col, next_col = st.columns(2)
+    with now_col:
+        st.markdown("#### ⏱ Happening now")
+        talks = happening_now(es, now)
+        st.markdown("\n".join(talk_line(t) for t in talks) if talks else "Nothing right now.")
+    with next_col:
+        st.markdown("#### ⏭ Up next (next hour)")
+        talks = up_next(es, now)
+        st.markdown(
+            "\n".join(talk_line(t) for t in talks) if talks else "Nothing in the next hour."
+        )
+
+    st.markdown("#### Talks per track")
+    st.bar_chart({"talks": count_by(es, "track")}, horizontal=True)
+
+    st.markdown("#### Talks per day")
+    per_day = count_by(es, "day", by_key=True)
+    for col, (day, n) in zip(st.columns(len(per_day) or 1), per_day.items()):
+        col.metric(day_label(day), n)
+
+    st.markdown("#### 🎉 Side events today")
+    events = side_events_on(es, now)
+    if not events:
+        st.write("No side events today.")
+    for e in events:
+        start = datetime.fromisoformat(e["start"])
+        st.markdown(f"- **{e['name']}** · {clock(start)} {start:%p} · {e['location']}")
+
+    st.markdown("#### How to use this app")
+    st.markdown(
+        "- **Talk Search:** describe what you want to learn; results match by meaning.\n"
+        "- **Hallway Matchmaker:** find people in the building working on similar things.\n"
+        "- **Assistant:** ask anything about the schedule and get an answer with talks cited."
+    )
+
+
 def main() -> None:
     st.title("🔎 Conference Search")
     st.caption("Conference companion · all data synthetic")
@@ -169,7 +245,11 @@ def main() -> None:
         st.error(f"Can't reach Elasticsearch: {err}")
         st.stop()
 
-    search_tab, match_tab, assistant = st.tabs(["Talk Search", "Hallway Matchmaker", "Assistant"])
+    overview, search_tab, match_tab, assistant = st.tabs(
+        ["Overview", "Talk Search", "Hallway Matchmaker", "Assistant"]
+    )
+    with overview:
+        overview_tab()
     with search_tab:
         talk_search_tab(profile)
     with match_tab:
