@@ -39,8 +39,15 @@ from voice import (  # noqa: E402
 from who_to_meet import who_to_meet  # noqa: E402
 
 NO_PROFILE = "(no profile)"
+STYLE_PATH = Path(__file__).resolve().parent / "assets" / "style.css"
 
-st.set_page_config(page_title="Conference Search", page_icon="🔎", layout="wide")
+st.set_page_config(page_title="HallwayTrack", page_icon="🔎", layout="wide")
+
+
+def load_style() -> None:
+    """Apply the visual theme. The app still works without it."""
+    if STYLE_PATH.exists():
+        st.html(f"<style>{STYLE_PATH.read_text()}</style>")
 
 
 @st.cache_resource
@@ -291,8 +298,14 @@ def overview_tab() -> None:
 
 
 def main() -> None:
-    st.title("🔎 Conference Search")
-    st.caption("Conference companion · all data synthetic")
+    load_style()
+    with st.container(key="hero"):
+        st.title("HallwayTrack")
+        st.markdown("Find the right talk, the right people and the right answer.")
+        st.caption(
+            f"{config.CONFERENCE_NAME} · {config.CONFERENCE_PLACE} · {config.CONFERENCE_DATES}"
+            " · all data synthetic"
+        )
     try:
         profile = sidebar_profile()
     except Exception as err:  # connection problems should show, not crash
