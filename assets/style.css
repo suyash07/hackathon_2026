@@ -1,0 +1,79 @@
+/* HallwayTrack look, based on docs/DESIGN-apple.md.
+   Visual only: no layout or logic depends on these rules. */
+:root {
+  --hw-blue: #0066cc;
+  --hw-blue-focus: #0071e3;
+  --hw-blue-on-dark: #2997ff;
+  --hw-ink: #1d1d1f;
+  --hw-muted: #7a7a7a;
+  --hw-parchment: #f5f5f7;
+  --hw-hairline: #e0e0e0;
+  --hw-tile: #272729;
+  --hw-font: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, "Inter",
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Type: system SF Pro, 17px body, weight 600 headlines with tight tracking */
+html, body, .stApp, button, input, textarea { font-family: var(--hw-font); }
+.stApp { color: var(--hw-ink); }
+.stMarkdown p, .stMarkdown li { font-size: 17px; line-height: 1.47; letter-spacing: -0.374px; }
+h1 { font-weight: 600 !important; font-size: 48px !important; line-height: 1.07 !important;
+     letter-spacing: -0.28px !important; }
+h2, h3 { font-weight: 600 !important; letter-spacing: -0.374px !important; }
+h4 { font-weight: 600 !important; font-size: 21px !important; letter-spacing: 0.231px !important; }
+[data-testid="stCaptionContainer"] p { color: var(--hw-muted); font-size: 14px;
+                                       letter-spacing: -0.224px; }
+a { color: var(--hw-blue); }
+
+/* Frosted top bar */
+header[data-testid="stHeader"] { background: rgba(245, 245, 247, 0.8);
+                                 backdrop-filter: saturate(180%) blur(20px); }
+
+/* Tabs as a pill sub-nav */
+.stTabs [data-baseweb="tab-list"] { gap: 4px; padding: 4px; border-radius: 9999px;
+                                    background: var(--hw-parchment); width: fit-content;
+                                    max-width: 100%; overflow-x: auto; }
+.stTabs [data-baseweb="tab"] { border-radius: 9999px; padding: 8px 18px; font-size: 14px; }
+.stTabs [aria-selected="true"] { background: #ffffff; }
+.stTabs [data-baseweb="tab-highlight"], .stTabs [data-baseweb="tab-border"] { display: none; }
+
+/* Buttons: pills, no shadows, Apple-style press */
+.stButton > button, .stDownloadButton > button { border-radius: 9999px; padding: 6px 18px;
+                                                 font-size: 14px; box-shadow: none; }
+.stDownloadButton > button { background: transparent; color: var(--hw-blue);
+                             border: 1px solid var(--hw-blue); }
+.stDownloadButton > button:hover { background: var(--hw-blue); color: #ffffff; }
+.stButton > button:active, .stDownloadButton > button:active { transform: scale(0.95); }
+button:focus-visible { outline: 2px solid var(--hw-blue-focus) !important; }
+
+/* Inputs: pill search fields */
+.stTextInput div[data-baseweb="input"], .stTextInput div[data-baseweb="base-input"] {
+  border-radius: 9999px; }
+.stTextInput input { padding: 12px 20px; font-size: 17px; }
+div[data-baseweb="select"] > div { border-radius: 9999px; }
+
+/* Cards: white, 18px radius, 1px hairline, no shadow */
+div[data-testid="stVerticalBlockBorderWrapper"]:has(> div > [data-testid="stVerticalBlock"]) {
+  border-radius: 18px; }
+div[data-testid="stExpander"] details { border-radius: 18px; border-color: var(--hw-hairline); }
+div[data-testid="stAlert"] { border-radius: 18px; }
+
+/* Metric tiles on parchment */
+div[data-testid="stMetric"] { background: var(--hw-parchment); border-radius: 18px;
+                              padding: 20px 24px; }
+div[data-testid="stMetricValue"] { font-weight: 600; letter-spacing: -0.5px; }
+
+/* Sidebar on parchment */
+section[data-testid="stSidebar"] { background: var(--hw-parchment); }
+
+/* Dark hero tile (st.container(key="hero")) */
+.st-key-hero { background: var(--hw-tile); border-radius: 18px; padding: 48px 40px; }
+.st-key-hero h1, .st-key-hero p { color: #ffffff !important; }
+.st-key-hero [data-testid="stCaptionContainer"] p { color: #cccccc !important; }
+.st-key-hero a { color: var(--hw-blue-on-dark); }
+
+/* Phones */
+@media (max-width: 640px) {
+  h1 { font-size: 34px !important; }
+  .st-key-hero { padding: 32px 20px; }
+}

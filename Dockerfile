@@ -5,6 +5,8 @@ ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 PIP_NO_CACHE_DIR=1 \
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY app.py .
+COPY .streamlit/ .streamlit/
+COPY assets/ assets/
 COPY src/ src/
 ARG APP_VERSION=dev
 ENV APP_VERSION=$APP_VERSION

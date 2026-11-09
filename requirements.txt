@@ -1,4 +1,4 @@
 elasticsearch>=9.0,<10
-streamlit
+streamlit==1.50.0
 python-dotenv
 openai>=2.48,<3
