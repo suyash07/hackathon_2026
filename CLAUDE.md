@@ -53,7 +53,7 @@ One profile per attendee in the `attendees` index — the single source of perso
 ## Kubernetes and Radar
 - The app deploys to the team's Radar cluster via Argo CD (GitOps). Follow @AGENTS.md for every cluster task (Radar MCP, ship, debug-failure, demo-story skills in `.agents/skills/`).
 - In this repo a deploy happens when a PR **merges into `main`** (the build-and-deploy Action then pushes a `deploy: <sha> [skip ci]` commit). Don't push app changes straight to `main`; keep the branch + Gitar PR workflow.
-- Credentials reach the pod only through Secret `app-credentials` (keys `es-url`, `es-user`, `es-password`), created in Radar's UI. Never put credential values in git, manifests, chat or logs.
+- Credentials reach the pod only through Secret `app-credentials` (keys `es-url`, `es-user`, `es-password`, plus optional `openai-api-key` for voice), created in Radar's UI. Never put credential values in git, manifests, chat or logs.
 
 ## Hackathon rules the agent must respect
 - Never use the term "eBPF" anywhere in the app, data, examples or docs; say "kernel-level" / "kernel tracing" instead.
@@ -74,7 +74,11 @@ One profile per attendee in the `attendees` index — the single source of perso
   use `from __future__ import annotations` for `X | None` style hints; no `match` statements.
 - Elasticsearch 9.x + Kibana local via start-local (Docker) at `localhost:9200` / `localhost:5601`.
 - Embeddings: `semantic_text` fields using the built-in `.elser-2-elasticsearch` endpoint (default). Reranker available: `.rerank-v1-elasticsearch`.
-- LLM: called through Elasticsearch's inference API (`es.inference.completion`) using the endpoint id in `LLM_INFERENCE_ID` (default `openai-completion`, an OpenAI model registered in Elasticsearch). No LLM SDK or LLM key in the app. Elastic-hosted `.gp-llm-*` / `.anthropic-*` endpoints return 403 on this trial deployment.
+- LLM: called through Elasticsearch's inference API (`es.inference.completion`) using the endpoint id in `LLM_INFERENCE_ID` (default `openai-completion`, an OpenAI model registered in Elasticsearch). No LLM SDK or LLM key in the app for text generation. Elastic-hosted `.gp-llm-*` / `.anthropic-*` endpoints return 403 on this trial deployment.
+- **Exception — speech-to-text:** voice questions in the Assistant tab call OpenAI directly with the
+  `openai` SDK (model in `TRANSCRIBE_MODEL`, default `whisper-1`), because Elasticsearch has no
+  speech-to-text. Only `src/voice.py` imports `openai`, and only for transcription; the transcript then
+  goes through the normal assistant flow. The key is `OPENAI_API_KEY` (optional: the mic is hidden without it).
 - UI: Streamlit.
 - Ignore the harmless `NotOpenSSLWarning` from urllib3.
 

@@ -28,6 +28,7 @@ from overview import (  # noqa: E402
 )
 from profiles import DEMO_USER_ID, get_profile, list_profiles  # noqa: E402
 from search import recommend_talks, search_talks  # noqa: E402
+from voice import get_transcriber, transcribe, voice_enabled  # noqa: E402
 from who_to_meet import who_to_meet  # noqa: E402
 
 NO_PROFILE = "(no profile)"
@@ -158,8 +159,40 @@ def matchmaker_tab(profile: dict | None) -> None:
         person_card(person)
 
 
+@st.cache_resource
+def transcriber():
+    """One OpenAI client for the whole app session."""
+    return get_transcriber()
+
+
+@st.cache_data(show_spinner=False)
+def speech_to_text(audio: bytes) -> str:
+    """Transcribe once per recording, so reruns don't call the API again."""
+    return transcribe(transcriber(), audio)
+
+
+def voice_question() -> str:
+    """Mic input. Returns the transcribed question, or '' if nothing was recorded."""
+    if not voice_enabled():
+        st.caption("🎤 Voice questions are off: add OPENAI_API_KEY to .env to enable them.")
+        return ""
+    recording = st.audio_input("Or ask by voice")
+    if recording is None:
+        return ""
+    try:
+        with st.spinner("Transcribing..."):
+            text = speech_to_text(recording.getvalue())
+    except RuntimeError as err:
+        st.error(str(err))
+        return ""
+    st.caption(f"🎤 You said: “{text}”")
+    return text
+
+
 def assistant_tab(profile: dict | None) -> None:
-    question = st.text_input("Ask a question")
+    typed = st.text_input("Ask a question")
+    spoken = voice_question()
+    question = typed or spoken
     if not question:
         return
     try:
