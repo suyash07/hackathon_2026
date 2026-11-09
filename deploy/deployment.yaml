@@ -1,0 +1,72 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app
+  labels:
+    app: app
+spec:
+  # One replica: Streamlit keeps each session on one pod (file uploads such as
+  # voice recordings would fail if requests were spread across pods).
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app
+  template:
+    metadata:
+      labels:
+        app: app
+    spec:
+      containers:
+        - name: app
+          image: app
+          ports:
+            - name: http
+              containerPort: 8080
+          env:
+            - name: TEAM_NAME
+              value: "hackathon"
+            - name: LLM_INFERENCE_ID
+              value: "openai-completion"
+            # Credentials live in Secret app-credentials, created in Radar's UI, never in git.
+            - name: ES_URL
+              valueFrom:
+                secretKeyRef:
+                  name: app-credentials
+                  key: es-url
+            - name: ES_USER
+              valueFrom:
+                secretKeyRef:
+                  name: app-credentials
+                  key: es-user
+            - name: ES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: app-credentials
+                  key: es-password
+          resources:
+            requests:
+              cpu: 250m
+              memory: 256Mi
+            limits:
+              cpu: "1"
+              memory: 768Mi
+          # Streamlit's built-in health endpoint.
+          readinessProbe:
+            httpGet:
+              path: /_stcore/health
+              port: http
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /_stcore/health
+              port: http
+            initialDelaySeconds: 20
+            periodSeconds: 10
+          securityContext:
+            runAsNonRoot: true
+            allowPrivilegeEscalation: false
+            seccompProfile:
+              type: RuntimeDefault
+            capabilities:
+              drop: ["ALL"]
