@@ -5,7 +5,7 @@
     "role": "Platform Engineer",
     "company": "Hackathon Team",
     "experience_level": "intermediate",
-    "working_on": "Building eBPF-based runtime security for Kubernetes with an AI assistant that triages the alerts.",
+    "working_on": "Building kernel-level runtime security for Kubernetes with an AI assistant that triages the alerts.",
     "interests": "Interested in runtime security and kernel-level threat detection and AI agents for operations.",
     "goals": [
       "learn",
@@ -170,8 +170,8 @@
     "role": "Network Engineer",
     "company": "Groundwork AI",
     "experience_level": "advanced",
-    "working_on": "Debugging packet drops in our CNI with eBPF tooling.",
-    "interests": "Interested in eBPF networking and service mesh and runtime security and kernel-level threat detection.",
+    "working_on": "Debugging packet drops in our CNI with kernel tracing tools.",
+    "interests": "Interested in kernel networking and service mesh and runtime security and kernel-level threat detection.",
     "goals": [
       "evaluate-tools",
       "share-work"
@@ -239,7 +239,7 @@
     "company": "TrustLayer",
     "experience_level": "advanced",
     "working_on": "Cutting logging costs with OpenTelemetry tail sampling.",
-    "interests": "Interested in observability and OpenTelemetry and eBPF networking and service mesh.",
+    "interests": "Interested in observability and OpenTelemetry and kernel networking and service mesh.",
     "goals": [
       "hiring",
       "job-seeking"
@@ -404,7 +404,7 @@
     "role": "Student",
     "company": "PayNova",
     "experience_level": "beginner",
-    "working_on": "Building an eBPF sensor that flags container escapes.",
+    "working_on": "Building a kernel-level sensor that flags container escapes.",
     "interests": "Interested in runtime security and kernel-level threat detection.",
     "goals": [
       "hiring",
@@ -478,8 +478,8 @@
     "role": "Platform Engineer",
     "company": "TrustLayer",
     "experience_level": "advanced",
-    "working_on": "Debugging packet drops in our CNI with eBPF tooling.",
-    "interests": "Interested in eBPF networking and service mesh.",
+    "working_on": "Debugging packet drops in our CNI with kernel tracing tools.",
+    "interests": "Interested in kernel networking and service mesh.",
     "goals": [
       "learn",
       "job-seeking"
@@ -593,8 +593,8 @@
     "role": "Network Engineer",
     "company": "NetScale",
     "experience_level": "beginner",
-    "working_on": "Debugging packet drops in our CNI with eBPF tooling.",
-    "interests": "Interested in eBPF networking and service mesh.",
+    "working_on": "Debugging packet drops in our CNI with kernel tracing tools.",
+    "interests": "Interested in kernel networking and service mesh.",
     "goals": [
       "job-seeking",
       "learn"
@@ -642,7 +642,7 @@
     "company": "KernelGuard",
     "experience_level": "beginner",
     "working_on": "An internal developer portal with golden path templates.",
-    "interests": "Interested in platform engineering and developer experience and eBPF networking and service mesh.",
+    "interests": "Interested in platform engineering and developer experience and kernel networking and service mesh.",
     "goals": [
       "share-work",
       "find-mentor"
@@ -710,7 +710,7 @@
     "company": "PayNova",
     "experience_level": "intermediate",
     "working_on": "Generating SBOMs and scanning third-party dependencies.",
-    "interests": "Interested in software supply chain security and eBPF networking and service mesh.",
+    "interests": "Interested in software supply chain security and kernel networking and service mesh.",
     "goals": [
       "job-seeking",
       "learn"
@@ -806,7 +806,7 @@
     "company": "EdgeLink",
     "experience_level": "intermediate",
     "working_on": "Migrating to a sidecar-free service mesh.",
-    "interests": "Interested in eBPF networking and service mesh.",
+    "interests": "Interested in kernel networking and service mesh.",
     "goals": [
       "job-seeking",
       "evaluate-tools"
@@ -1013,7 +1013,7 @@
     "company": "OrbitOps",
     "experience_level": "intermediate",
     "working_on": "Detecting cryptominers in Kubernetes pods by watching syscalls.",
-    "interests": "Interested in runtime security and kernel-level threat detection and eBPF networking and service mesh.",
+    "interests": "Interested in runtime security and kernel-level threat detection and kernel networking and service mesh.",
     "goals": [
       "find-mentor",
       "share-work"
@@ -1112,7 +1112,7 @@
     "company": "BlueHarbor",
     "experience_level": "beginner",
     "working_on": "Migrating to a sidecar-free service mesh.",
-    "interests": "Interested in eBPF networking and service mesh and databases and stateful workloads on Kubernetes.",
+    "interests": "Interested in kernel networking and service mesh and databases and stateful workloads on Kubernetes.",
     "goals": [
       "job-seeking",
       "share-work"
@@ -1223,8 +1223,8 @@
     "role": "Network Engineer",
     "company": "LedgerCo",
     "experience_level": "intermediate",
-    "working_on": "Debugging packet drops in our CNI with eBPF tooling.",
-    "interests": "Interested in eBPF networking and service mesh.",
+    "working_on": "Debugging packet drops in our CNI with kernel tracing tools.",
+    "interests": "Interested in kernel networking and service mesh.",
     "goals": [
       "meet-maintainers",
       "hiring"
@@ -1679,7 +1679,7 @@
     "role": "Student",
     "company": "PayNova",
     "experience_level": "beginner",
-    "working_on": "Building an eBPF sensor that flags container escapes.",
+    "working_on": "Building a kernel-level sensor that flags container escapes.",
     "interests": "Interested in runtime security and kernel-level threat detection and cloud cost optimization.",
     "goals": [
       "learn",
@@ -1751,8 +1751,8 @@
     "role": "Platform Engineer",
     "company": "FinSight",
     "experience_level": "advanced",
-    "working_on": "Debugging packet drops in our CNI with eBPF tooling.",
-    "interests": "Interested in eBPF networking and service mesh and GitOps and progressive delivery.",
+    "working_on": "Debugging packet drops in our CNI with kernel tracing tools.",
+    "interests": "Interested in kernel networking and service mesh and GitOps and progressive delivery.",
     "goals": [
       "hiring",
       "find-mentor"
@@ -1871,8 +1871,8 @@
     "role": "Network Engineer",
     "company": "NetScale",
     "experience_level": "intermediate",
-    "working_on": "Debugging packet drops in our CNI with eBPF tooling.",
-    "interests": "Interested in eBPF networking and service mesh.",
+    "working_on": "Debugging packet drops in our CNI with kernel tracing tools.",
+    "interests": "Interested in kernel networking and service mesh.",
     "goals": [
       "hiring",
       "meet-maintainers"
@@ -1895,7 +1895,7 @@
     "role": "Student",
     "company": "KernelGuard",
     "experience_level": "beginner",
-    "working_on": "Building an eBPF sensor that flags container escapes.",
+    "working_on": "Building a kernel-level sensor that flags container escapes.",
     "interests": "Interested in runtime security and kernel-level threat detection and running LLM inference on Kubernetes.",
     "goals": [
       "find-contributors",
@@ -1969,8 +1969,8 @@
     "role": "Platform Engineer",
     "company": "BlueHarbor",
     "experience_level": "intermediate",
-    "working_on": "Debugging packet drops in our CNI with eBPF tooling.",
-    "interests": "Interested in eBPF networking and service mesh and platform engineering and developer experience.",
+    "working_on": "Debugging packet drops in our CNI with kernel tracing tools.",
+    "interests": "Interested in kernel networking and service mesh and platform engineering and developer experience.",
     "goals": [
       "evaluate-tools",
       "job-seeking"
@@ -2085,7 +2085,7 @@
     "company": "EdgeLink",
     "experience_level": "advanced",
     "working_on": "Rolling out zero trust between microservices.",
-    "interests": "Interested in zero trust and workload identity and eBPF networking and service mesh.",
+    "interests": "Interested in zero trust and workload identity and kernel networking and service mesh.",
     "goals": [
       "hiring",
       "job-seeking"
@@ -2177,8 +2177,8 @@
     "role": "Platform Engineer",
     "company": "Skyforge",
     "experience_level": "beginner",
-    "working_on": "Debugging packet drops in our CNI with eBPF tooling.",
-    "interests": "Interested in eBPF networking and service mesh and platform engineering and developer experience.",
+    "working_on": "Debugging packet drops in our CNI with kernel tracing tools.",
+    "interests": "Interested in kernel networking and service mesh and platform engineering and developer experience.",
     "goals": [
       "evaluate-tools",
       "find-contributors"
@@ -2293,8 +2293,8 @@
     "role": "Network Engineer",
     "company": "Northwind Cloud",
     "experience_level": "intermediate",
-    "working_on": "Debugging packet drops in our CNI with eBPF tooling.",
-    "interests": "Interested in eBPF networking and service mesh.",
+    "working_on": "Debugging packet drops in our CNI with kernel tracing tools.",
+    "interests": "Interested in kernel networking and service mesh.",
     "goals": [
       "job-seeking",
       "find-contributors"
@@ -2383,7 +2383,7 @@
     "company": "Latticeworks",
     "experience_level": "intermediate",
     "working_on": "Canary releases with automatic rollback.",
-    "interests": "Interested in GitOps and progressive delivery and eBPF networking and service mesh.",
+    "interests": "Interested in GitOps and progressive delivery and kernel networking and service mesh.",
     "goals": [
       "job-seeking",
       "hiring"
@@ -2588,7 +2588,7 @@
     "company": "Streamly",
     "experience_level": "intermediate",
     "working_on": "Self-service preview environments for every pull request.",
-    "interests": "Interested in platform engineering and developer experience and eBPF networking and service mesh.",
+    "interests": "Interested in platform engineering and developer experience and kernel networking and service mesh.",
     "goals": [
       "find-mentor",
       "find-contributors"
@@ -2709,7 +2709,7 @@
     "company": "OrbitOps",
     "experience_level": "advanced",
     "working_on": "Rolling out zero trust between microservices.",
-    "interests": "Interested in zero trust and workload identity and eBPF networking and service mesh.",
+    "interests": "Interested in zero trust and workload identity and kernel networking and service mesh.",
     "goals": [
       "share-work",
       "hiring"
@@ -2759,7 +2759,7 @@
     "company": "OrbitOps",
     "experience_level": "advanced",
     "working_on": "Self-service preview environments for every pull request.",
-    "interests": "Interested in platform engineering and developer experience and eBPF networking and service mesh.",
+    "interests": "Interested in platform engineering and developer experience and kernel networking and service mesh.",
     "goals": [
       "evaluate-tools",
       "hiring"
@@ -2805,7 +2805,7 @@
     "company": "Northwind Cloud",
     "experience_level": "advanced",
     "working_on": "Self-service preview environments for every pull request.",
-    "interests": "Interested in platform engineering and developer experience and eBPF networking and service mesh.",
+    "interests": "Interested in platform engineering and developer experience and kernel networking and service mesh.",
     "goals": [
       "share-work",
       "job-seeking"

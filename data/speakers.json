@@ -21,7 +21,7 @@
     "id": "s004",
     "name": "Liam Patel",
     "company": "CloudNest",
-    "bio": "Works on eBPF networking and service mesh; maintainer of an open-source project."
+    "bio": "Works on kernel networking and service mesh; maintainer of an open-source project."
   },
   {
     "id": "s005",
@@ -93,7 +93,7 @@
     "id": "s016",
     "name": "Yuki Moreau",
     "company": "ShopWave",
-    "bio": "Works on eBPF networking and service mesh; leads a platform team."
+    "bio": "Works on kernel networking and service mesh; leads a platform team."
   },
   {
     "id": "s017",
@@ -165,7 +165,7 @@
     "id": "s028",
     "name": "Daniel Tanaka",
     "company": "Groundwork AI",
-    "bio": "Works on eBPF networking and service mesh; speaks regularly at community events."
+    "bio": "Works on kernel networking and service mesh; speaks regularly at community events."
   },
   {
     "id": "s029",
@@ -237,7 +237,7 @@
     "id": "s040",
     "name": "Daniel Haddad",
     "company": "Skyforge",
-    "bio": "Works on eBPF networking and service mesh; maintainer of an open-source project."
+    "bio": "Works on kernel networking and service mesh; maintainer of an open-source project."
   },
   {
     "id": "s041",
@@ -309,7 +309,7 @@
     "id": "s052",
     "name": "Diego Khan",
     "company": "FinSight",
-    "bio": "Works on eBPF networking and service mesh; maintainer of an open-source project."
+    "bio": "Works on kernel networking and service mesh; maintainer of an open-source project."
   },
   {
     "id": "s053",
@@ -381,7 +381,7 @@
     "id": "s064",
     "name": "Zara Rahman",
     "company": "BlueHarbor",
-    "bio": "Works on eBPF networking and service mesh; previously an SRE."
+    "bio": "Works on kernel networking and service mesh; previously an SRE."
   },
   {
     "id": "s065",
@@ -453,7 +453,7 @@
     "id": "s076",
     "name": "Noah Iyer",
     "company": "PayNova",
-    "bio": "Works on eBPF networking and service mesh; maintainer of an open-source project."
+    "bio": "Works on kernel networking and service mesh; maintainer of an open-source project."
   },
   {
     "id": "s077",

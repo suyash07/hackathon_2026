@@ -15,7 +15,7 @@
   },
   {
     "id": "e003",
-    "name": "eBPF Hands-On Workshop",
+    "name": "Kernel Tracing Hands-On Workshop",
     "description": "Write your first kernel tracing program. Laptop required.",
     "start": "2026-11-11T12:15:00-07:00",
     "location": "Lab A"
