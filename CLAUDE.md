@@ -69,7 +69,7 @@ One profile per attendee in the `attendees` index — the single source of perso
   use `from __future__ import annotations` for `X | None` style hints; no `match` statements.
 - Elasticsearch 9.x + Kibana local via start-local (Docker) at `localhost:9200` / `localhost:5601`.
 - Embeddings: `semantic_text` fields using the built-in `.elser-2-elasticsearch` endpoint (default). Reranker available: `.rerank-v1-elasticsearch`.
-- LLM: Anthropic Claude via the `anthropic` SDK; model from `LLM_MODEL` in `.env`.
+- LLM: called through Elasticsearch's inference API (`es.inference.completion`) using the endpoint id in `LLM_INFERENCE_ID` (default `openai-completion`, an OpenAI model registered in Elasticsearch). No LLM SDK or LLM key in the app. Elastic-hosted `.gp-llm-*` / `.anthropic-*` endpoints return 403 on this trial deployment.
 - UI: Streamlit.
 - Ignore the harmless `NotOpenSSLWarning` from urllib3.
 
@@ -115,7 +115,7 @@ tests/                   pytest tests
 - **Types & docs:** type hints on all public functions; short docstrings stating purpose, args, returns.
 - **Small, pure functions:** separate "build query" from "run query" so queries are unit-testable without Elasticsearch.
 - **Config:** never hard-code URLs, keys, index names or model names — import from `config.py`. Index names live in config as constants.
-- **One client:** create the Elasticsearch / Anthropic clients once (`es_client.py`; in Streamlit wrap with `@st.cache_resource`).
+- **One client:** create the Elasticsearch client once (`es_client.py`; in Streamlit wrap with `@st.cache_resource`).
 - **Errors:** fail with clear messages (missing env var, ES down, index missing). Check `helpers.bulk` errors and report counts — never silently drop documents. No bare `except:`.
 - **Logging:** use `logging` in `src/`; `print` only in CLI `__main__` blocks.
 - **Idempotent setup:** indexing script can be re-run safely (recreate index, then load).

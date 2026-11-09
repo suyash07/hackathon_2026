@@ -21,17 +21,11 @@ def embedding_model():
     return ", ".join(ids)
 
 
-def anthropic_key():
-    if not config.ANTHROPIC_API_KEY:
-        raise ValueError("ANTHROPIC_API_KEY is empty in .env")
-    import anthropic
-
-    r = anthropic.Anthropic(api_key=config.ANTHROPIC_API_KEY).messages.create(
-        model=config.LLM_MODEL,
-        max_tokens=10,
-        messages=[{"role": "user", "content": "Say ok"}],
+def llm():
+    res = get_client().inference.completion(
+        inference_id=config.LLM_INFERENCE_ID, input="Reply with just: ok"
     )
-    return f"{config.LLM_MODEL} replied '{r.content[0].text.strip()}'"
+    return f"{config.LLM_INFERENCE_ID} replied '{res['completion'][0]['result'].strip()}'"
 
 
 def streamlit():
@@ -42,5 +36,5 @@ def streamlit():
 
 check("Elasticsearch", elasticsearch)
 check("Embedding endpoints", embedding_model)
-check("Anthropic API", anthropic_key)
+check("LLM via Elasticsearch", llm)
 check("Streamlit", streamlit)
