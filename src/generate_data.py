@@ -45,7 +45,7 @@ LEVELS = ["beginner", "intermediate", "advanced"]
 TOPICS = {
     "runtime_security": {
         "track": "Security",
-        "tags": ["eBPF", "security", "runtime", "Falco"],
+        "tags": ["kernel-tracing", "security", "runtime", "Falco"],
         "subjects": [
             "Runtime Threat Detection",
             "Catching Container Escapes",
@@ -54,9 +54,9 @@ TOPICS = {
             "Kernel Tracing for Incident Response",
         ],
         "keyword": [
-            "We use eBPF probes to detect suspicious behavior in containers.",
+            "We use kernel probes to detect suspicious behavior in containers.",
             "Falco rules flag shells spawned inside production pods.",
-            "eBPF-based sensors watch every syscall with negligible overhead.",
+            "Kernel-level sensors watch every syscall with negligible overhead.",
         ],
         "plain": [
             "We watch what processes do deep inside the operating system and flag "
@@ -105,7 +105,7 @@ TOPICS = {
     },
     "networking": {
         "track": "Networking",
-        "tags": ["Cilium", "eBPF", "networking", "service-mesh"],
+        "tags": ["Cilium", "kernel-networking", "networking", "service-mesh"],
         "subjects": [
             "Sidecar-Free Service Mesh",
             "Network Policy That Scales",
@@ -113,8 +113,8 @@ TOPICS = {
             "XDP Load Balancing",
         ],
         "keyword": [
-            "Cilium uses eBPF to enforce identity-aware network policy.",
-            "We replaced kube-proxy with an eBPF datapath.",
+            "Cilium enforces identity-aware network policy inside the kernel.",
+            "We replaced kube-proxy with a kernel-level datapath.",
         ],
         "plain": [
             "Packets get filtered before they ever reach the network stack, which "
@@ -407,7 +407,7 @@ ROLES = {
 WORKING_ON = {
     "runtime_security": [
         "Detecting cryptominers in Kubernetes pods by watching syscalls",
-        "Building an eBPF sensor that flags container escapes",
+        "Building a kernel-level sensor that flags container escapes",
         "Writing runtime detection rules for our production clusters",
     ],
     "supply_chain": [
@@ -420,7 +420,7 @@ WORKING_ON = {
     ],
     "networking": [
         "Migrating to a sidecar-free service mesh",
-        "Debugging packet drops in our CNI with eBPF tooling",
+        "Debugging packet drops in our CNI with kernel tracing tools",
     ],
     "inference": [
         "Serving open-weight LLMs on a shared GPU cluster",
@@ -459,7 +459,7 @@ INTEREST_TEXT = {
     "runtime_security": "runtime security and kernel-level threat detection",
     "supply_chain": "software supply chain security",
     "identity": "zero trust and workload identity",
-    "networking": "eBPF networking and service mesh",
+    "networking": "kernel networking and service mesh",
     "inference": "running LLM inference on Kubernetes",
     "agents": "AI agents for operations",
     "rag": "RAG and vector search",
@@ -633,7 +633,7 @@ def make_attendees(rng: random.Random, talks: list, used_names: set) -> list:
             "role": "Platform Engineer",
             "company": "Hackathon Team",
             "experience_level": "intermediate",
-            "working_on": "Building eBPF-based runtime security for Kubernetes with an AI "
+            "working_on": "Building kernel-level runtime security for Kubernetes with an AI "
             "assistant that triages the alerts.",
             "interests": "Interested in runtime security and kernel-level threat detection "
             "and AI agents for operations.",
@@ -660,7 +660,7 @@ def make_side_events(rng: random.Random) -> list:
             "Coffee Bar",
         ),
         (
-            "eBPF Hands-On Workshop",
+            "Kernel Tracing Hands-On Workshop",
             "Write your first kernel tracing program. Laptop required.",
             "Lab A",
         ),

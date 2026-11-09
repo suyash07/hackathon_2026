@@ -4,7 +4,7 @@ Instructions for the coding agent working in this repo. Follow them on every tas
 
 ## Project
 A conference companion for KubeCon + CloudNativeCon NA 2026 (Salt Lake City), built on Elasticsearch:
-1. **Talk search** — semantic search over talk titles + abstracts ("something on eBPF and security" finds the right session even without those words).
+1. **Talk search** — semantic search over talk titles + abstracts ("stopping attackers breaking out of containers" finds the right session even without those words).
    - Add-on: below the results, a **"Based on your profile, you might like…"** section with 3 talks matching the selected profile's `interests`. Reuse the same search function with `interests` as the query (no new search logic); exclude talks already in the main results. Hidden when no profile is selected.
    - This is talk recommendation, not the matchmaker (which recommends people). If time runs short, ship this and skip the agenda builder.
 2. **Hallway matchmaker** — attendees' "working on" text stored as vectors; find the closest people.
@@ -25,7 +25,7 @@ One profile per attendee in the `attendees` index — the single source of perso
 | `experience_level` (`beginner` / `intermediate` / `expert`) | keyword | agenda builder, assistant |
 | `working_on` | semantic_text | matchmaker, who-to-meet |
 | `interests` (1–2 sentences) | semantic_text | search boosting, agenda builder, who-to-meet |
-| `goals` (list, e.g. `hiring`, `learn eBPF`, `find contributors`) | keyword | assistant context, matchmaker |
+| `goals` (list, e.g. `hiring`, `learn kubernetes`, `find contributors`) | keyword | assistant context, matchmaker |
 | `available_days` | keyword | agenda builder |
 | `checked_in` | boolean | matchmaker ("in the building" = only checked-in people) |
 | `current_location` (room / area, null if not checked in) | keyword | matchmaker ("find them in Room 4") |
@@ -36,14 +36,14 @@ One profile per attendee in the `attendees` index — the single source of perso
 - The RAG assistant receives the profile as context so "what should I attend?" is personalized.
 
 ## Data rules
-- **Talks/speakers:** synthetic, KubeCon-style (~150–300 talks over Nov 9–12, Salt Lake City). Use realistic cloud-native tracks: AI Inference + Agentic, Platform Engineering, Security, Observability, Networking (eBPF/Cilium), plus co-located-event style sessions (CiliumCon, ArgoCon, BackstageCon). Fictional speakers and companies. Do not scrape the real schedule.
+- **Talks/speakers:** synthetic, KubeCon-style (~150–300 talks over Nov 9–12, Salt Lake City). Use realistic cloud-native tracks: AI Inference + Agentic, Platform Engineering, Security, Observability, Networking (Cilium, service mesh), plus co-located-event style sessions (CiliumCon, ArgoCon, BackstageCon). Fictional speakers and companies. Do not scrape the real schedule.
 - **Talk schema:** `id, title, abstract, speakers (list of names), speaker_ids (list), track, tags (list), format (talk/workshop/panel/lightning), level, room, start, end, day`. Times in ISO 8601 with Salt Lake City offset (`-07:00`).
 - **Speaker schema:** `id, name, company, bio`. **Side event schema:** `id, name, description, start, location`.
 - **Attendees, side events:** also synthetic (fictional names/companies) — public repo, no real personal data. README → Data states that all data is synthetic.
 - Generate with a script `src/generate_data.py` using a fixed random seed so data is reproducible; write to `data/*.json`. Never hand-edit generated files.
 - Make synthetic data realistic enough to demo every feature:
   - ~100–150 attendees spanning roles (SRE, platform, security, ML, data, student, PM) and all experience levels.
-  - Interests that overlap across people (so matchmaker returns meaningful clusters) and some that **cross** topics (eBPF + AI) to show semantic matching.
+  - Interests that overlap across people (so matchmaker returns meaningful clusters) and some that **cross** topics (security + AI) to show semantic matching.
   - Overlapping talk time slots in the same interest area, so the agenda builder must resolve conflicts.
   - A few deliberately vague/off-keyword phrasings (e.g. "kernel-level visibility") to prove semantic search beats keyword search.
   - A named demo user (e.g. `demo-user`) whose profile produces a clear, explainable result in every feature.
@@ -51,6 +51,7 @@ One profile per attendee in the `attendees` index — the single source of perso
 - Indexing script recreates indices from `data/` so the demo can be reset in one command.
 
 ## Hackathon rules the agent must respect
+- Never use the term "eBPF" anywhere in the app, data, examples or docs; say "kernel-level" / "kernel tracing" instead.
 - Main code is written during the hackathon. Do not paste in pre-written feature code; write it fresh with the user.
 - The user must be able to explain every line and every architecture decision. After each change, give a 1–3 line "why" for the key decision.
 - AI assistance is allowed but must be disclosed — keep the "AI use disclosure" section in README.md.
@@ -147,9 +148,14 @@ tests/                   pytest tests
 5. Feature actually runs end to end (or say clearly what's untested).
 6. README updated if a feature, setup step, or data source changed.
 7. Commit with a Conventional Commit message (`feat:`, `fix:`, `docs:`…) describing *why*, not just what.
-8. Push to `origin main`; report the commit hash and a one-line summary.
+8. Push the **feature branch** (never commit straight to `main`), then open a pull request (`gh pr create` if available, otherwise give the user the GitHub compare link).
+9. Wait for the **Gitar** review on the PR; fix its findings in new commits on the same branch; merge when clean (`gh pr merge --squash` or the GitHub button), then `git checkout main && git pull`.
+10. Report the PR link and a one-line summary.
+
+Gitar review instructions live in `.gitar/review/*.md` (hackathon rules, Python standards, Elasticsearch conventions). Keep them in sync with this file when conventions change.
 
 ## Git workflow
+- One branch per feature: `feat/<name>`, `fix/<name>`, `docs/<name>`. One PR per branch, reviewed by Gitar before merging to `main`.
 - Small commits after each working step, Conventional Commits: `feat:`, `fix:`, `docs:`, `refactor:`, `test:`, `chore:`.
 - Never commit `.env`, `hackathon/`, `__pycache__/`, or large raw data dumps.
 - Update README (setup, architecture, data sources) as features land.

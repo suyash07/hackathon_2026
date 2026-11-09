@@ -2,7 +2,7 @@
   {
     "id": "t001",
     "title": "Debugging Dropped Packets: Beyond the Hype",
-    "abstract": "Cilium uses eBPF to enforce identity-aware network policy. We replaced kube-proxy with an eBPF datapath. Attendees leave with a working reference architecture.",
+    "abstract": "Cilium enforces identity-aware network policy inside the kernel. We replaced kube-proxy with a kernel-level datapath. Attendees leave with a working reference architecture.",
     "speakers": [
       "Diego Khan",
       "Liam Patel"
@@ -13,7 +13,7 @@
     ],
     "track": "CiliumCon",
     "tags": [
-      "eBPF",
+      "kernel-networking",
       "service-mesh",
       "Cilium"
     ],
@@ -37,7 +37,7 @@
     "track": "CiliumCon",
     "tags": [
       "service-mesh",
-      "eBPF",
+      "kernel-networking",
       "Cilium"
     ],
     "format": "lightning",
@@ -50,7 +50,7 @@
   {
     "id": "t003",
     "title": "Debugging Dropped Packets: Lessons from Production",
-    "abstract": "Cilium uses eBPF to enforce identity-aware network policy. Packets get filtered before they ever reach the network stack, which cut our latency in half. No prior experience required.",
+    "abstract": "Cilium enforces identity-aware network policy inside the kernel. Packets get filtered before they ever reach the network stack, which cut our latency in half. No prior experience required.",
     "speakers": [
       "Daniel Tanaka"
     ],
@@ -73,7 +73,7 @@
   {
     "id": "t004",
     "title": "Network Policy That Scales: in 30 Minutes",
-    "abstract": "Tracing traffic between services when the network plugin is someone else's code. We replaced kube-proxy with an eBPF datapath. Includes a live demo and open-source code.",
+    "abstract": "Tracing traffic between services when the network plugin is someone else's code. We replaced kube-proxy with a kernel-level datapath. Includes a live demo and open-source code.",
     "speakers": [
       "Noah Iyer"
     ],
@@ -83,7 +83,7 @@
     "track": "CiliumCon",
     "tags": [
       "Cilium",
-      "eBPF",
+      "kernel-networking",
       "networking"
     ],
     "format": "talk",
@@ -96,7 +96,7 @@
   {
     "id": "t005",
     "title": "Network Policy That Scales: From Zero to Production",
-    "abstract": "We replaced kube-proxy with an eBPF datapath. Cilium uses eBPF to enforce identity-aware network policy. Includes a live demo and open-source code.",
+    "abstract": "We replaced kube-proxy with a kernel-level datapath. Cilium enforces identity-aware network policy inside the kernel. Includes a live demo and open-source code.",
     "speakers": [
       "Liam Patel",
       "Daniel Tanaka"
@@ -107,7 +107,7 @@
     ],
     "track": "CiliumCon",
     "tags": [
-      "eBPF",
+      "kernel-networking",
       "Cilium",
       "networking"
     ],
@@ -121,7 +121,7 @@
   {
     "id": "t006",
     "title": "Network Policy That Scales: A Live Demo",
-    "abstract": "Tracing traffic between services when the network plugin is someone else's code. We replaced kube-proxy with an eBPF datapath. Includes a live demo and open-source code.",
+    "abstract": "Tracing traffic between services when the network plugin is someone else's code. We replaced kube-proxy with a kernel-level datapath. Includes a live demo and open-source code.",
     "speakers": [
       "Noah Iyer"
     ],
@@ -131,7 +131,7 @@
     "track": "CiliumCon",
     "tags": [
       "Cilium",
-      "eBPF",
+      "kernel-networking",
       "service-mesh"
     ],
     "format": "talk",
@@ -757,7 +757,7 @@
     "track": "Cloud Native Security Day",
     "tags": [
       "runtime",
-      "eBPF",
+      "kernel-tracing",
       "Falco"
     ],
     "format": "lightning",
@@ -783,7 +783,7 @@
     "tags": [
       "security",
       "Falco",
-      "eBPF"
+      "kernel-tracing"
     ],
     "format": "talk",
     "level": "intermediate",
@@ -805,7 +805,7 @@
     "track": "Cloud Native Security Day",
     "tags": [
       "Falco",
-      "eBPF",
+      "kernel-tracing",
       "runtime"
     ],
     "format": "talk",
@@ -829,7 +829,7 @@
     "tags": [
       "Falco",
       "security",
-      "eBPF"
+      "kernel-tracing"
     ],
     "format": "talk",
     "level": "advanced",
@@ -1039,7 +1039,7 @@
   {
     "id": "t044",
     "title": "Detecting Cryptominers in Pods: A Field Guide",
-    "abstract": "We use eBPF probes to detect suspicious behavior in containers. Falco rules flag shells spawned inside production pods. Attendees leave with a working reference architecture.",
+    "abstract": "We use kernel probes to detect suspicious behavior in containers. Falco rules flag shells spawned inside production pods. Attendees leave with a working reference architecture.",
     "speakers": [
       "Lena Haddad"
     ],
@@ -1050,7 +1050,7 @@
     "tags": [
       "Falco",
       "security",
-      "eBPF"
+      "kernel-tracing"
     ],
     "format": "talk",
     "level": "beginner",
@@ -1154,7 +1154,7 @@
   {
     "id": "t049",
     "title": "Syscall-Level Defense: From Zero to Production",
-    "abstract": "We use eBPF probes to detect suspicious behavior in containers. We watch what processes do deep inside the operating system and flag anything that looks like an attacker breaking out of a container. We share benchmarks, failures and the fixes that stuck.",
+    "abstract": "We use kernel probes to detect suspicious behavior in containers. We watch what processes do deep inside the operating system and flag anything that looks like an attacker breaking out of a container. We share benchmarks, failures and the fixes that stuck.",
     "speakers": [
       "Maya Rossi",
       "Arjun Martinez"
@@ -1179,7 +1179,7 @@
   {
     "id": "t050",
     "title": "XDP Load Balancing: Lessons from Production",
-    "abstract": "Cilium uses eBPF to enforce identity-aware network policy. Packets get filtered before they ever reach the network stack, which cut our latency in half. No prior experience required.",
+    "abstract": "Cilium enforces identity-aware network policy inside the kernel. Packets get filtered before they ever reach the network stack, which cut our latency in half. No prior experience required.",
     "speakers": [
       "Diego Khan"
     ],
@@ -1190,7 +1190,7 @@
     "tags": [
       "Cilium",
       "networking",
-      "eBPF"
+      "kernel-networking"
     ],
     "format": "talk",
     "level": "beginner",
@@ -1423,7 +1423,7 @@
     "track": "Security",
     "tags": [
       "runtime",
-      "eBPF",
+      "kernel-tracing",
       "security"
     ],
     "format": "talk",
@@ -1459,7 +1459,7 @@
   {
     "id": "t062",
     "title": "Catching Container Escapes: Lessons from Production",
-    "abstract": "We watch what processes do deep inside the operating system and flag anything that looks like an attacker breaking out of a container. eBPF-based sensors watch every syscall with negligible overhead. Includes a live demo and open-source code.",
+    "abstract": "We watch what processes do deep inside the operating system and flag anything that looks like an attacker breaking out of a container. Kernel-level sensors watch every syscall with negligible overhead. Includes a live demo and open-source code.",
     "speakers": [
       "Lena Haddad"
     ],
@@ -1557,7 +1557,7 @@
   {
     "id": "t066",
     "title": "Network Policy That Scales: Beyond the Hype",
-    "abstract": "Cilium uses eBPF to enforce identity-aware network policy. Packets get filtered before they ever reach the network stack, which cut our latency in half. Expect real numbers from a large production environment.",
+    "abstract": "Cilium enforces identity-aware network policy inside the kernel. Packets get filtered before they ever reach the network stack, which cut our latency in half. Expect real numbers from a large production environment.",
     "speakers": [
       "Noah Iyer"
     ],
@@ -1567,7 +1567,7 @@
     "track": "Networking",
     "tags": [
       "Cilium",
-      "eBPF",
+      "kernel-networking",
       "service-mesh"
     ],
     "format": "lightning",
@@ -1770,7 +1770,7 @@
   {
     "id": "t075",
     "title": "Kernel Tracing for Incident Response: From Zero to Production",
-    "abstract": "Falco rules flag shells spawned inside production pods. eBPF-based sensors watch every syscall with negligible overhead. Expect real numbers from a large production environment.",
+    "abstract": "Falco rules flag shells spawned inside production pods. Kernel-level sensors watch every syscall with negligible overhead. Expect real numbers from a large production environment.",
     "speakers": [
       "Samir Farah"
     ],
@@ -1779,7 +1779,7 @@
     ],
     "track": "Security",
     "tags": [
-      "eBPF",
+      "kernel-tracing",
       "runtime",
       "security"
     ],
@@ -1901,7 +1901,7 @@
     "track": "Security",
     "tags": [
       "runtime",
-      "eBPF",
+      "kernel-tracing",
       "security"
     ],
     "format": "talk",
@@ -2111,7 +2111,7 @@
     ],
     "track": "Security",
     "tags": [
-      "eBPF",
+      "kernel-tracing",
       "security",
       "Falco"
     ],
@@ -2280,7 +2280,7 @@
     "tags": [
       "Cilium",
       "service-mesh",
-      "eBPF"
+      "kernel-networking"
     ],
     "format": "lightning",
     "level": "intermediate",
@@ -2436,7 +2436,7 @@
   {
     "id": "t103",
     "title": "Runtime Threat Detection: Patterns and Pitfalls",
-    "abstract": "Learn how to notice a compromised workload by its behavior rather than its signature. eBPF-based sensors watch every syscall with negligible overhead. Expect real numbers from a large production environment.",
+    "abstract": "Learn how to notice a compromised workload by its behavior rather than its signature. Kernel-level sensors watch every syscall with negligible overhead. Expect real numbers from a large production environment.",
     "speakers": [
       "Maya Rossi",
       "Kenji Bianchi",
@@ -2609,7 +2609,7 @@
   {
     "id": "t110",
     "title": "XDP Load Balancing: A Live Demo",
-    "abstract": "Packets get filtered before they ever reach the network stack, which cut our latency in half. Cilium uses eBPF to enforce identity-aware network policy. Includes a live demo and open-source code.",
+    "abstract": "Packets get filtered before they ever reach the network stack, which cut our latency in half. Cilium enforces identity-aware network policy inside the kernel. Includes a live demo and open-source code.",
     "speakers": [
       "Daniel Tanaka",
       "Yuki Moreau"
@@ -2622,7 +2622,7 @@
     "tags": [
       "service-mesh",
       "networking",
-      "eBPF"
+      "kernel-networking"
     ],
     "format": "talk",
     "level": "advanced",
@@ -2741,7 +2741,7 @@
     "tags": [
       "networking",
       "Cilium",
-      "eBPF"
+      "kernel-networking"
     ],
     "format": "talk",
     "level": "beginner",
@@ -2943,7 +2943,7 @@
   {
     "id": "t124",
     "title": "Sidecar-Free Service Mesh: What We Got Wrong",
-    "abstract": "Cilium uses eBPF to enforce identity-aware network policy. We replaced kube-proxy with an eBPF datapath. We share benchmarks, failures and the fixes that stuck.",
+    "abstract": "Cilium enforces identity-aware network policy inside the kernel. We replaced kube-proxy with a kernel-level datapath. We share benchmarks, failures and the fixes that stuck.",
     "speakers": [
       "Daniel Haddad"
     ],
@@ -2952,7 +2952,7 @@
     ],
     "track": "Networking",
     "tags": [
-      "eBPF",
+      "kernel-networking",
       "Cilium",
       "service-mesh"
     ],
@@ -3196,7 +3196,7 @@
     "tags": [
       "security",
       "runtime",
-      "eBPF"
+      "kernel-tracing"
     ],
     "format": "talk",
     "level": "beginner",
@@ -3409,7 +3409,7 @@
     "tags": [
       "Cilium",
       "service-mesh",
-      "eBPF"
+      "kernel-networking"
     ],
     "format": "talk",
     "level": "intermediate",
@@ -3501,7 +3501,7 @@
     "tags": [
       "Falco",
       "security",
-      "eBPF"
+      "kernel-tracing"
     ],
     "format": "talk",
     "level": "advanced",
@@ -3536,7 +3536,7 @@
   {
     "id": "t149",
     "title": "Network Policy That Scales: at Scale",
-    "abstract": "We replaced kube-proxy with an eBPF datapath. Cilium uses eBPF to enforce identity-aware network policy. We share benchmarks, failures and the fixes that stuck.",
+    "abstract": "We replaced kube-proxy with a kernel-level datapath. Cilium enforces identity-aware network policy inside the kernel. We share benchmarks, failures and the fixes that stuck.",
     "speakers": [
       "Daniel Haddad",
       "Liam Patel"
@@ -3548,7 +3548,7 @@
     "track": "Networking",
     "tags": [
       "service-mesh",
-      "eBPF",
+      "kernel-networking",
       "Cilium"
     ],
     "format": "talk",
@@ -3642,7 +3642,7 @@
     "track": "Networking",
     "tags": [
       "service-mesh",
-      "eBPF",
+      "kernel-networking",
       "networking"
     ],
     "format": "talk",
@@ -3810,7 +3810,7 @@
     "tags": [
       "service-mesh",
       "networking",
-      "eBPF"
+      "kernel-networking"
     ],
     "format": "talk",
     "level": "beginner",
@@ -3968,7 +3968,7 @@
   {
     "id": "t167",
     "title": "Catching Container Escapes: A Field Guide",
-    "abstract": "Falco rules flag shells spawned inside production pods. eBPF-based sensors watch every syscall with negligible overhead. No prior experience required.",
+    "abstract": "Falco rules flag shells spawned inside production pods. Kernel-level sensors watch every syscall with negligible overhead. No prior experience required.",
     "speakers": [
       "Mateo Mensah"
     ],
@@ -3977,7 +3977,7 @@
     ],
     "track": "Security",
     "tags": [
-      "eBPF",
+      "kernel-tracing",
       "Falco",
       "runtime"
     ],
@@ -4125,7 +4125,7 @@
     "tags": [
       "Falco",
       "security",
-      "eBPF"
+      "kernel-tracing"
     ],
     "format": "talk",
     "level": "intermediate",
@@ -4162,7 +4162,7 @@
   {
     "id": "t175",
     "title": "Sidecar-Free Service Mesh: Beyond the Hype",
-    "abstract": "Cilium uses eBPF to enforce identity-aware network policy. Tracing traffic between services when the network plugin is someone else's code. Attendees leave with a working reference architecture.",
+    "abstract": "Cilium enforces identity-aware network policy inside the kernel. Tracing traffic between services when the network plugin is someone else's code. Attendees leave with a working reference architecture.",
     "speakers": [
       "Zara Rahman",
       "Noah Iyer"
@@ -4175,7 +4175,7 @@
     "tags": [
       "Cilium",
       "service-mesh",
-      "eBPF"
+      "kernel-networking"
     ],
     "format": "talk",
     "level": "beginner",
@@ -4256,7 +4256,7 @@
   {
     "id": "t179",
     "title": "Network Policy That Scales: What We Got Wrong",
-    "abstract": "Tracing traffic between services when the network plugin is someone else's code. We replaced kube-proxy with an eBPF datapath. Expect real numbers from a large production environment.",
+    "abstract": "Tracing traffic between services when the network plugin is someone else's code. We replaced kube-proxy with a kernel-level datapath. Expect real numbers from a large production environment.",
     "speakers": [
       "Zara Rahman",
       "Daniel Haddad"
@@ -4268,7 +4268,7 @@
     "track": "Networking",
     "tags": [
       "service-mesh",
-      "eBPF",
+      "kernel-networking",
       "Cilium"
     ],
     "format": "lightning",

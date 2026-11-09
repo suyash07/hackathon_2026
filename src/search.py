@@ -1,6 +1,6 @@
 """Feature 1: talk search by meaning, plus "You might like" recommendations.
 
-Run from the project root:  python src/search.py "something on eBPF and security"
+Run from the project root:  python src/search.py "stopping attackers breaking out of containers"
 """
 
 from __future__ import annotations
@@ -12,18 +12,11 @@ from elasticsearch import Elasticsearch
 import config
 from es_client import get_client
 from profiles import DEMO_USER_ID, get_profile
+from queries import build_semantic_query
 
 DEFAULT_TOP_K = 5
 RECOMMEND_TOP_K = 3
 TALK_FIELDS = ["id", "title", "speakers", "track", "tags", "format", "room", "start", "end"]
-
-
-def build_semantic_query(field: str, text: str, exclude_ids: list[str] | None = None) -> dict:
-    """Return a query that matches `text` by meaning, optionally skipping some document ids."""
-    semantic = {"semantic": {"field": field, "query": text}}
-    if not exclude_ids:
-        return semantic
-    return {"bool": {"must": semantic, "must_not": {"ids": {"values": exclude_ids}}}}
 
 
 def search_talks(
@@ -56,7 +49,7 @@ def print_talks(talks: list[dict]) -> None:
 
 
 if __name__ == "__main__":
-    text = sys.argv[1] if len(sys.argv) > 1 else "something on eBPF and security"
+    text = sys.argv[1] if len(sys.argv) > 1 else "stopping attackers breaking out of containers"
     es = get_client()
 
     results = search_talks(es, text)

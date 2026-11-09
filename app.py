@@ -14,6 +14,7 @@ import streamlit as st
 sys.path.insert(0, str(Path(__file__).resolve().parent / "src"))
 
 from es_client import get_client  # noqa: E402
+from matchmaker import find_matches  # noqa: E402
 from profiles import DEMO_USER_ID, get_profile, list_profiles  # noqa: E402
 from search import recommend_talks, search_talks  # noqa: E402
 
@@ -57,6 +58,15 @@ def talk_card(talk: dict, bookmarked: set[str]) -> None:
         st.caption(" ".join(f"`{tag}`" for tag in talk.get("tags", [])))
 
 
+def person_card(person: dict) -> None:
+    """Render one attendee match."""
+    with st.container(border=True):
+        st.markdown(f"**{person['name']}** · {person['role']}, {person['company']}")
+        st.write(person["working_on"])
+        where = person.get("current_location") or "not checked in"
+        st.caption(f"📍 {where} · goals: {', '.join(person.get('goals', []))}")
+
+
 def sidebar_profile() -> dict | None:
     """Profile picker. Returns the selected profile, or None."""
     st.sidebar.header("Who are you?")
@@ -96,6 +106,19 @@ def talk_search_tab(profile: dict | None) -> None:
             talk_card(talk, bookmarked)
 
 
+def matchmaker_tab(profile: dict | None) -> None:
+    if not profile:
+        st.info("Pick a profile in the sidebar to find people working on similar things.")
+        return
+    st.write(f"People working on things like: *{profile['working_on']}*")
+    in_building = st.checkbox("Only people in the building right now", value=True)
+    matches = find_matches(es_client(), profile, in_building_only=in_building)
+    if not matches:
+        st.info("No matches found.")
+    for person in matches:
+        person_card(person)
+
+
 def main() -> None:
     st.title("🔎 Conference Search")
     st.caption("Conference companion · all data synthetic")
@@ -105,9 +128,11 @@ def main() -> None:
         st.error(f"Can't reach Elasticsearch: {err}")
         st.stop()
 
-    (search_tab,) = st.tabs(["Talk Search"])
+    search_tab, match_tab = st.tabs(["Talk Search", "Hallway Matchmaker"])
     with search_tab:
         talk_search_tab(profile)
+    with match_tab:
+        matchmaker_tab(profile)
 
 
 main()
