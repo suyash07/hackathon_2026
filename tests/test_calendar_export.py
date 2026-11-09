@@ -36,7 +36,11 @@ def test_ics_has_event_times_and_reminder():
     assert ics.endswith("END:VCALENDAR\r\n")
 
 
-def test_long_lines_are_folded():
-    long_talk = {**TALK, "title": "x" * 200}
-    for line in talk_to_ics(long_talk).split("\r\n"):
-        assert len(line) <= 75
+def test_non_ascii_lines_are_folded_by_utf8_octets():
+    title = "é" * 100
+    long_talk = {**TALK, "title": title}
+    ics = talk_to_ics(long_talk)
+
+    for line in ics.split("\r\n"):
+        assert len(line.encode("utf-8")) <= 75
+    assert f"SUMMARY:{title}" in ics.replace("\r\n ", "")

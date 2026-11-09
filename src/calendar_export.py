@@ -20,8 +20,17 @@ def escape(text: str) -> str:
 
 
 def fold(line: str) -> str:
-    """Split long lines; continuation lines start with a space."""
-    parts = [line[i : i + MAX_LINE] for i in range(0, len(line), MAX_LINE)] or [""]
+    """Split lines longer than 75 octets; continuation lines start with a space."""
+    parts: list[str] = []
+    current, size = "", 0
+    for ch in line:
+        n = len(ch.encode("utf-8"))
+        if size + n > MAX_LINE:
+            parts.append(current)
+            current, size = "", 0
+        current += ch
+        size += n
+    parts.append(current)
     return "\r\n ".join(parts)
 
 
