@@ -50,6 +50,11 @@ One profile per attendee in the `attendees` index — the single source of perso
 - Validate data before indexing (required fields present, `end > start`, no duplicate ids) and fail with a clear message.
 - Indexing script recreates indices from `data/` so the demo can be reset in one command.
 
+## Kubernetes and Radar
+- The app deploys to the team's Radar cluster via Argo CD (GitOps). Follow @AGENTS.md for every cluster task (Radar MCP, ship, debug-failure, demo-story skills in `.agents/skills/`).
+- In this repo a deploy happens when a PR **merges into `main`** (the build-and-deploy Action then pushes a `deploy: <sha> [skip ci]` commit). Don't push app changes straight to `main`; keep the branch + Gitar PR workflow.
+- Credentials reach the pod only through Secret `app-credentials` (keys `es-url`, `es-user`, `es-password`), created in Radar's UI. Never put credential values in git, manifests, chat or logs.
+
 ## Hackathon rules the agent must respect
 - Never use the term "eBPF" anywhere in the app, data, examples or docs; say "kernel-level" / "kernel tracing" instead.
 - Main code is written during the hackathon. Do not paste in pre-written feature code; write it fresh with the user.
