@@ -14,6 +14,7 @@ import streamlit as st
 sys.path.insert(0, str(Path(__file__).resolve().parent / "src"))
 
 from assistant import ask  # noqa: E402
+from calendar_export import talk_to_ics  # noqa: E402
 from es_client import get_client  # noqa: E402
 from matchmaker import find_matches  # noqa: E402
 from profiles import DEMO_USER_ID, get_profile, list_profiles  # noqa: E402
@@ -67,6 +68,13 @@ def talk_card(talk: dict, bookmarked: set[str], people: list[dict] | None = None
         if people:
             names = ", ".join(f"{p['name']} ({p['role']})" for p in people)
             st.markdown(f"🤝 **Who to meet:** {names}")
+        st.download_button(
+            "📅 Add to calendar",
+            data=talk_to_ics(talk),
+            file_name=f"{talk['id']}.ics",
+            mime="text/calendar",
+            key=f"ics-{talk['id']}",
+        )
 
 
 def person_card(person: dict) -> None:
